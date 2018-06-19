@@ -664,46 +664,28 @@
 		(object State "Start Simulation"
 		    quid       	"5B2856590360"
 		    type       	"StartState")
-		(object ActivityState "Input conditions"
+		(object ActivityState "input conditions"
 		    quid       	"5B28569602D1"
 		    documentation 	"输入模拟器的变量：Number of agents, strategies and iteration times and length of short memory")
 		(object ActivityState "initialize Data"
 		    quid       	"5B28572A006F"
-		    documentation 	"初始化后台数据中的，短期记忆长度，agent, 迭代和策略的数量")
-		(object Decision "Check input"
+		    documentation 	"初始化后台数据中的，短期记忆长度，agent, 迭代和策略的数量"
+		    statemachine 	(object State_Machine "State/Activity Model2"
+			quid       	"5B2859730113"
+			states     	(list States
+			    (object State "input obtained"
+				quid       	"5B2859570034"
+				type       	"Normal"))
+			partitions 	(list Partitions)
+			objects    	(list Objects)
+			transitions 	(list transition_list)
+			objectflows 	(list objectflow_list)
+			statediagrams 	(list StateDiagrams)))
+		(object ActivityState "NewActivity"
+		    quid       	"5B28594F002C")
+		(object Decision "check Input"
 		    quid       	"5B285B5E0018"
-		    documentation 	"检查输入是否合法")
-		(object ActivityState "Run one iteration"
-		    quid       	"5B285D670371"
-		    documentation 	"电脑agents自动做出选择")
-		(object ActivityState "Display result"
-		    quid       	"5B285DD10100"
-		    documentation 	"展现用户此轮选择正确与否")
-		(object ActivityState "Ask next step"
-		    quid       	"5B285E6202FF"
-		    documentation 	"询问用户下一步行动：继续一轮迭代，还是检查模拟器状态，还是直接退出")
-		(object ActivityState "Make Decision"
-		    quid       	"5B285ECB00DD"
-		    documentation 	"用户选择下一步行动：继续一轮迭代还是检查状态")
-		(object Decision "decide next"
-		    quid       	"5B285F3D00F2"
-		    documentation 	"选择下一步活动：迭代或检查状态")
-		(object ActivityState "Input choice"
-		    quid       	"5B285CE201D2"
-		    documentation 	"用户输入此轮选择：是否去酒吧")
-		(object ActivityState "Input agents"
-		    quid       	"5B2861EC0338"
-		    documentation 	"用户输入想要查看的agents编号和要看的信息：关于最近酒吧情况的记录，当前最佳策略，策略分数们，个人账户分数")
-		(object ActivityState "Display status"
-		    quid       	"5B2862C10253"
-		    documentation 	"展示相关agent的信息（记忆、策略和个人分数、最佳策略内容），以及总体模拟的信息（迄今为止的酒吧人数折线图和每个agent账户分数折线图）")
-		(object ActivityState "Read Status"
-		    quid       	"5B286A380186"
-		    documentation 	"读取相关agent的信息（记忆、策略和个人分数、最佳策略内容），以及总体模拟的信息（迄今为止的酒吧人数变化和每个agent账户分数变化）")
-		(object State "Exit simulation"
-		    quid       	"5B286A9E02AE"
-		    documentation 	"退出模拟"
-		    type       	"EndState"))
+		    documentation 	"检查输入是否合法"))
 	    partitions 	(list Partitions
 		(object Partition "User"
 		    quid       	"5B27DDD60066"
@@ -724,7 +706,7 @@
 	    transitions 	(list transition_list
 		(object State_Transition
 		    quid       	"5B2856AD0101"
-		    supplier   	"Use Case View::State/Activity Model::Input conditions"
+		    supplier   	"Use Case View::State/Activity Model::input conditions"
 		    supplier_quidu 	"5B28569602D1"
 		    client     	"Use Case View::State/Activity Model::Start Simulation"
 		    client_quidu 	"5B2856590360"
@@ -734,163 +716,10 @@
 		    quid       	"5B28573301BC"
 		    supplier   	"Use Case View::State/Activity Model::initialize Data"
 		    supplier_quidu 	"5B28572A006F"
-		    client     	"Use Case View::State/Activity Model::Input conditions"
+		    client     	"Use Case View::State/Activity Model::input conditions"
 		    client_quidu 	"5B28569602D1"
 		    sendEvent  	(object sendEvent
-			quid       	"5B28573301BF"))
-		(object State_Transition
-		    quid       	"5B285C11032E"
-		    supplier   	"Use Case View::State/Activity Model::Check input"
-		    supplier_quidu 	"5B285B5E0018"
-		    client     	"Use Case View::State/Activity Model::Input conditions"
-		    client_quidu 	"5B28569602D1"
-		    sendEvent  	(object sendEvent
-			quid       	"5B285C110331"))
-		(object State_Transition
-		    quid       	"5B285C18012F"
-		    label      	""
-		    supplier   	"Use Case View::State/Activity Model::initialize Data"
-		    supplier_quidu 	"5B28572A006F"
-		    client     	"Use Case View::State/Activity Model::Check input"
-		    client_quidu 	"5B285B5E0018"
-		    condition  	"valid input"
-		    sendEvent  	(object sendEvent
-			quid       	"5B285C180132"))
-		(object State_Transition
-		    quid       	"5B285C6C02B6"
-		    documentation 	"若输入无效则返回输入界面"
-		    label      	""
-		    supplier   	"Use Case View::State/Activity Model::Input conditions"
-		    supplier_quidu 	"5B28569602D1"
-		    client     	"Use Case View::State/Activity Model::Check input"
-		    client_quidu 	"5B285B5E0018"
-		    Event      	(object Event "[invalid input]"
-			quid       	"5B285C6C02B7")
-		    sendEvent  	(object sendEvent
-			quid       	"5B285C6C02B9"))
-		(object State_Transition
-		    quid       	"5B285E080065"
-		    supplier   	"Use Case View::State/Activity Model::Input choice"
-		    supplier_quidu 	"5B285CE201D2"
-		    client     	"Use Case View::State/Activity Model::initialize Data"
-		    client_quidu 	"5B28572A006F"
-		    sendEvent  	(object sendEvent
-			quid       	"5B285E080068"))
-		(object State_Transition
-		    quid       	"5B285E0F03C5"
-		    supplier   	"Use Case View::State/Activity Model::Run one iteration"
-		    supplier_quidu 	"5B285D670371"
-		    client     	"Use Case View::State/Activity Model::Input choice"
-		    client_quidu 	"5B285CE201D2"
-		    sendEvent  	(object sendEvent
-			quid       	"5B285E0F03C8"))
-		(object State_Transition
-		    quid       	"5B285E1500C7"
-		    supplier   	"Use Case View::State/Activity Model::Display result"
-		    supplier_quidu 	"5B285DD10100"
-		    client     	"Use Case View::State/Activity Model::Run one iteration"
-		    client_quidu 	"5B285D670371"
-		    sendEvent  	(object sendEvent
-			quid       	"5B285E1500CA"))
-		(object State_Transition
-		    quid       	"5B285E2503A9"
-		    supplier   	"Use Case View::State/Activity Model::Input choice"
-		    supplier_quidu 	"5B285CE201D2"
-		    client     	"Use Case View::State/Activity Model::Display result"
-		    client_quidu 	"5B285DD10100"
-		    sendEvent  	(object sendEvent
-			quid       	"5B285E2503AC"))
-		(object State_Transition
-		    quid       	"5B285F640380"
-		    supplier   	"Use Case View::State/Activity Model::Ask next step"
-		    supplier_quidu 	"5B285E6202FF"
-		    client     	"Use Case View::State/Activity Model::initialize Data"
-		    client_quidu 	"5B28572A006F"
-		    sendEvent  	(object sendEvent
-			quid       	"5B285F640383"))
-		(object State_Transition
-		    quid       	"5B285F6800BC"
-		    supplier   	"Use Case View::State/Activity Model::Make Decision"
-		    supplier_quidu 	"5B285ECB00DD"
-		    client     	"Use Case View::State/Activity Model::Ask next step"
-		    client_quidu 	"5B285E6202FF"
-		    sendEvent  	(object sendEvent
-			quid       	"5B285F6800BF"))
-		(object State_Transition
-		    quid       	"5B285F6B0165"
-		    supplier   	"Use Case View::State/Activity Model::decide next"
-		    supplier_quidu 	"5B285F3D00F2"
-		    client     	"Use Case View::State/Activity Model::Make Decision"
-		    client_quidu 	"5B285ECB00DD"
-		    sendEvent  	(object sendEvent
-			quid       	"5B285F6B0168"))
-		(object State_Transition
-		    quid       	"5B285F7700C3"
-		    label      	""
-		    supplier   	"Use Case View::State/Activity Model::Input choice"
-		    supplier_quidu 	"5B285CE201D2"
-		    client     	"Use Case View::State/Activity Model::decide next"
-		    client_quidu 	"5B285F3D00F2"
-		    Event      	(object Event "[iterate]"
-			quid       	"5B285F7700C4")
-		    sendEvent  	(object sendEvent
-			quid       	"5B285F7700C6"))
-		(object State_Transition
-		    quid       	"5B285FA9024C"
-		    supplier   	"Use Case View::State/Activity Model::Ask next step"
-		    supplier_quidu 	"5B285E6202FF"
-		    client     	"Use Case View::State/Activity Model::Display result"
-		    client_quidu 	"5B285DD10100"
-		    sendEvent  	(object sendEvent
-			quid       	"5B285FA9024F"))
-		(object State_Transition
-		    quid       	"5B286286011D"
-		    supplier   	"Use Case View::State/Activity Model::Input agents"
-		    supplier_quidu 	"5B2861EC0338"
-		    client     	"Use Case View::State/Activity Model::decide next"
-		    client_quidu 	"5B285F3D00F2"
-		    sendEvent  	(object sendEvent
-			quid       	"5B2862860120"))
-		(object State_Transition
-		    quid       	"5B286A700359"
-		    supplier   	"Use Case View::State/Activity Model::Read Status"
-		    supplier_quidu 	"5B286A380186"
-		    client     	"Use Case View::State/Activity Model::Input agents"
-		    client_quidu 	"5B2861EC0338"
-		    sendEvent  	(object sendEvent
-			quid       	"5B286A70035C"))
-		(object State_Transition
-		    quid       	"5B286A7602AB"
-		    supplier   	"Use Case View::State/Activity Model::Display status"
-		    supplier_quidu 	"5B2862C10253"
-		    client     	"Use Case View::State/Activity Model::Read Status"
-		    client_quidu 	"5B286A380186"
-		    sendEvent  	(object sendEvent
-			quid       	"5B286A7602AE"))
-		(object State_Transition
-		    quid       	"5B286A7C0280"
-		    supplier   	"Use Case View::State/Activity Model::Ask next step"
-		    supplier_quidu 	"5B285E6202FF"
-		    client     	"Use Case View::State/Activity Model::Display status"
-		    client_quidu 	"5B2862C10253"
-		    sendEvent  	(object sendEvent
-			quid       	"5B286A7C0283"))
-		(object State_Transition
-		    quid       	"5B286AB500BA"
-		    supplier   	"Use Case View::State/Activity Model::Exit simulation"
-		    supplier_quidu 	"5B286A9E02AE"
-		    client     	"Use Case View::State/Activity Model::Ask next step"
-		    client_quidu 	"5B285E6202FF"
-		    sendEvent  	(object sendEvent
-			quid       	"5B286AB500BD"))
-		(object State_Transition
-		    quid       	"5B286AD501EE"
-		    supplier   	"Use Case View::State/Activity Model::Exit simulation"
-		    supplier_quidu 	"5B286A9E02AE"
-		    client     	"Use Case View::State/Activity Model::Display result"
-		    client_quidu 	"5B285DD10100"
-		    sendEvent  	(object sendEvent
-			quid       	"5B286AD501F1")))
+			quid       	"5B28573301BF")))
 	    objectflows 	(list objectflow_list)
 	    statediagrams 	(list StateDiagrams
 		(object ActivityDiagram "UseCase"
@@ -900,12 +729,12 @@
 		    max_height 	28350
 		    max_width  	21600
 		    origin_x   	0
-		    origin_y   	575
+		    origin_y   	0
 		    items      	(list diagram_item_list
 			(object Swimlane "User" @24
 			    line_color 	3342489
 			    quidu      	"5B27DDD60066"
-			    width      	628)
+			    width      	516)
 			(object StateView "StartState" "Start Simulation" @25
 			    Parent_View 	@24
 			    location   	(242, 176)
@@ -941,37 +770,14 @@
 			    line_color 	3342489
 			    quidu      	"5B2856590360"
 			    autoResize 	TRUE)
-			(object ActivityStateView "Make Decision" @27
-			    Parent_View 	@24
-			    location   	(259, 564)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    label      	(object ItemLabel
-				Parent_View 	@27
-				location   	(259, 567)
-				fill_color 	13434879
-				anchor_loc 	1
-				nlines     	2
-				max_width  	269
-				justify    	0
-				label      	"Make Decision")
-			    icon_style 	"Icon"
+			(object Swimlane "UI" @27
+			    location   	(516, 0)
 			    line_color 	3342489
-			    fill_color 	13434879
-			    quidu      	"5B285ECB00DD"
-			    height     	106
-			    annotation 	1
-			    autoResize 	TRUE)
-			(object ActivityStateView "Input choice" @28
-			    Parent_View 	@24
-			    location   	(248, 747)
+			    quidu      	"5B2855FB00A6"
+			    width      	548)
+			(object ActivityStateView "input conditions" @28
+			    Parent_View 	@27
+			    location   	(768, 187)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -983,51 +789,34 @@
 				default_color 	TRUE)
 			    label      	(object ItemLabel
 				Parent_View 	@28
-				location   	(248, 750)
+				location   	(768, 190)
 				fill_color 	13434879
 				anchor_loc 	1
 				nlines     	2
 				max_width  	269
 				justify    	0
-				label      	"Input choice")
+				label      	"input conditions")
 			    icon_style 	"Icon"
 			    line_color 	3342489
 			    fill_color 	13434879
-			    quidu      	"5B285CE201D2"
+			    quidu      	"5B28569602D1"
 			    height     	106
 			    annotation 	1
 			    autoResize 	TRUE)
-			(object ActivityStateView "Input agents" @29
-			    Parent_View 	@24
-			    location   	(287, 1197)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    label      	(object ItemLabel
-				Parent_View 	@29
-				location   	(287, 1200)
-				fill_color 	13434879
-				anchor_loc 	1
-				nlines     	2
-				max_width  	269
-				justify    	0
-				label      	"Input agents")
-			    icon_style 	"Icon"
+			(object TransView "" @29
+			    stereotype 	TRUE
 			    line_color 	3342489
-			    fill_color 	13434879
-			    quidu      	"5B2861EC0338"
-			    height     	106
-			    annotation 	1
-			    autoResize 	TRUE)
-			(object StateView "EndState" "Exit simulation" @30
-			    Parent_View 	@24
-			    location   	(316, 403)
+			    quidu      	"5B2856AD0101"
+			    client     	@25
+			    supplier   	@28
+			    vertices   	(list Points
+				(272, 176)
+				(596, 183))
+			    line_style 	0
+			    x_offset   	FALSE)
+			(object DecisionView "check Input" @30
+			    Parent_View 	@27
+			    location   	(775, 371)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -1039,436 +828,7 @@
 				default_color 	TRUE)
 			    label      	(object SegLabel @31
 				Parent_View 	@30
-				location   	(370, 361)
-				font       	(object Font
-				    size       	10
-				    face       	"Arial"
-				    bold       	FALSE
-				    italics    	TRUE
-				    underline  	FALSE
-				    strike     	FALSE
-				    color      	0
-				    default_color 	TRUE)
-				nlines     	2
-				max_width  	600
-				justify    	1
-				label      	"Exit simulation"
-				pctDist    	1.000000
-				height     	0
-				orientation 	0)
-			    icon_style 	"Icon"
-			    line_color 	3342489
-			    quidu      	"5B286A9E02AE"
-			    autoResize 	TRUE)
-			(object Swimlane "UI" @32
-			    location   	(628, 0)
-			    line_color 	3342489
-			    quidu      	"5B2855FB00A6"
-			    width      	686)
-			(object ActivityStateView "Input conditions" @33
-			    Parent_View 	@32
-			    location   	(880, 187)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    label      	(object ItemLabel
-				Parent_View 	@33
-				location   	(880, 190)
-				fill_color 	13434879
-				anchor_loc 	1
-				nlines     	2
-				max_width  	269
-				justify    	0
-				label      	"Input conditions")
-			    icon_style 	"Icon"
-			    line_color 	3342489
-			    fill_color 	13434879
-			    quidu      	"5B28569602D1"
-			    height     	106
-			    annotation 	1
-			    autoResize 	TRUE)
-			(object TransView "" @34
-			    stereotype 	TRUE
-			    line_color 	3342489
-			    quidu      	"5B2856AD0101"
-			    client     	@25
-			    supplier   	@33
-			    vertices   	(list Points
-				(272, 176)
-				(708, 184))
-			    line_style 	0
-			    x_offset   	FALSE)
-			(object DecisionView "Check input" @35
-			    Parent_View 	@32
-			    location   	(878, 378)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    label      	(object SegLabel @36
-				Parent_View 	@35
-				location   	(934, 329)
-				font       	(object Font
-				    size       	10
-				    face       	"Arial"
-				    bold       	FALSE
-				    italics    	TRUE
-				    underline  	FALSE
-				    strike     	FALSE
-				    color      	0
-				    default_color 	TRUE)
-				anchor     	1
-				nlines     	1
-				max_width  	249
-				justify    	1
-				label      	"Check input"
-				pctDist    	1.000000
-				height     	0
-				orientation 	0)
-			    icon_style 	"Icon"
-			    line_color 	3342489
-			    fill_color 	13434879
-			    quidu      	"5B285B5E0018"
-			    autoResize 	TRUE)
-			(object TransView "" @37
-			    stereotype 	TRUE
-			    line_color 	3342489
-			    quidu      	"5B285C11032E"
-			    client     	@33
-			    supplier   	@35
-			    vertices   	(list Points
-				(879, 239)
-				(878, 341))
-			    line_style 	0
-			    x_offset   	FALSE)
-			(object TransView "" @38
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    label      	(object SegLabel @39
-				Parent_View 	@38
-				location   	(834, 290)
-				font       	(object Font
-				    size       	10
-				    face       	"Arial"
-				    bold       	FALSE
-				    italics    	FALSE
-				    underline  	FALSE
-				    strike     	FALSE
-				    color      	0
-				    default_color 	TRUE)
-				anchor_loc 	1
-				nlines     	1
-				max_width  	450
-				justify    	0
-				label      	"[invalid input]"
-				pctDist    	0.500000
-				height     	45
-				orientation 	0)
-			    stereotype 	TRUE
-			    line_color 	3342489
-			    quidu      	"5B285C6C02B6"
-			    client     	@35
-			    supplier   	@33
-			    vertices   	(list Points
-				(878, 341)
-				(879, 239))
-			    line_style 	0
-			    x_offset   	FALSE)
-			(object ActivityStateView "Display result" @40
-			    Parent_View 	@32
-			    location   	(875, 844)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    label      	(object ItemLabel
-				Parent_View 	@40
-				location   	(875, 847)
-				fill_color 	13434879
-				anchor_loc 	1
-				nlines     	2
-				max_width  	269
-				justify    	0
-				label      	"Display result")
-			    icon_style 	"Icon"
-			    line_color 	3342489
-			    fill_color 	13434879
-			    quidu      	"5B285DD10100"
-			    height     	106
-			    annotation 	1
-			    autoResize 	TRUE)
-			(object TransView "" @41
-			    stereotype 	TRUE
-			    line_color 	3342489
-			    quidu      	"5B285E2503A9"
-			    client     	@40
-			    supplier   	@28
-			    vertices   	(list Points
-				(711, 818)
-				(411, 772))
-			    line_style 	0
-			    x_offset   	FALSE)
-			(object ActivityStateView "Ask next step" @42
-			    Parent_View 	@32
-			    location   	(876, 548)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    label      	(object ItemLabel
-				Parent_View 	@42
-				location   	(876, 551)
-				fill_color 	13434879
-				anchor_loc 	1
-				nlines     	2
-				max_width  	269
-				justify    	0
-				label      	"Ask next step")
-			    icon_style 	"Icon"
-			    line_color 	3342489
-			    fill_color 	13434879
-			    quidu      	"5B285E6202FF"
-			    height     	106
-			    annotation 	1
-			    autoResize 	TRUE)
-			(object TransView "" @43
-			    stereotype 	TRUE
-			    line_color 	3342489
-			    quidu      	"5B285F6800BC"
-			    client     	@42
-			    supplier   	@27
-			    vertices   	(list Points
-				(704, 552)
-				(430, 559))
-			    line_style 	0
-			    x_offset   	FALSE)
-			(object TransView "" @44
-			    stereotype 	TRUE
-			    line_color 	3342489
-			    quidu      	"5B285FA9024C"
-			    client     	@40
-			    supplier   	@42
-			    vertices   	(list Points
-				(875, 790)
-				(875, 601))
-			    line_style 	0
-			    x_offset   	FALSE)
-			(object ActivityStateView "Display status" @45
-			    Parent_View 	@32
-			    location   	(1000, 1169)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    label      	(object ItemLabel
-				Parent_View 	@45
-				location   	(1000, 1172)
-				fill_color 	13434879
-				anchor_loc 	1
-				nlines     	2
-				max_width  	269
-				justify    	0
-				label      	"Display status")
-			    icon_style 	"Icon"
-			    line_color 	3342489
-			    fill_color 	13434879
-			    quidu      	"5B2862C10253"
-			    height     	106
-			    annotation 	1
-			    autoResize 	TRUE)
-			(object TransView "" @46
-			    stereotype 	TRUE
-			    line_color 	3342489
-			    quidu      	"5B286A7C0280"
-			    client     	@45
-			    supplier   	@42
-			    vertices   	(list Points
-				(989, 1115)
-				(886, 601))
-			    line_style 	0
-			    x_offset   	FALSE)
-			(object Swimlane "Data" @47
-			    location   	(1314, 0)
-			    line_color 	3342489
-			    quidu      	"5B28561B0372"
-			    width      	696)
-			(object ActivityStateView "initialize Data" @48
-			    Parent_View 	@47
-			    location   	(1668, 553)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    label      	(object ItemLabel
-				Parent_View 	@48
-				location   	(1668, 544)
-				fill_color 	13434879
-				anchor_loc 	1
-				nlines     	2
-				max_width  	253
-				justify    	0
-				label      	"initialize Data")
-			    icon_style 	"Label"
-			    line_color 	3342489
-			    fill_color 	13434879
-			    quidu      	"5B28572A006F"
-			    height     	131
-			    annotation 	1
-			    autoResize 	TRUE)
-			(object TransView "" @49
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    label      	(object SegLabel @50
-				Parent_View 	@49
-				location   	(1241, 403)
-				font       	(object Font
-				    size       	10
-				    face       	"Arial"
-				    bold       	FALSE
-				    italics    	FALSE
-				    underline  	FALSE
-				    strike     	FALSE
-				    color      	0
-				    default_color 	TRUE)
-				anchor_loc 	1
-				nlines     	1
-				max_width  	228
-				justify    	0
-				label      	"[ valid input ]"
-				pctDist    	0.500000
-				height     	45
-				orientation 	0)
-			    stereotype 	TRUE
-			    line_color 	3342489
-			    quidu      	"5B285C18012F"
-			    client     	@35
-			    supplier   	@48
-			    vertices   	(list Points
-				(953, 378)
-				(1506, 513))
-			    line_style 	0
-			    x_offset   	FALSE)
-			(object TransView "" @51
-			    stereotype 	TRUE
-			    line_color 	3342489
-			    quidu      	"5B285F640380"
-			    client     	@48
-			    supplier   	@42
-			    vertices   	(list Points
-				(1489, 551)
-				(1047, 549))
-			    line_style 	0
-			    x_offset   	FALSE)
-			(object ActivityStateView "Run one iteration" @52
-			    Parent_View 	@47
-			    location   	(1763, 1232)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    label      	(object ItemLabel
-				Parent_View 	@52
-				location   	(1763, 1235)
-				fill_color 	13434879
-				anchor_loc 	1
-				nlines     	2
-				max_width  	269
-				justify    	0
-				label      	"Run one iteration")
-			    icon_style 	"Icon"
-			    line_color 	3342489
-			    fill_color 	13434879
-			    quidu      	"5B285D670371"
-			    height     	106
-			    annotation 	1
-			    autoResize 	TRUE)
-			(object TransView "" @53
-			    stereotype 	TRUE
-			    line_color 	3342489
-			    quidu      	"5B285E1500C7"
-			    client     	@52
-			    supplier   	@40
-			    vertices   	(list Points
-				(1641, 1179)
-				(996, 896))
-			    line_style 	0
-			    x_offset   	FALSE)
-			(object TransView "" @54
-			    stereotype 	TRUE
-			    line_color 	3342489
-			    quidu      	"5B285E0F03C5"
-			    client     	@28
-			    supplier   	@52
-			    vertices   	(list Points
-				(393, 793)
-				(1617, 1185))
-			    line_style 	0
-			    x_offset   	FALSE)
-			(object DecisionView "decide next" @55
-			    Parent_View 	@47
-			    location   	(1727, 668)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    label      	(object SegLabel @56
-				Parent_View 	@55
-				location   	(1783, 619)
+				location   	(831, 322)
 				font       	(object Font
 				    size       	10
 				    face       	"Arial"
@@ -1482,80 +842,23 @@
 				nlines     	2
 				max_width  	300
 				justify    	1
-				label      	"decide next"
+				label      	"check Input"
 				pctDist    	1.000000
 				height     	0
 				orientation 	0)
 			    icon_style 	"Icon"
 			    line_color 	3342489
 			    fill_color 	13434879
-			    quidu      	"5B285F3D00F2"
+			    quidu      	"5B285B5E0018"
 			    autoResize 	TRUE)
-			(object TransView "" @57
-			    stereotype 	TRUE
+			(object Swimlane "Data" @32
+			    location   	(1064, 0)
 			    line_color 	3342489
-			    quidu      	"5B285F6B0165"
-			    client     	@27
-			    supplier   	@55
-			    vertices   	(list Points
-				(429, 575)
-				(1652, 668))
-			    line_style 	0
-			    x_offset   	FALSE)
-			(object TransView "" @58
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    label      	(object SegLabel @59
-				Parent_View 	@58
-				location   	(1039, 747)
-				font       	(object Font
-				    size       	10
-				    face       	"Arial"
-				    bold       	FALSE
-				    italics    	FALSE
-				    underline  	FALSE
-				    strike     	FALSE
-				    color      	0
-				    default_color 	TRUE)
-				anchor_loc 	1
-				nlines     	1
-				max_width  	450
-				justify    	0
-				label      	"[iterate]"
-				pctDist    	0.500000
-				height     	45
-				orientation 	0)
-			    stereotype 	TRUE
-			    line_color 	3342489
-			    quidu      	"5B285F7700C3"
-			    client     	@55
-			    supplier   	@28
-			    vertices   	(list Points
-				(1652, 668)
-				(419, 737))
-			    line_style 	0
-			    x_offset   	FALSE)
-			(object TransView "" @60
-			    stereotype 	TRUE
-			    line_color 	3342489
-			    quidu      	"5B286286011D"
-			    client     	@55
-			    supplier   	@29
-			    vertices   	(list Points
-				(1652, 668)
-				(423, 1143))
-			    line_style 	0
-			    x_offset   	FALSE)
-			(object ActivityStateView "Read Status" @61
-			    Parent_View 	@47
-			    location   	(1621, 1430)
+			    quidu      	"5B28561B0372"
+			    width      	622)
+			(object ActivityStateView "initialize Data" @33
+			    Parent_View 	@32
+			    location   	(1368, 512)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -1566,58 +869,25 @@
 				color      	0
 				default_color 	TRUE)
 			    label      	(object ItemLabel
-				Parent_View 	@61
-				location   	(1621, 1433)
+				Parent_View 	@33
+				location   	(1368, 503)
 				fill_color 	13434879
 				anchor_loc 	1
 				nlines     	2
-				max_width  	269
+				max_width  	253
 				justify    	0
-				label      	"Read Status")
-			    icon_style 	"Icon"
+				label      	"initialize Data")
+			    icon_style 	"Label"
 			    line_color 	3342489
 			    fill_color 	13434879
-			    quidu      	"5B286A380186"
-			    height     	106
+			    quidu      	"5B28572A006F"
+			    height     	131
 			    annotation 	1
 			    autoResize 	TRUE)
-			(object TransView "" @62
-			    stereotype 	TRUE
+			(object Swimlane "" @34
+			    location   	(1686, 0)
 			    line_color 	3342489
-			    quidu      	"5B286A700359"
-			    client     	@29
-			    supplier   	@61
-			    vertices   	(list Points
-				(448, 1225)
-				(1459, 1401))
-			    line_style 	0
-			    x_offset   	FALSE)
-			(object TransView "" @63
-			    stereotype 	TRUE
-			    line_color 	3342489
-			    quidu      	"5B286A7602AB"
-			    client     	@61
-			    supplier   	@45
-			    vertices   	(list Points
-				(1494, 1377)
-				(1126, 1222))
-			    line_style 	0
-			    x_offset   	FALSE)
-			(object Swimlane "" @64
-			    location   	(2010, 0)
-			    line_color 	3342489
-			    width      	450)
-			(object TransView "" @65
-			    stereotype 	TRUE
-			    line_color 	3342489
-			    quidu      	"5B286AB500BA"
-			    client     	@42
-			    supplier   	@30
-			    vertices   	(list Points
-				(724, 508)
-				(358, 413))
-			    line_style 	0
-			    x_offset   	FALSE)))))
+			    width      	450)))))
 	logical_presentations 	(list unit_reference_list
 	    (object UseCaseDiagram "Main"
 		quid       	"5B27B0930079"
@@ -1628,7 +898,7 @@
 		origin_x   	0
 		origin_y   	0
 		items      	(list diagram_item_list
-		    (object UseCaseView "Use Case View::Choose" @66
+		    (object UseCaseView "Use Case View::Choose" @35
 			location   	(772, 518)
 			font       	(object Font
 			    size       	10
@@ -1640,7 +910,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@66
+			    Parent_View 	@35
 			    location   	(772, 656)
 			    anchor_loc 	1
 			    nlines     	2
@@ -1651,7 +921,7 @@
 			line_color 	3342489
 			fill_color 	13434879
 			quidu      	"5B27BB7D03CC")
-		    (object UseCaseView "Use Case View::Initialize" @67
+		    (object UseCaseView "Use Case View::Initialize" @36
 			location   	(775, 240)
 			font       	(object Font
 			    size       	10
@@ -1663,7 +933,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@67
+			    Parent_View 	@36
 			    location   	(775, 378)
 			    anchor_loc 	1
 			    nlines     	2
@@ -1674,7 +944,7 @@
 			line_color 	3342489
 			fill_color 	13434879
 			quidu      	"5B27BA880228")
-		    (object ClassView "Class" "Use Case View::User" @68
+		    (object ClassView "Class" "Use Case View::User" @37
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -1689,7 +959,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@68
+			    Parent_View 	@37
 			    location   	(148, 566)
 			    anchor_loc 	1
 			    nlines     	2
@@ -1702,7 +972,7 @@
 			quidu      	"5B27B22D00F7"
 			annotation 	8
 			autoResize 	TRUE)
-		    (object UseCaseView "Use Case View::Operate" @69
+		    (object UseCaseView "Use Case View::Operate" @38
 			location   	(434, 372)
 			font       	(object Font
 			    size       	10
@@ -1714,7 +984,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@69
+			    Parent_View 	@38
 			    location   	(434, 510)
 			    anchor_loc 	1
 			    nlines     	2
@@ -1725,7 +995,7 @@
 			line_color 	3342489
 			fill_color 	13434879
 			quidu      	"5B27CBA60341")
-		    (object AssociationViewNew "$UNNAMED$0" @70
+		    (object AssociationViewNew "$UNNAMED$0" @39
 			location   	(264, 389)
 			font       	(object Font
 			    size       	10
@@ -1740,51 +1010,51 @@
 			line_color 	3342489
 			quidu      	"5B27CBC200A5"
 			roleview_list 	(list RoleViews
-			    (object RoleView "$UNNAMED$1" @71
-				Parent_View 	@70
+			    (object RoleView "$UNNAMED$1" @40
+				Parent_View 	@39
 				location   	(116, -17)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5B27CBC40134"
-				client     	@70
-				supplier   	@69
+				client     	@39
+				supplier   	@38
 				vertices   	(list Points
 				    (264, 389)
 				    (323, 383))
 				line_style 	0)
-			    (object RoleView "$UNNAMED$2" @72
-				Parent_View 	@70
+			    (object RoleView "$UNNAMED$2" @41
+				Parent_View 	@39
 				location   	(116, -17)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5B27CBC4018C"
-				client     	@70
-				supplier   	@68
+				client     	@39
+				supplier   	@37
 				vertices   	(list Points
 				    (264, 389)
 				    (205, 396))
 				line_style 	0)))
-		    (object InheritView "" @73
+		    (object InheritView "" @42
 			stereotype 	TRUE
 			line_color 	3342489
 			quidu      	"5B27CBD5018F"
-			client     	@67
-			supplier   	@69
+			client     	@36
+			supplier   	@38
 			vertices   	(list Points
 			    (664, 280)
 			    (542, 326))
 			line_style 	0)
-		    (object InheritView "" @74
+		    (object InheritView "" @43
 			stereotype 	TRUE
 			line_color 	3342489
 			quidu      	"5B27CBDC021F"
-			client     	@66
-			supplier   	@69
+			client     	@35
+			supplier   	@38
 			vertices   	(list Points
 			    (662, 467)
 			    (542, 417))
 			line_style 	0)
-		    (object UseCaseView "Use Case View::Display" @75
+		    (object UseCaseView "Use Case View::Display" @44
 			location   	(472, 684)
 			font       	(object Font
 			    size       	10
@@ -1796,7 +1066,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@75
+			    Parent_View 	@44
 			    location   	(472, 822)
 			    anchor_loc 	1
 			    nlines     	2
@@ -1808,12 +1078,12 @@
 			fill_color 	13434879
 			quidu      	"5B27DC940103"
 			height     	118)
-		    (object InheritView "" @76
+		    (object InheritView "" @45
 			stereotype 	TRUE
 			line_color 	3342489
 			quidu      	"5B27DCA5030C"
-			client     	@75
-			supplier   	@69
+			client     	@44
+			supplier   	@38
 			vertices   	(list Points
 			    (462, 625)
 			    (452, 535))
@@ -1824,167 +1094,7 @@
 	global     	TRUE
 	subsystem  	"Component View"
 	quidu      	"5B27B0930063"
-	logical_models 	(list unit_reference_list
-	    (object Class "Agent"
-		quid       	"5B286E29038B"
-		used_nodes 	(list uses_relationship_list
-		    (object Uses_Relationship
-			quid       	"5B287C6803D3"
-			supplier   	"Logical View::Strategy"
-			quidu      	"5B286E370090"))
-		operations 	(list Operations
-		    (object Operation "Init"
-			quid       	"5B28717F03DD"
-			documentation 	"初始化单个agent，包括其a_Account分数，a_Strategies策略池"
-			parameters 	(list Parameters
-			    (object Parameter "id"
-				quid       	"5B2871AE02A2"
-				documentation 	"该agent应赋予的ID号"
-				type       	"Integer")
-			    (object Parameter "numOfStrategy"
-				quid       	"5B28722D00B9"
-				documentation 	"非负整数，单个agent的策略总个数"
-				type       	"Integer")
-			    (object Parameter "lenOfMem"
-				quid       	"5B28728401F9"
-				documentation 	"agent能记忆的最近酒吧情况数量，非负整数"
-				type       	"Integer"))
-			concurrency 	"Synchronous"
-			opExportControl 	"Private"
-			uid        	0)
-		    (object Operation "UpdateStrategies"
-			quid       	"5B2874E200FD"
-			documentation 	"更新策略池的打分，返回更新成功与否"
-			parameters 	(list Parameters
-			    (object Parameter "currentResult"
-				quid       	"5B2875ED0217"
-				documentation 	"当前迭代的酒吧情况：1为拥挤，0为空闲"
-				type       	"Integer")
-			    (object Parameter "lastMem"
-				quid       	"5B2876A600D9"
-				documentation 	"列表，记录当前迭代未更新时的近几周酒吧拥挤情况"))
-			result     	"Boolean"
-			concurrency 	"Sequential"
-			opExportControl 	"Public"
-			uid        	0)
-		    (object Operation "GetAccount"
-			quid       	"5B2876EE022E"
-			documentation 	"返回a_Agent的值"
-			result     	"Double"
-			concurrency 	"Sequential"
-			opExportControl 	"Public"
-			uid        	0)
-		    (object Operation "GetStrategies"
-			quid       	"5B2877D600B3"
-			documentation 	"返回该agent的策略池"
-			result     	"Strategy"
-			concurrency 	"Sequential"
-			opExportControl 	"Public"
-			uid        	0
-			quidu      	"5B286E370090")
-		    (object Operation "UpdateAccount"
-			quid       	"5B2878160267"
-			documentation 	"更新该agent的account分数数组，即添加最近的分数在数组末尾"
-			parameters 	(list Parameters
-			    (object Parameter "currentAccount"
-				quid       	"5B2878650309"
-				documentation 	"当前迭代过后的账户分数"
-				type       	"Double"))
-			result     	"Boolean"
-			concurrency 	"Sequential"
-			opExportControl 	"Public"
-			uid        	0)
-		    (object Operation "MakeDecision"
-			quid       	"5B2878A40065"
-			documentation 	"agent该轮根据a_Strategies中最大分数的策略做出选择，是否前往酒吧：1前往，0不去。"
-			parameters 	(list Parameters
-			    (object Parameter "lastMem"
-				quid       	"5B28796B0324"
-				documentation 	"存储该轮迭代之前几次的酒吧拥挤情况"))
-			result     	"Integer"
-			concurrency 	"Sequential"
-			opExportControl 	"Public"
-			uid        	0))
-		class_attributes 	(list class_attribute_list
-		    (object ClassAttribute "a_ID"
-			quid       	"5B286FBD029D"
-			documentation 	"每个agent独有的ID号码"
-			type       	"Integer")
-		    (object ClassAttribute "a_Strategies[ ]"
-			quid       	"5B286FC90186"
-			documentation 	"该agent所有下属的策略，最大堆形式（保持策略池中分数最高的在堆顶端），保存策略的实体们"
-			type       	"Strategy"
-			quidu      	"5B286E370090")
-		    (object ClassAttribute "a_Account[ ]"
-			quid       	"5B28700C0254"
-			documentation 	"agent的从开始到现在的累计账户分数的列表：正确预测的奖励和错误预测的惩罚总和"
-			type       	"Variant"
-			initv      	"[0.0]")))
-	    (object Class "Strategy"
-		quid       	"5B286E370090"
-		operations 	(list Operations
-		    (object Operation "Init"
-			quid       	"5B287AE10212"
-			documentation 	"初始化策略和分数，对每个情况的都随机预测"
-			parameters 	(list Parameters
-			    (object Parameter "lenOfMem"
-				quid       	"5B287B2800F7"
-				documentation 	"非负整数k，决定一个策略中的情况数量（2^k）"
-				type       	"Integer"))
-			concurrency 	"Synchronous"
-			opExportControl 	"Private"
-			uid        	0)
-		    (object Operation "UpdateStrategy"
-			quid       	"5B287B9C00A7"
-			documentation 	"更新该策略的分数，根据当前酒吧实际情况匹配预测结果是否正确"
-			parameters 	(list Parameters
-			    (object Parameter "lastMem"
-				quid       	"5B287BF1033E"
-				documentation 	"之前几局迭代的酒吧满空情况")
-			    (object Parameter "currentResult"
-				quid       	"5B287BF801E6"
-				documentation 	"非负整数，酒吧满1空0"
-				type       	"Integer"))
-			result     	"Boolean"
-			concurrency 	"Sequential"
-			opExportControl 	"Public"
-			uid        	0))
-		class_attributes 	(list class_attribute_list
-		    (object ClassAttribute "s_Score"
-			quid       	"5B2879E8021C"
-			documentation 	"存储当前策略的分数：根据预测正确的奖励和错误的惩罚和计算"
-			type       	"Double"
-			initv      	"0.0")
-		    (object ClassAttribute "s_Strategy"
-			quid       	"5B2879FD0141"
-			documentation 	"列表形式存储单个策略中所有情况和预测。")))
-	    (object Class "Game"
-		quid       	"5B287EAD024B"
-		class_attributes 	(list class_attribute_list
-		    (object ClassAttribute "g_lenOfMem"
-			quid       	"5B287ED00227")
-		    (object ClassAttribute "g_lastMem"
-			quid       	"5B287EF20125")
-		    (object ClassAttribute "g_iterationTimes"
-			quid       	"5B287EFF0302")
-		    (object ClassAttribute "g_numOfStrategies"
-			quid       	"5B287F0C02B2")
-		    (object ClassAttribute "g_numOfAgents"
-			quid       	"5B287F1C0273")))
-	    (object Association "has many"
-		quid       	"5B287DB40205"
-		roles      	(list role_list
-		    (object Role "$UNNAMED$3"
-			quid       	"5B287DB50248"
-			supplier   	"Logical View::Strategy"
-			quidu      	"5B286E370090"
-			client_cardinality 	(value cardinality "n")
-			is_navigable 	TRUE)
-		    (object Role "$UNNAMED$4"
-			quid       	"5B287DB5024B"
-			supplier   	"Logical View::Agent"
-			quidu      	"5B286E29038B"
-			client_cardinality 	(value cardinality "1")))))
+	logical_models 	(list unit_reference_list)
 	logical_presentations 	(list unit_reference_list
 	    (object ClassDiagram "Main"
 		quid       	"5B27B0930067"
@@ -1994,271 +1104,7 @@
 		max_width  	21600
 		origin_x   	0
 		origin_y   	2450
-		items      	(list diagram_item_list
-		    (object ClassView "Class" "Logical View::Agent" @77
-			ShowCompartmentStereotypes 	TRUE
-			IncludeAttribute 	TRUE
-			IncludeOperation 	TRUE
-			location   	(822, 1240)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object ItemLabel
-			    Parent_View 	@77
-			    location   	(543, 959)
-			    fill_color 	13434879
-			    nlines     	1
-			    max_width  	558
-			    justify    	0
-			    label      	"Agent")
-			icon_style 	"Icon"
-			line_color 	3342489
-			fill_color 	13434879
-			quidu      	"5B286E29038B"
-			compartment 	(object Compartment
-			    Parent_View 	@77
-			    location   	(543, 1020)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    icon_style 	"Icon"
-			    fill_color 	13434879
-			    anchor     	2
-			    nlines     	10
-			    max_width  	584
-			    justify    	1)
-			width      	576
-			height     	586
-			annotation 	8
-			autoResize 	TRUE)
-		    (object ClassView "Class" "Logical View::Strategy" @78
-			ShowCompartmentStereotypes 	TRUE
-			IncludeAttribute 	TRUE
-			IncludeOperation 	TRUE
-			location   	(1759, 1241)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object ItemLabel
-			    Parent_View 	@78
-			    location   	(1530, 1085)
-			    fill_color 	13434879
-			    nlines     	1
-			    max_width  	458
-			    justify    	0
-			    label      	"Strategy")
-			icon_style 	"Icon"
-			line_color 	3342489
-			fill_color 	13434879
-			quidu      	"5B286E370090"
-			compartment 	(object Compartment
-			    Parent_View 	@78
-			    location   	(1530, 1146)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    icon_style 	"Icon"
-			    fill_color 	13434879
-			    anchor     	2
-			    nlines     	5
-			    max_width  	478
-			    justify    	1)
-			width      	476
-			height     	336
-			annotation 	8
-			autoResize 	TRUE)
-		    (object AssociationViewNew "has many" @79
-			location   	(1315, 1240)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object SegLabel @80
-			    Parent_View 	@79
-			    location   	(1315, 1181)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				bold       	FALSE
-				italics    	TRUE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    anchor     	1
-			    anchor_loc 	1
-			    nlines     	1
-			    max_width  	450
-			    justify    	0
-			    label      	"has many"
-			    pctDist    	0.500000
-			    height     	60
-			    orientation 	0)
-			stereotype 	TRUE
-			line_color 	3342489
-			quidu      	"5B287DB40205"
-			roleview_list 	(list RoleViews
-			    (object RoleView "$UNNAMED$3" @81
-				Parent_View 	@79
-				location   	(499, -44)
-				font       	(object Font
-				    size       	10
-				    face       	"Arial"
-				    bold       	FALSE
-				    italics    	FALSE
-				    underline  	FALSE
-				    strike     	FALSE
-				    color      	0
-				    default_color 	TRUE)
-				stereotype 	TRUE
-				line_color 	3342489
-				quidu      	"5B287DB50248"
-				client     	@79
-				supplier   	@78
-				vertices   	(list Points
-				    (1315, 1240)
-				    (1520, 1240))
-				line_style 	0
-				label      	(object SegLabel @82
-				    Parent_View 	@81
-				    location   	(1498, 1294)
-				    font       	(object Font
-					size       	10
-					face       	"Arial"
-					bold       	FALSE
-					italics    	FALSE
-					underline  	FALSE
-					strike     	FALSE
-					color      	0
-					default_color 	TRUE)
-				    anchor     	2
-				    anchor_loc 	1
-				    nlines     	1
-				    max_width  	15
-				    justify    	0
-				    label      	"n"
-				    pctDist    	0.900000
-				    height     	54
-				    orientation 	1))
-			    (object RoleView "$UNNAMED$4" @83
-				Parent_View 	@79
-				location   	(499, -44)
-				font       	(object Font
-				    size       	10
-				    face       	"Arial"
-				    bold       	FALSE
-				    italics    	FALSE
-				    underline  	FALSE
-				    strike     	FALSE
-				    color      	0
-				    default_color 	TRUE)
-				stereotype 	TRUE
-				line_color 	3342489
-				quidu      	"5B287DB5024B"
-				client     	@79
-				supplier   	@77
-				vertices   	(list Points
-				    (1315, 1240)
-				    (1110, 1240))
-				line_style 	0
-				label      	(object SegLabel @84
-				    Parent_View 	@83
-				    location   	(1132, 1294)
-				    font       	(object Font
-					size       	10
-					face       	"Arial"
-					bold       	FALSE
-					italics    	FALSE
-					underline  	FALSE
-					strike     	FALSE
-					color      	0
-					default_color 	TRUE)
-				    anchor     	2
-				    anchor_loc 	1
-				    nlines     	1
-				    max_width  	15
-				    justify    	0
-				    label      	"1"
-				    pctDist    	0.900000
-				    height     	54
-				    orientation 	0))))
-		    (object ClassView "Class" "Logical View::Game" @85
-			ShowCompartmentStereotypes 	TRUE
-			IncludeAttribute 	TRUE
-			IncludeOperation 	TRUE
-			location   	(784, 1800)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object ItemLabel
-			    Parent_View 	@85
-			    location   	(589, 1619)
-			    fill_color 	13434879
-			    nlines     	1
-			    max_width  	390
-			    justify    	0
-			    label      	"Game")
-			icon_style 	"Icon"
-			line_color 	3342489
-			fill_color 	13434879
-			quidu      	"5B287EAD024B"
-			compartment 	(object Compartment
-			    Parent_View 	@85
-			    location   	(589, 1680)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    icon_style 	"Icon"
-			    fill_color 	13434879
-			    anchor     	2
-			    nlines     	6
-			    max_width  	388
-			    justify    	1)
-			width      	408
-			height     	386
-			annotation 	8
-			autoResize 	TRUE)))))
+		items      	(list diagram_item_list))))
     root_subsystem 	(object SubSystem "Component View"
 	quid       	"5B27B0930063"
 	physical_models 	(list unit_reference_list)
