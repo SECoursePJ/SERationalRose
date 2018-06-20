@@ -261,7 +261,7 @@
 				    location   	(180, 250)
 				    anchor_loc 	1
 				    nlines     	2
-				    max_width  	324
+				    max_width  	360
 				    justify    	0
 				    label      	"")
 				icon       	"Actor"
@@ -269,10 +269,10 @@
 				line_color 	3342489
 				fill_color 	13434879
 				quidu      	"5B28AA5D0211"
-				width      	300
+				width      	120
 				height     	1178
-				icon_height 	150
-				icon_width 	108
+				icon_height 	162
+				icon_width 	120
 				icon_y_offset 	0
 				annotation 	1
 				Focus_Of_Control 	(object Focus_Of_Control "" @3
@@ -809,7 +809,7 @@
 				    location   	(430, 932)
 				    anchor_loc 	1
 				    nlines     	2
-				    max_width  	328
+				    max_width  	331
 				    justify    	0
 				    label      	"")
 				icon       	"Actor"
@@ -1367,7 +1367,7 @@
 						synchronization 	"Return"
 						dir        	"ToClientFromSupplier"
 						sequence   	"1.1.2.3"
-						ordinal    	12
+						ordinal    	13
 						quidu      	"000000000000"
 						creation   	FALSE))))
 				class      	"Logical View::UI"
@@ -1399,7 +1399,7 @@
 						synchronization 	"Return"
 						dir        	"ToClientFromSupplier"
 						sequence   	"1.1.2.1.2"
-						ordinal    	10
+						ordinal    	11
 						quidu      	"000000000000"
 						creation   	FALSE)))
 				    (object Link
@@ -1455,8 +1455,8 @@
 						frequency  	"Aperiodic"
 						synchronization 	"Return"
 						dir        	"ToClientFromSupplier"
-						sequence   	"3"
-						ordinal    	11
+						sequence   	"4"
+						ordinal    	12
 						quidu      	"000000000000"
 						creation   	FALSE))))
 				class      	"Logical View::Game"
@@ -1520,6 +1520,15 @@
 						ordinal    	8
 						Operation  	"UpdateStrategy(, Integer)"
 						quidu      	"5B287B9C00A7"
+						creation   	FALSE)
+					    (object Message "UpdateTrue"
+						quid       	"5B28BDAB03CB"
+						frequency  	"Aperiodic"
+						synchronization 	"Return"
+						dir        	"ToClientFromSupplier"
+						sequence   	"3"
+						ordinal    	10
+						quidu      	"000000000000"
 						creation   	FALSE))))
 				class      	"Logical View::Agent"
 				quidu      	"5B286E29038B"
@@ -1535,7 +1544,7 @@
 			max_height 	28350
 			max_width  	21600
 			origin_x   	0
-			origin_y   	144
+			origin_y   	150
 			items      	(list diagram_item_list
 			    (object InterObjView "$UNNAMED$5" @60
 				location   	(180, 225)
@@ -1553,7 +1562,7 @@
 				    location   	(180, 250)
 				    anchor_loc 	1
 				    nlines     	2
-				    max_width  	324
+				    max_width  	360
 				    justify    	0
 				    label      	"")
 				icon       	"Actor"
@@ -1561,10 +1570,10 @@
 				line_color 	3342489
 				fill_color 	13434879
 				quidu      	"5B28B6E700E8"
-				width      	300
+				width      	120
 				height     	1650
-				icon_height 	150
-				icon_width 	108
+				icon_height 	162
+				icon_width 	120
 				icon_y_offset 	0
 				annotation 	1
 				Focus_Of_Control 	(object Focus_Of_Control "" @61
@@ -1599,7 +1608,7 @@
 				fill_color 	13434879
 				quidu      	"5B28B6EF00E6"
 				width      	300
-				height     	1697
+				height     	1858
 				icon_height 	0
 				icon_width 	0
 				icon_y_offset 	0
@@ -1612,7 +1621,7 @@
 				    y_coord    	105
 				    Nested     	FALSE)
 				Focus_Of_Control 	(object Focus_Of_Control "" @64
-				    location   	(540, 1742)
+				    location   	(540, 1903)
 				    line_color 	3342489
 				    InterObjView 	@62
 				    height     	90
@@ -1643,7 +1652,7 @@
 				fill_color 	13434879
 				quidu      	"5B28B6F203B1"
 				width      	300
-				height     	1697
+				height     	1858
 				icon_height 	0
 				icon_width 	0
 				icon_y_offset 	0
@@ -1666,18 +1675,18 @@
 				    location   	(900, 863)
 				    line_color 	3342489
 				    InterObjView 	@65
-				    height     	879
-				    y_coord    	789
+				    height     	1040
+				    y_coord    	950
 				    Nested     	TRUE)
 				Focus_Of_Control 	(object Focus_Of_Control "" @69
-				    location   	(900, 1497)
+				    location   	(900, 1670)
 				    line_color 	3342489
 				    InterObjView 	@65
 				    height     	1
 				    y_coord    	-89
 				    Nested     	TRUE)
 				Focus_Of_Control 	(object Focus_Of_Control "" @70
-				    location   	(900, 1614)
+				    location   	(900, 1775)
 				    line_color 	3342489
 				    InterObjView 	@65
 				    height     	1
@@ -1708,7 +1717,7 @@
 				fill_color 	13434879
 				quidu      	"5B28BA3B02CD"
 				width      	300
-				height     	1697
+				height     	1858
 				icon_height 	0
 				icon_width 	0
 				icon_y_offset 	0
@@ -1735,13 +1744,20 @@
 				    y_coord    	0
 				    Nested     	FALSE)
 				Focus_Of_Control 	(object Focus_Of_Control "" @75
-				    location   	(1303, 1614)
+				    location   	(1303, 1497)
+				    line_color 	3342489
+				    InterObjView 	@71
+				    height     	90
+				    y_coord    	0
+				    Nested     	FALSE)
+				Focus_Of_Control 	(object Focus_Of_Control "" @76
+				    location   	(1303, 1775)
 				    line_color 	3342489
 				    InterObjView 	@71
 				    height     	90
 				    y_coord    	0
 				    Nested     	FALSE))
-			    (object InterObjView "User" @76
+			    (object InterObjView "User" @77
 				location   	(1762, 225)
 				font       	(object Font
 				    size       	10
@@ -1753,7 +1769,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@76
+				    Parent_View 	@77
 				    location   	(1762, 225)
 				    fill_color 	13434879
 				    anchor_loc 	1
@@ -1766,26 +1782,26 @@
 				fill_color 	13434879
 				quidu      	"5B28B6F601C5"
 				width      	300
-				height     	1697
+				height     	1858
 				icon_height 	0
 				icon_width 	0
 				icon_y_offset 	0
 				annotation 	1
-				Focus_Of_Control 	(object Focus_Of_Control "" @77
+				Focus_Of_Control 	(object Focus_Of_Control "" @78
 				    location   	(1762, 968)
 				    line_color 	3342489
-				    InterObjView 	@76
-				    height     	529
-				    y_coord    	439
+				    InterObjView 	@77
+				    height     	702
+				    y_coord    	612
 				    Nested     	FALSE)
-				Focus_Of_Control 	(object Focus_Of_Control "" @78
+				Focus_Of_Control 	(object Focus_Of_Control "" @79
 				    location   	(1762, 1392)
 				    line_color 	3342489
-				    InterObjView 	@76
+				    InterObjView 	@77
 				    height     	1
 				    y_coord    	-89
 				    Nested     	TRUE))
-			    (object InterObjView "$UNNAMED$8" @79
+			    (object InterObjView "$UNNAMED$8" @80
 				location   	(2597, 225)
 				font       	(object Font
 				    size       	10
@@ -1797,7 +1813,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@79
+				    Parent_View 	@80
 				    location   	(2597, 225)
 				    fill_color 	13434879
 				    anchor_loc 	1
@@ -1810,26 +1826,33 @@
 				fill_color 	13434879
 				quidu      	"5B28B6F90178"
 				width      	300
-				height     	1697
+				height     	1858
 				icon_height 	0
 				icon_width 	0
 				icon_y_offset 	0
 				annotation 	1
-				Focus_Of_Control 	(object Focus_Of_Control "" @80
+				Focus_Of_Control 	(object Focus_Of_Control "" @81
 				    location   	(2597, 1178)
 				    line_color 	3342489
-				    InterObjView 	@79
+				    InterObjView 	@80
 				    height     	169
 				    y_coord    	79
 				    Nested     	FALSE)
-				Focus_Of_Control 	(object Focus_Of_Control "" @81
+				Focus_Of_Control 	(object Focus_Of_Control "" @82
 				    location   	(2597, 1287)
 				    line_color 	3342489
-				    InterObjView 	@79
+				    InterObjView 	@80
 				    height     	105
 				    y_coord    	15
-				    Nested     	TRUE))
-			    (object InterMessView "Run( )" @82
+				    Nested     	TRUE)
+				Focus_Of_Control 	(object Focus_Of_Control "" @83
+				    location   	(2597, 1497)
+				    line_color 	3342489
+				    InterObjView 	@80
+				    height     	90
+				    y_coord    	0
+				    Nested     	FALSE))
+			    (object InterMessView "Run( )" @84
 				location   	(0, 397)
 				font       	(object Font
 				    size       	10
@@ -1840,8 +1863,8 @@
 				    strike     	FALSE
 				    color      	0
 				    default_color 	TRUE)
-				label      	(object SegLabel @83
-				    Parent_View 	@82
+				label      	(object SegLabel @85
+				    Parent_View 	@84
 				    location   	(359, 353)
 				    font       	(object Font
 					size       	10
@@ -1855,7 +1878,7 @@
 				    quidu      	"5B28B7010271"
 				    anchor_loc 	1
 				    nlines     	1
-				    max_width  	150
+				    max_width  	162
 				    justify    	0
 				    label      	"Run( )"
 				    pctDist    	0.500000
@@ -1869,7 +1892,7 @@
 				origin     	(195, 397)
 				terminus   	(524, 397)
 				ordinal    	0)
-			    (object InterMessView "Run(decision)" @84
+			    (object InterMessView "Run(decision)" @86
 				location   	(0, 502)
 				font       	(object Font
 				    size       	10
@@ -1880,8 +1903,8 @@
 				    strike     	FALSE
 				    color      	0
 				    default_color 	TRUE)
-				label      	(object SegLabel @85
-				    Parent_View 	@84
+				label      	(object SegLabel @87
+				    Parent_View 	@86
 				    location   	(719, 458)
 				    font       	(object Font
 					size       	10
@@ -1909,7 +1932,7 @@
 				origin     	(555, 502)
 				terminus   	(884, 502)
 				ordinal    	1)
-			    (object SelfMessView "Update(currentResult)" @86
+			    (object SelfMessView "Update(currentResult)" @88
 				location   	(0, 838)
 				font       	(object Font
 				    size       	10
@@ -1920,8 +1943,8 @@
 				    strike     	FALSE
 				    color      	0
 				    default_color 	TRUE)
-				label      	(object SegLabel @87
-				    Parent_View 	@86
+				label      	(object SegLabel @89
+				    Parent_View 	@88
 				    location   	(991, 794)
 				    font       	(object Font
 					size       	10
@@ -1949,7 +1972,7 @@
 				origin     	(916, 838)
 				terminus   	(1066, 838)
 				ordinal    	4)
-			    (object InterMessView "UpdateStrategies(currentResult,lastMem)" @88
+			    (object InterMessView "UpdateStrategies(currentResult,lastMem)" @90
 				location   	(0, 968)
 				font       	(object Font
 				    size       	10
@@ -1960,8 +1983,8 @@
 				    strike     	FALSE
 				    color      	0
 				    default_color 	TRUE)
-				label      	(object SegLabel @89
-				    Parent_View 	@88
+				label      	(object SegLabel @91
+				    Parent_View 	@90
 				    location   	(1330, 924)
 				    font       	(object Font
 					size       	10
@@ -1983,13 +2006,13 @@
 				    orientation 	0)
 				line_color 	3342489
 				client     	@65
-				supplier   	@76
+				supplier   	@77
 				Focus_Src  	@68
-				Focus_Entry 	@77
+				Focus_Entry 	@78
 				origin     	(915, 968)
 				terminus   	(1746, 968)
 				ordinal    	5)
-			    (object InterMessView "UpdateStrategy(lastMem, currentResult)" @90
+			    (object InterMessView "UpdateStrategy(lastMem, currentResult)" @92
 				location   	(0, 1178)
 				font       	(object Font
 				    size       	10
@@ -2000,8 +2023,8 @@
 				    strike     	FALSE
 				    color      	0
 				    default_color 	TRUE)
-				label      	(object SegLabel @91
-				    Parent_View 	@90
+				label      	(object SegLabel @93
+				    Parent_View 	@92
 				    location   	(2179, 1134)
 				    font       	(object Font
 					size       	10
@@ -2022,14 +2045,14 @@
 				    height     	45
 				    orientation 	0)
 				line_color 	3342489
-				client     	@76
-				supplier   	@79
-				Focus_Src  	@77
-				Focus_Entry 	@80
+				client     	@77
+				supplier   	@80
+				Focus_Src  	@78
+				Focus_Entry 	@81
 				origin     	(1777, 1178)
 				terminus   	(2581, 1178)
 				ordinal    	7)
-			    (object InterMessView "UpdateTrue" @92
+			    (object InterMessView "UpdateTrue" @94
 				location   	(0, 1392)
 				font       	(object Font
 				    size       	10
@@ -2040,8 +2063,8 @@
 				    strike     	FALSE
 				    color      	0
 				    default_color 	TRUE)
-				label      	(object SegLabel @93
-				    Parent_View 	@92
+				label      	(object SegLabel @95
+				    Parent_View 	@94
 				    location   	(2180, 1348)
 				    font       	(object Font
 					size       	10
@@ -2062,15 +2085,15 @@
 				    height     	45
 				    orientation 	1)
 				line_color 	3342489
-				client     	@79
-				supplier   	@76
-				Focus_Src  	@81
-				Focus_Entry 	@78
+				client     	@80
+				supplier   	@77
+				Focus_Src  	@82
+				Focus_Entry 	@79
 				origin     	(2581, 1392)
 				terminus   	(1778, 1392)
 				ordinal    	9)
-			    (object InterMessView "UpdateTrue" @94
-				location   	(0, 1497)
+			    (object InterMessView "UpdateTrue" @96
+				location   	(0, 1670)
 				font       	(object Font
 				    size       	10
 				    face       	"Arial"
@@ -2080,9 +2103,9 @@
 				    strike     	FALSE
 				    color      	0
 				    default_color 	TRUE)
-				label      	(object SegLabel @95
-				    Parent_View 	@94
-				    location   	(1331, 1453)
+				label      	(object SegLabel @97
+				    Parent_View 	@96
+				    location   	(1331, 1626)
 				    font       	(object Font
 					size       	10
 					face       	"Arial"
@@ -2102,15 +2125,15 @@
 				    height     	45
 				    orientation 	1)
 				line_color 	3342489
-				client     	@76
+				client     	@77
 				supplier   	@65
-				Focus_Src  	@77
+				Focus_Src  	@78
 				Focus_Entry 	@69
-				origin     	(1746, 1497)
-				terminus   	(916, 1497)
-				ordinal    	10)
-			    (object InterMessView "currentResult" @96
-				location   	(0, 1742)
+				origin     	(1746, 1670)
+				terminus   	(916, 1670)
+				ordinal    	11)
+			    (object InterMessView "currentResult" @98
+				location   	(0, 1903)
 				font       	(object Font
 				    size       	10
 				    face       	"Arial"
@@ -2120,9 +2143,9 @@
 				    strike     	FALSE
 				    color      	0
 				    default_color 	TRUE)
-				label      	(object SegLabel @97
-				    Parent_View 	@96
-				    location   	(720, 1698)
+				label      	(object SegLabel @99
+				    Parent_View 	@98
+				    location   	(720, 1859)
 				    font       	(object Font
 					size       	10
 					face       	"Arial"
@@ -2146,10 +2169,10 @@
 				supplier   	@62
 				Focus_Src  	@68
 				Focus_Entry 	@64
-				origin     	(884, 1742)
-				terminus   	(556, 1742)
-				ordinal    	12)
-			    (object InterMessView "MakeDecision()" @98
+				origin     	(884, 1903)
+				terminus   	(556, 1903)
+				ordinal    	13)
+			    (object InterMessView "MakeDecision()" @100
 				location   	(0, 607)
 				font       	(object Font
 				    size       	10
@@ -2160,8 +2183,8 @@
 				    strike     	FALSE
 				    color      	0
 				    default_color 	TRUE)
-				label      	(object SegLabel @99
-				    Parent_View 	@98
+				label      	(object SegLabel @101
+				    Parent_View 	@100
 				    location   	(1101, 563)
 				    font       	(object Font
 					size       	10
@@ -2189,7 +2212,7 @@
 				origin     	(915, 607)
 				terminus   	(1287, 607)
 				ordinal    	2)
-			    (object InterMessView "decisions" @100
+			    (object InterMessView "decisions" @102
 				location   	(0, 712)
 				font       	(object Font
 				    size       	10
@@ -2200,8 +2223,8 @@
 				    strike     	FALSE
 				    color      	0
 				    default_color 	TRUE)
-				label      	(object SegLabel @101
-				    Parent_View 	@100
+				label      	(object SegLabel @103
+				    Parent_View 	@102
 				    location   	(1102, 668)
 				    font       	(object Font
 					size       	10
@@ -2229,7 +2252,7 @@
 				origin     	(1287, 712)
 				terminus   	(916, 712)
 				ordinal    	3)
-			    (object InterMessView "UpdateStrategies()" @102
+			    (object InterMessView "UpdateStrategies()" @104
 				location   	(0, 1073)
 				font       	(object Font
 				    size       	10
@@ -2240,8 +2263,8 @@
 				    strike     	FALSE
 				    color      	0
 				    default_color 	TRUE)
-				label      	(object SegLabel @103
-				    Parent_View 	@102
+				label      	(object SegLabel @105
+				    Parent_View 	@104
 				    location   	(1101, 1029)
 				    font       	(object Font
 					size       	10
@@ -2269,8 +2292,8 @@
 				origin     	(915, 1073)
 				terminus   	(1287, 1073)
 				ordinal    	6)
-			    (object InterMessView "UpdateTrue" @104
-				location   	(0, 1614)
+			    (object InterMessView "UpdateTrue" @106
+				location   	(0, 1775)
 				font       	(object Font
 				    size       	10
 				    face       	"Arial"
@@ -2280,9 +2303,9 @@
 				    strike     	FALSE
 				    color      	0
 				    default_color 	TRUE)
-				label      	(object SegLabel @105
-				    Parent_View 	@104
-				    location   	(1102, 1570)
+				label      	(object SegLabel @107
+				    Parent_View 	@106
+				    location   	(1102, 1731)
 				    font       	(object Font
 					size       	10
 					face       	"Arial"
@@ -2295,7 +2318,7 @@
 				    quidu      	"5B28BAA90214"
 				    anchor_loc 	1
 				    nlines     	1
-				    max_width  	273
+				    max_width  	278
 				    justify    	0
 				    label      	"UpdateTrue"
 				    pctDist    	0.500000
@@ -2304,12 +2327,12 @@
 				line_color 	3342489
 				client     	@71
 				supplier   	@65
-				Focus_Src  	@75
+				Focus_Src  	@76
 				Focus_Entry 	@70
-				origin     	(1287, 1614)
-				terminus   	(916, 1614)
-				ordinal    	11)
-			    (object InterMessView "UpdateStrategy()" @106
+				origin     	(1287, 1775)
+				terminus   	(916, 1775)
+				ordinal    	12)
+			    (object InterMessView "UpdateStrategy()" @108
 				location   	(0, 1287)
 				font       	(object Font
 				    size       	10
@@ -2320,8 +2343,8 @@
 				    strike     	FALSE
 				    color      	0
 				    default_color 	TRUE)
-				label      	(object SegLabel @107
-				    Parent_View 	@106
+				label      	(object SegLabel @109
+				    Parent_View 	@108
 				    location   	(1949, 1243)
 				    font       	(object Font
 					size       	10
@@ -2335,7 +2358,7 @@
 				    quidu      	"5B28BABB0308"
 				    anchor_loc 	1
 				    nlines     	1
-				    max_width  	341
+				    max_width  	352
 				    justify    	0
 				    label      	"UpdateStrategy()"
 				    pctDist    	0.500000
@@ -2343,17 +2366,57 @@
 				    orientation 	0)
 				line_color 	3342489
 				client     	@71
-				supplier   	@79
+				supplier   	@80
 				Focus_Src  	@74
-				Focus_Entry 	@81
+				Focus_Entry 	@82
 				origin     	(1318, 1287)
 				terminus   	(2581, 1287)
 				ordinal    	8)
-			    (object Destruction_Marker @108
+			    (object Destruction_Marker @110
 				Parent_View 	@60
 				location   	(180, 1875)
 				line_color 	3342489
-				fill_color 	13434879)))
+				fill_color 	13434879)
+			    (object InterMessView "UpdateTrue" @111
+				location   	(0, 1497)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object SegLabel @112
+				    Parent_View 	@111
+				    location   	(1950, 1453)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    quidu      	"5B28BDAB03CB"
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	273
+				    justify    	0
+				    label      	"UpdateTrue"
+				    pctDist    	0.500000
+				    height     	45
+				    orientation 	1)
+				line_color 	3342489
+				client     	@80
+				supplier   	@71
+				Focus_Src  	@83
+				Focus_Entry 	@75
+				origin     	(2581, 1497)
+				terminus   	(1319, 1497)
+				ordinal    	10)))
 		    (object ObjectDiagram "Choose"
 			mechanism_ref 	@59
 			quid       	"5B28BC630304"
@@ -2364,7 +2427,7 @@
 			origin_x   	0
 			origin_y   	0
 			items      	(list diagram_item_list
-			    (object ObjectView "$UNNAMED$5" @109
+			    (object ObjectView "$UNNAMED$5" @113
 				location   	(120, 440)
 				font       	(object Font
 				    size       	10
@@ -2376,11 +2439,11 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@109
+				    Parent_View 	@113
 				    location   	(120, 600)
 				    anchor_loc 	1
 				    nlines     	2
-				    max_width  	335
+				    max_width  	339
 				    justify    	0
 				    label      	"")
 				icon       	"Actor"
@@ -2393,7 +2456,7 @@
 				subobjects 	0
 				x_offset   	0.000000
 				y_offset   	0.000000)
-			    (object ObjectView "$UNNAMED$6" @110
+			    (object ObjectView "$UNNAMED$6" @114
 				location   	(408, 340)
 				font       	(object Font
 				    size       	10
@@ -2405,7 +2468,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@110
+				    Parent_View 	@114
 				    location   	(327, 289)
 				    fill_color 	13434879
 				    nlines     	2
@@ -2422,7 +2485,7 @@
 				subobjects 	0
 				x_offset   	0.000000
 				y_offset   	0.000000)
-			    (object ObjectView "$UNNAMED$7" @111
+			    (object ObjectView "$UNNAMED$7" @115
 				location   	(980, 378)
 				font       	(object Font
 				    size       	10
@@ -2434,7 +2497,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@111
+				    Parent_View 	@115
 				    location   	(899, 327)
 				    fill_color 	13434879
 				    nlines     	2
@@ -2451,7 +2514,7 @@
 				subobjects 	0
 				x_offset   	0.000000
 				y_offset   	0.000000)
-			    (object ObjectView "User" @112
+			    (object ObjectView "User" @116
 				location   	(153, 858)
 				font       	(object Font
 				    size       	10
@@ -2463,7 +2526,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@112
+				    Parent_View 	@116
 				    location   	(72, 807)
 				    fill_color 	13434879
 				    nlines     	2
@@ -2480,7 +2543,7 @@
 				subobjects 	0
 				x_offset   	0.000000
 				y_offset   	0.000000)
-			    (object ObjectView "$UNNAMED$8" @113
+			    (object ObjectView "$UNNAMED$8" @117
 				location   	(920, 1281)
 				font       	(object Font
 				    size       	10
@@ -2492,7 +2555,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@113
+				    Parent_View 	@117
 				    location   	(824, 1230)
 				    fill_color 	13434879
 				    nlines     	2
@@ -2510,7 +2573,7 @@
 				subobjects 	0
 				x_offset   	0.000000
 				y_offset   	0.000000)
-			    (object ObjectView "Others" @114
+			    (object ObjectView "Others" @118
 				location   	(1481, 1087)
 				font       	(object Font
 				    size       	10
@@ -2522,7 +2585,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@114
+				    Parent_View 	@118
 				    location   	(1400, 1036)
 				    fill_color 	13434879
 				    nlines     	2
@@ -2539,18 +2602,18 @@
 				subobjects 	0
 				x_offset   	0.000000
 				y_offset   	0.000000)
-			    (object LinkSelfView "" @115
+			    (object LinkSelfView "" @119
 				location   	(980, 165)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5B28B76B015F"
-				client     	@111
-				supplier   	@111
+				client     	@115
+				supplier   	@115
 				vertices   	(list Points
 				    (923, 315)
 				    (1037, 315))
 				line_style 	4)
-			    (object MessView "" @116
+			    (object MessView "" @120
 				location   	(980, 121)
 				font       	(object Font
 				    size       	10
@@ -2562,8 +2625,8 @@
 				    color      	0
 				    default_color 	TRUE)
 				line_color 	3342489
-				label      	(object SegLabel @117
-				    Parent_View 	@116
+				label      	(object SegLabel @121
+				    Parent_View 	@120
 				    location   	(980, 77)
 				    font       	(object Font
 					size       	10
@@ -2583,24 +2646,24 @@
 				    pctDist    	0.500000
 				    height     	45
 				    orientation 	0)
-				object_arc 	@115
+				object_arc 	@119
 				pctDist    	0.500000
 				height     	45
 				orientation 	0
 				dir        	1
 				origin     	(920, 121)
 				terminus   	(1040, 121))
-			    (object LinkView "" @118
+			    (object LinkView "" @122
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5B28B7010270"
-				client     	@109
-				supplier   	@110
+				client     	@113
+				supplier   	@114
 				vertices   	(list Points
 				    (177, 416)
 				    (317, 371))
 				line_style 	0)
-			    (object MessView "" @119
+			    (object MessView "" @123
 				location   	(233, 352)
 				font       	(object Font
 				    size       	10
@@ -2612,8 +2675,8 @@
 				    color      	0
 				    default_color 	TRUE)
 				line_color 	3342489
-				label      	(object SegLabel @120
-				    Parent_View 	@119
+				label      	(object SegLabel @124
+				    Parent_View 	@123
 				    location   	(221, 310)
 				    font       	(object Font
 					size       	10
@@ -2627,30 +2690,30 @@
 				    quidu      	"5B28B7010271"
 				    anchor_loc 	1
 				    nlines     	1
-				    max_width  	450
+				    max_width  	162
 				    justify    	0
 				    label      	"Run( )"
 				    pctDist    	0.500000
 				    height     	45
 				    orientation 	0)
-				object_arc 	@118
+				object_arc 	@122
 				pctDist    	0.500000
 				height     	45
 				orientation 	0
 				dir        	1
 				origin     	(176, 369)
 				terminus   	(290, 335))
-			    (object LinkView "" @121
+			    (object LinkView "" @125
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5B28B71A02C9"
-				client     	@110
-				supplier   	@111
+				client     	@114
+				supplier   	@115
 				vertices   	(list Points
 				    (498, 345)
 				    (889, 370))
 				line_style 	0)
-			    (object MessView "" @122
+			    (object MessView "" @126
 				location   	(697, 314)
 				font       	(object Font
 				    size       	10
@@ -2662,8 +2725,8 @@
 				    color      	0
 				    default_color 	TRUE)
 				line_color 	3342489
-				label      	(object SegLabel @123
-				    Parent_View 	@122
+				label      	(object SegLabel @127
+				    Parent_View 	@126
 				    location   	(700, 270)
 				    font       	(object Font
 					size       	10
@@ -2683,14 +2746,14 @@
 				    pctDist    	0.500000
 				    height     	45
 				    orientation 	0)
-				object_arc 	@121
+				object_arc 	@125
 				pctDist    	0.500000
 				height     	45
 				orientation 	0
 				dir        	1
 				origin     	(637, 310)
 				terminus   	(757, 318))
-			    (object MessView "" @124
+			    (object MessView "" @128
 				location   	(692, 403)
 				font       	(object Font
 				    size       	10
@@ -2702,8 +2765,8 @@
 				    color      	0
 				    default_color 	TRUE)
 				line_color 	3342489
-				label      	(object SegLabel @125
-				    Parent_View 	@124
+				label      	(object SegLabel @129
+				    Parent_View 	@128
 				    location   	(691, 448)
 				    font       	(object Font
 					size       	10
@@ -2723,24 +2786,24 @@
 				    pctDist    	0.500000
 				    height     	45
 				    orientation 	0)
-				object_arc 	@121
+				object_arc 	@125
 				pctDist    	0.500000
 				height     	45
 				orientation 	1
 				dir        	-1
 				origin     	(751, 406)
 				terminus   	(633, 400))
-			    (object LinkView "" @126
+			    (object LinkView "" @130
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5B28B73103D5"
-				client     	@111
-				supplier   	@112
+				client     	@115
+				supplier   	@116
 				vertices   	(list Points
 				    (889, 430)
 				    (243, 805))
 				line_style 	0)
-			    (object MessView "" @127
+			    (object MessView "" @131
 				location   	(589, 657)
 				font       	(object Font
 				    size       	10
@@ -2752,8 +2815,8 @@
 				    color      	0
 				    default_color 	TRUE)
 				line_color 	3342489
-				label      	(object SegLabel @128
-				    Parent_View 	@127
+				label      	(object SegLabel @132
+				    Parent_View 	@131
 				    location   	(612, 696)
 				    font       	(object Font
 					size       	10
@@ -2773,14 +2836,14 @@
 				    pctDist    	0.500000
 				    height     	45
 				    orientation 	0)
-				object_arc 	@126
+				object_arc 	@130
 				pctDist    	0.500000
 				height     	45
 				orientation 	0
 				dir        	1
 				origin     	(640, 627)
 				terminus   	(538, 687))
-			    (object MessView "" @129
+			    (object MessView "" @133
 				location   	(544, 580)
 				font       	(object Font
 				    size       	10
@@ -2792,8 +2855,8 @@
 				    color      	0
 				    default_color 	TRUE)
 				line_color 	3342489
-				label      	(object SegLabel @130
-				    Parent_View 	@129
+				label      	(object SegLabel @134
+				    Parent_View 	@133
 				    location   	(523, 542)
 				    font       	(object Font
 					size       	10
@@ -2813,24 +2876,24 @@
 				    pctDist    	0.500000
 				    height     	45
 				    orientation 	0)
-				object_arc 	@126
+				object_arc 	@130
 				pctDist    	0.500000
 				height     	45
 				orientation 	1
 				dir        	-1
 				origin     	(492, 609)
 				terminus   	(596, 551))
-			    (object LinkView "" @131
+			    (object LinkView "" @135
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5B28BA5E0140"
-				client     	@111
-				supplier   	@114
+				client     	@115
+				supplier   	@118
 				vertices   	(list Points
 				    (1024, 441)
 				    (1436, 1023))
 				line_style 	0)
-			    (object MessView "" @132
+			    (object MessView "" @136
 				location   	(1267, 707)
 				font       	(object Font
 				    size       	10
@@ -2842,8 +2905,8 @@
 				    color      	0
 				    default_color 	TRUE)
 				line_color 	3342489
-				label      	(object SegLabel @133
-				    Parent_View 	@132
+				label      	(object SegLabel @137
+				    Parent_View 	@136
 				    location   	(1304, 635)
 				    font       	(object Font
 					size       	10
@@ -2863,8 +2926,8 @@
 				    pctDist    	0.500000
 				    height     	45
 				    orientation 	0)
-				label      	(object SegLabel @134
-				    Parent_View 	@132
+				label      	(object SegLabel @138
+				    Parent_View 	@136
 				    location   	(1304, 682)
 				    font       	(object Font
 					size       	10
@@ -2884,14 +2947,14 @@
 				    pctDist    	0.500000
 				    height     	45
 				    orientation 	0)
-				object_arc 	@131
+				object_arc 	@135
 				pctDist    	0.500000
 				height     	45
 				orientation 	0
 				dir        	1
 				origin     	(1232, 658)
 				terminus   	(1302, 756))
-			    (object MessView "" @135
+			    (object MessView "" @139
 				location   	(1194, 758)
 				font       	(object Font
 				    size       	10
@@ -2903,9 +2966,9 @@
 				    color      	0
 				    default_color 	TRUE)
 				line_color 	3342489
-				label      	(object SegLabel @136
-				    Parent_View 	@135
-				    location   	(1158, 784)
+				label      	(object SegLabel @140
+				    Parent_View 	@139
+				    location   	(1158, 878)
 				    font       	(object Font
 					size       	10
 					face       	"Arial"
@@ -2924,8 +2987,8 @@
 				    pctDist    	0.500000
 				    height     	45
 				    orientation 	0)
-				label      	(object SegLabel @137
-				    Parent_View 	@135
+				label      	(object SegLabel @141
+				    Parent_View 	@139
 				    location   	(1158, 831)
 				    font       	(object Font
 					size       	10
@@ -2939,30 +3002,30 @@
 				    quidu      	"5B28BAA90214"
 				    anchor_loc 	1
 				    nlines     	1
-				    max_width  	450
+				    max_width  	278
 				    justify    	0
 				    label      	"UpdateTrue"
 				    pctDist    	0.500000
 				    height     	45
 				    orientation 	0)
-				object_arc 	@131
+				object_arc 	@135
 				pctDist    	0.500000
 				height     	45
 				orientation 	1
 				dir        	-1
 				origin     	(1228, 806)
 				terminus   	(1160, 710))
-			    (object LinkView "" @138
+			    (object LinkView "" @142
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5B28B88D03B6"
-				client     	@112
-				supplier   	@113
+				client     	@116
+				supplier   	@117
 				vertices   	(list Points
 				    (243, 907)
 				    (814, 1221))
 				line_style 	0)
-			    (object MessView "" @139
+			    (object MessView "" @143
 				location   	(551, 1026)
 				font       	(object Font
 				    size       	10
@@ -2974,8 +3037,8 @@
 				    color      	0
 				    default_color 	TRUE)
 				line_color 	3342489
-				label      	(object SegLabel @140
-				    Parent_View 	@139
+				label      	(object SegLabel @144
+				    Parent_View 	@143
 				    location   	(573, 988)
 				    font       	(object Font
 					size       	10
@@ -2995,14 +3058,14 @@
 				    pctDist    	0.500000
 				    height     	45
 				    orientation 	0)
-				object_arc 	@138
+				object_arc 	@142
 				pctDist    	0.500000
 				height     	45
 				orientation 	0
 				dir        	1
 				origin     	(498, 997)
 				terminus   	(604, 1055))
-			    (object MessView "" @141
+			    (object MessView "" @145
 				location   	(508, 1103)
 				font       	(object Font
 				    size       	10
@@ -3014,8 +3077,8 @@
 				    color      	0
 				    default_color 	TRUE)
 				line_color 	3342489
-				label      	(object SegLabel @142
-				    Parent_View 	@141
+				label      	(object SegLabel @146
+				    Parent_View 	@145
 				    location   	(488, 1143)
 				    font       	(object Font
 					size       	10
@@ -3035,24 +3098,24 @@
 				    pctDist    	0.500000
 				    height     	45
 				    orientation 	0)
-				object_arc 	@138
+				object_arc 	@142
 				pctDist    	0.500000
 				height     	45
 				orientation 	1
 				dir        	-1
 				origin     	(560, 1131)
 				terminus   	(456, 1075))
-			    (object LinkView "" @143
+			    (object LinkView "" @147
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5B28BABB0307"
-				client     	@114
-				supplier   	@113
+				client     	@118
+				supplier   	@117
 				vertices   	(list Points
 				    (1390, 1117)
 				    (1025, 1244))
 				line_style 	0)
-			    (object MessView "" @144
+			    (object MessView "" @148
 				location   	(1223, 1223)
 				font       	(object Font
 				    size       	10
@@ -3064,8 +3127,8 @@
 				    color      	0
 				    default_color 	TRUE)
 				line_color 	3342489
-				label      	(object SegLabel @145
-				    Parent_View 	@144
+				label      	(object SegLabel @149
+				    Parent_View 	@148
 				    location   	(1238, 1265)
 				    font       	(object Font
 					size       	10
@@ -3079,19 +3142,59 @@
 				    quidu      	"5B28BABB0308"
 				    anchor_loc 	1
 				    nlines     	1
-				    max_width  	450
+				    max_width  	352
 				    justify    	0
 				    label      	"UpdateStrategy()"
 				    pctDist    	0.500000
 				    height     	45
 				    orientation 	0)
-				object_arc 	@143
+				object_arc 	@147
 				pctDist    	0.500000
 				height     	45
 				orientation 	0
 				dir        	1
 				origin     	(1279, 1203)
-				terminus   	(1167, 1243))))))
+				terminus   	(1167, 1243))
+			    (object MessView "" @150
+				location   	(1194, 1138)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				line_color 	3342489
+				label      	(object SegLabel @151
+				    Parent_View 	@150
+				    location   	(1181, 1096)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    quidu      	"5B28BDAB03CB"
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	273
+				    justify    	0
+				    label      	"UpdateTrue"
+				    pctDist    	0.500000
+				    height     	45
+				    orientation 	0)
+				object_arc 	@147
+				pctDist    	0.500000
+				height     	45
+				orientation 	1
+				dir        	-1
+				origin     	(1137, 1157)
+				terminus   	(1251, 1119))))))
 	    (object UseCase "Operate"
 		quid       	"5B27CBA60341")
 	    (object UseCase "Display"
@@ -3103,7 +3206,7 @@
 			supplier   	"Use Case View::Operate"
 			quidu      	"5B27CBA60341"))
 		logical_models 	(list unit_reference_list
-		    (object Mechanism @146
+		    (object Mechanism @152
 			logical_models 	(list unit_reference_list
 			    (object Object "$UNNAMED$9"
 				quid       	"5B28B20402DC"
@@ -3258,7 +3361,7 @@
 				multi      	FALSE))))
 		logical_presentations 	(list unit_reference_list
 		    (object InteractionDiagram "Display"
-			mechanism_ref 	@146
+			mechanism_ref 	@152
 			quid       	"5B28B18F0154"
 			title      	"Display"
 			zoom       	100
@@ -3267,7 +3370,7 @@
 			origin_x   	0
 			origin_y   	0
 			items      	(list diagram_item_list
-			    (object InterObjView "$UNNAMED$9" @147
+			    (object InterObjView "$UNNAMED$9" @153
 				location   	(180, 225)
 				font       	(object Font
 				    size       	10
@@ -3279,11 +3382,11 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@147
+				    Parent_View 	@153
 				    location   	(180, 250)
 				    anchor_loc 	1
 				    nlines     	2
-				    max_width  	324
+				    max_width  	360
 				    justify    	0
 				    label      	"")
 				icon       	"Actor"
@@ -3291,20 +3394,20 @@
 				line_color 	3342489
 				fill_color 	13434879
 				quidu      	"5B28B20402DC"
-				width      	300
+				width      	120
 				height     	1026
-				icon_height 	150
-				icon_width 	108
+				icon_height 	162
+				icon_width 	120
 				icon_y_offset 	0
 				annotation 	1
-				Focus_Of_Control 	(object Focus_Of_Control "" @148
+				Focus_Of_Control 	(object Focus_Of_Control "" @154
 				    location   	(180, 369)
 				    line_color 	3342489
-				    InterObjView 	@147
+				    InterObjView 	@153
 				    height     	90
 				    y_coord    	0
 				    Nested     	FALSE))
-			    (object InterObjView "$UNNAMED$10" @149
+			    (object InterObjView "$UNNAMED$10" @155
 				location   	(540, 225)
 				font       	(object Font
 				    size       	10
@@ -3316,7 +3419,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@149
+				    Parent_View 	@155
 				    location   	(540, 225)
 				    fill_color 	13434879
 				    anchor_loc 	1
@@ -3334,28 +3437,28 @@
 				icon_width 	0
 				icon_y_offset 	0
 				annotation 	1
-				Focus_Of_Control 	(object Focus_Of_Control "" @150
+				Focus_Of_Control 	(object Focus_Of_Control "" @156
 				    location   	(540, 369)
 				    line_color 	3342489
-				    InterObjView 	@149
+				    InterObjView 	@155
 				    height     	965
 				    y_coord    	875
 				    Nested     	FALSE)
-				Focus_Of_Control 	(object Focus_Of_Control "" @151
+				Focus_Of_Control 	(object Focus_Of_Control "" @157
 				    location   	(540, 499)
 				    line_color 	3342489
-				    InterObjView 	@149
+				    InterObjView 	@155
 				    height     	90
 				    y_coord    	0
 				    Nested     	TRUE)
-				Focus_Of_Control 	(object Focus_Of_Control "" @152
+				Focus_Of_Control 	(object Focus_Of_Control "" @158
 				    location   	(540, 1234)
 				    line_color 	3342489
-				    InterObjView 	@149
+				    InterObjView 	@155
 				    height     	1
 				    y_coord    	-89
 				    Nested     	TRUE))
-			    (object InterObjView "$UNNAMED$11" @153
+			    (object InterObjView "$UNNAMED$11" @159
 				location   	(1022, 228)
 				font       	(object Font
 				    size       	10
@@ -3367,7 +3470,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@153
+				    Parent_View 	@159
 				    location   	(1022, 228)
 				    fill_color 	13434879
 				    anchor_loc 	1
@@ -3385,28 +3488,28 @@
 				icon_width 	0
 				icon_y_offset 	0
 				annotation 	1
-				Focus_Of_Control 	(object Focus_Of_Control "" @154
+				Focus_Of_Control 	(object Focus_Of_Control "" @160
 				    location   	(1022, 308)
 				    line_color 	3342489
-				    InterObjView 	@153
+				    InterObjView 	@159
 				    height     	90
 				    y_coord    	0
 				    Nested     	FALSE)
-				Focus_Of_Control 	(object Focus_Of_Control "" @155
+				Focus_Of_Control 	(object Focus_Of_Control "" @161
 				    location   	(1022, 604)
 				    line_color 	3342489
-				    InterObjView 	@153
+				    InterObjView 	@159
 				    height     	630
 				    y_coord    	540
 				    Nested     	FALSE)
-				Focus_Of_Control 	(object Focus_Of_Control "" @156
+				Focus_Of_Control 	(object Focus_Of_Control "" @162
 				    location   	(1022, 1129)
 				    line_color 	3342489
-				    InterObjView 	@153
+				    InterObjView 	@159
 				    height     	1
 				    y_coord    	-89
 				    Nested     	TRUE))
-			    (object InterObjView "$UNNAMED$12" @157
+			    (object InterObjView "$UNNAMED$12" @163
 				location   	(1581, 225)
 				font       	(object Font
 				    size       	10
@@ -3418,7 +3521,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@157
+				    Parent_View 	@163
 				    location   	(1581, 225)
 				    fill_color 	13434879
 				    anchor_loc 	1
@@ -3436,28 +3539,28 @@
 				icon_width 	0
 				icon_y_offset 	0
 				annotation 	1
-				Focus_Of_Control 	(object Focus_Of_Control "" @158
+				Focus_Of_Control 	(object Focus_Of_Control "" @164
 				    location   	(1581, 709)
 				    line_color 	3342489
-				    InterObjView 	@157
+				    InterObjView 	@163
 				    height     	165
 				    y_coord    	75
 				    Nested     	FALSE)
-				Focus_Of_Control 	(object Focus_Of_Control "" @159
+				Focus_Of_Control 	(object Focus_Of_Control "" @165
 				    location   	(1581, 814)
 				    line_color 	3342489
-				    InterObjView 	@157
+				    InterObjView 	@163
 				    height     	315
 				    y_coord    	225
 				    Nested     	TRUE)
-				Focus_Of_Control 	(object Focus_Of_Control "" @160
+				Focus_Of_Control 	(object Focus_Of_Control "" @166
 				    location   	(1581, 1024)
 				    line_color 	3342489
-				    InterObjView 	@157
+				    InterObjView 	@163
 				    height     	1
 				    y_coord    	-89
 				    Nested     	TRUE))
-			    (object InterObjView "$UNNAMED$13" @161
+			    (object InterObjView "$UNNAMED$13" @167
 				location   	(1941, 225)
 				font       	(object Font
 				    size       	10
@@ -3469,7 +3572,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@161
+				    Parent_View 	@167
 				    location   	(1941, 225)
 				    fill_color 	13434879
 				    anchor_loc 	1
@@ -3487,14 +3590,14 @@
 				icon_width 	0
 				icon_y_offset 	0
 				annotation 	1
-				Focus_Of_Control 	(object Focus_Of_Control "" @162
+				Focus_Of_Control 	(object Focus_Of_Control "" @168
 				    location   	(1941, 919)
 				    line_color 	3342489
-				    InterObjView 	@161
+				    InterObjView 	@167
 				    height     	195
 				    y_coord    	105
 				    Nested     	FALSE))
-			    (object InterMessView "Display( )" @163
+			    (object InterMessView "Display( )" @169
 				location   	(0, 369)
 				font       	(object Font
 				    size       	10
@@ -3505,8 +3608,8 @@
 				    strike     	FALSE
 				    color      	0
 				    default_color 	TRUE)
-				label      	(object SegLabel @164
-				    Parent_View 	@163
+				label      	(object SegLabel @170
+				    Parent_View 	@169
 				    location   	(359, 325)
 				    font       	(object Font
 					size       	10
@@ -3527,14 +3630,14 @@
 				    height     	45
 				    orientation 	0)
 				line_color 	3342489
-				client     	@147
-				supplier   	@149
-				Focus_Src  	@148
-				Focus_Entry 	@150
+				client     	@153
+				supplier   	@155
+				Focus_Src  	@154
+				Focus_Entry 	@156
 				origin     	(195, 369)
 				terminus   	(524, 369)
 				ordinal    	0)
-			    (object InterMessView "Display(a_ID)" @165
+			    (object InterMessView "Display(a_ID)" @171
 				location   	(0, 604)
 				font       	(object Font
 				    size       	10
@@ -3545,8 +3648,8 @@
 				    strike     	FALSE
 				    color      	0
 				    default_color 	TRUE)
-				label      	(object SegLabel @166
-				    Parent_View 	@165
+				label      	(object SegLabel @172
+				    Parent_View 	@171
 				    location   	(780, 560)
 				    font       	(object Font
 					size       	10
@@ -3567,14 +3670,14 @@
 				    height     	45
 				    orientation 	0)
 				line_color 	3342489
-				client     	@149
-				supplier   	@153
-				Focus_Src  	@150
-				Focus_Entry 	@155
+				client     	@155
+				supplier   	@159
+				Focus_Src  	@156
+				Focus_Entry 	@161
 				origin     	(555, 604)
 				terminus   	(1006, 604)
 				ordinal    	2)
-			    (object InterMessView "GetAccount( )" @167
+			    (object InterMessView "GetAccount( )" @173
 				location   	(0, 709)
 				font       	(object Font
 				    size       	10
@@ -3585,8 +3688,8 @@
 				    strike     	FALSE
 				    color      	0
 				    default_color 	TRUE)
-				label      	(object SegLabel @168
-				    Parent_View 	@167
+				label      	(object SegLabel @174
+				    Parent_View 	@173
 				    location   	(1301, 665)
 				    font       	(object Font
 					size       	10
@@ -3607,14 +3710,14 @@
 				    height     	45
 				    orientation 	0)
 				line_color 	3342489
-				client     	@153
-				supplier   	@157
-				Focus_Src  	@155
-				Focus_Entry 	@158
+				client     	@159
+				supplier   	@163
+				Focus_Src  	@161
+				Focus_Entry 	@164
 				origin     	(1037, 709)
 				terminus   	(1565, 709)
 				ordinal    	3)
-			    (object InterMessView "GetStrategies( )" @169
+			    (object InterMessView "GetStrategies( )" @175
 				location   	(0, 814)
 				font       	(object Font
 				    size       	10
@@ -3625,8 +3728,8 @@
 				    strike     	FALSE
 				    color      	0
 				    default_color 	TRUE)
-				label      	(object SegLabel @170
-				    Parent_View 	@169
+				label      	(object SegLabel @176
+				    Parent_View 	@175
 				    location   	(1301, 770)
 				    font       	(object Font
 					size       	10
@@ -3647,14 +3750,14 @@
 				    height     	45
 				    orientation 	0)
 				line_color 	3342489
-				client     	@153
-				supplier   	@157
-				Focus_Src  	@155
-				Focus_Entry 	@159
+				client     	@159
+				supplier   	@163
+				Focus_Src  	@161
+				Focus_Entry 	@165
 				origin     	(1037, 814)
 				terminus   	(1565, 814)
 				ordinal    	4)
-			    (object InterMessView "a_Account/a_Strategies" @171
+			    (object InterMessView "a_Account/a_Strategies" @177
 				location   	(0, 1129)
 				font       	(object Font
 				    size       	10
@@ -3665,8 +3768,8 @@
 				    strike     	FALSE
 				    color      	0
 				    default_color 	TRUE)
-				label      	(object SegLabel @172
-				    Parent_View 	@171
+				label      	(object SegLabel @178
+				    Parent_View 	@177
 				    location   	(1302, 1085)
 				    font       	(object Font
 					size       	10
@@ -3687,14 +3790,14 @@
 				    height     	45
 				    orientation 	1)
 				line_color 	3342489
-				client     	@157
-				supplier   	@153
-				Focus_Src  	@159
-				Focus_Entry 	@156
+				client     	@163
+				supplier   	@159
+				Focus_Src  	@165
+				Focus_Entry 	@162
 				origin     	(1565, 1129)
 				terminus   	(1038, 1129)
 				ordinal    	7)
-			    (object InterMessView "a_Account/Strategy" @173
+			    (object InterMessView "a_Account/Strategy" @179
 				location   	(0, 1234)
 				font       	(object Font
 				    size       	10
@@ -3705,8 +3808,8 @@
 				    strike     	FALSE
 				    color      	0
 				    default_color 	TRUE)
-				label      	(object SegLabel @174
-				    Parent_View 	@173
+				label      	(object SegLabel @180
+				    Parent_View 	@179
 				    location   	(781, 1190)
 				    font       	(object Font
 					size       	10
@@ -3727,14 +3830,14 @@
 				    height     	45
 				    orientation 	1)
 				line_color 	3342489
-				client     	@153
-				supplier   	@149
-				Focus_Src  	@155
-				Focus_Entry 	@152
+				client     	@159
+				supplier   	@155
+				Focus_Src  	@161
+				Focus_Entry 	@158
 				origin     	(1006, 1234)
 				terminus   	(556, 1234)
 				ordinal    	8)
-			    (object InterMessView "GetInfo( )" @175
+			    (object InterMessView "GetInfo( )" @181
 				location   	(0, 919)
 				font       	(object Font
 				    size       	10
@@ -3745,8 +3848,8 @@
 				    strike     	FALSE
 				    color      	0
 				    default_color 	TRUE)
-				label      	(object SegLabel @176
-				    Parent_View 	@175
+				label      	(object SegLabel @182
+				    Parent_View 	@181
 				    location   	(1760, 875)
 				    font       	(object Font
 					size       	10
@@ -3767,14 +3870,14 @@
 				    height     	45
 				    orientation 	0)
 				line_color 	3342489
-				client     	@157
-				supplier   	@161
-				Focus_Src  	@159
-				Focus_Entry 	@162
+				client     	@163
+				supplier   	@167
+				Focus_Src  	@165
+				Focus_Entry 	@168
 				origin     	(1596, 919)
 				terminus   	(1925, 919)
 				ordinal    	5)
-			    (object InterMessView "Strategy" @177
+			    (object InterMessView "Strategy" @183
 				location   	(0, 1024)
 				font       	(object Font
 				    size       	10
@@ -3785,8 +3888,8 @@
 				    strike     	FALSE
 				    color      	0
 				    default_color 	TRUE)
-				label      	(object SegLabel @178
-				    Parent_View 	@177
+				label      	(object SegLabel @184
+				    Parent_View 	@183
 				    location   	(1761, 980)
 				    font       	(object Font
 					size       	10
@@ -3807,19 +3910,19 @@
 				    height     	45
 				    orientation 	1)
 				line_color 	3342489
-				client     	@161
-				supplier   	@157
-				Focus_Src  	@162
-				Focus_Entry 	@160
+				client     	@167
+				supplier   	@163
+				Focus_Src  	@168
+				Focus_Entry 	@166
 				origin     	(1925, 1024)
 				terminus   	(1597, 1024)
 				ordinal    	6)
-			    (object Destruction_Marker @179
-				Parent_View 	@147
+			    (object Destruction_Marker @185
+				Parent_View 	@153
 				location   	(180, 1251)
 				line_color 	3342489
 				fill_color 	13434879)
-			    (object SelfMessView "FaultHandle()" @180
+			    (object SelfMessView "FaultHandle()" @186
 				location   	(0, 474)
 				font       	(object Font
 				    size       	10
@@ -3830,8 +3933,8 @@
 				    strike     	FALSE
 				    color      	0
 				    default_color 	TRUE)
-				label      	(object SegLabel @181
-				    Parent_View 	@180
+				label      	(object SegLabel @187
+				    Parent_View 	@186
 				    location   	(631, 430)
 				    font       	(object Font
 					size       	10
@@ -3852,15 +3955,15 @@
 				    height     	45
 				    orientation 	0)
 				line_color 	3342489
-				client     	@149
-				supplier   	@149
-				Focus_Src  	@150
-				Focus_Entry 	@151
+				client     	@155
+				supplier   	@155
+				Focus_Src  	@156
+				Focus_Entry 	@157
 				origin     	(556, 474)
 				terminus   	(706, 474)
 				ordinal    	1)))
 		    (object ObjectDiagram "Display"
-			mechanism_ref 	@146
+			mechanism_ref 	@152
 			quid       	"5B28BC3B02F5"
 			title      	"Display"
 			zoom       	100
@@ -3869,7 +3972,7 @@
 			origin_x   	0
 			origin_y   	0
 			items      	(list diagram_item_list
-			    (object ObjectView "$UNNAMED$9" @182
+			    (object ObjectView "$UNNAMED$9" @188
 				location   	(145, 740)
 				font       	(object Font
 				    size       	10
@@ -3881,11 +3984,11 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@182
+				    Parent_View 	@188
 				    location   	(145, 900)
 				    anchor_loc 	1
 				    nlines     	2
-				    max_width  	331
+				    max_width  	335
 				    justify    	0
 				    label      	"")
 				icon       	"Actor"
@@ -3898,7 +4001,7 @@
 				subobjects 	0
 				x_offset   	0.000000
 				y_offset   	0.000000)
-			    (object ObjectView "$UNNAMED$10" @183
+			    (object ObjectView "$UNNAMED$10" @189
 				location   	(330, 390)
 				font       	(object Font
 				    size       	10
@@ -3910,7 +4013,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@183
+				    Parent_View 	@189
 				    location   	(249, 339)
 				    fill_color 	13434879
 				    nlines     	2
@@ -3927,7 +4030,7 @@
 				subobjects 	0
 				x_offset   	0.000000
 				y_offset   	0.000000)
-			    (object ObjectView "$UNNAMED$11" @184
+			    (object ObjectView "$UNNAMED$11" @190
 				location   	(911, 362)
 				font       	(object Font
 				    size       	10
@@ -3939,7 +4042,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@184
+				    Parent_View 	@190
 				    location   	(830, 311)
 				    fill_color 	13434879
 				    nlines     	2
@@ -3956,7 +4059,7 @@
 				subobjects 	0
 				x_offset   	0.000000
 				y_offset   	0.000000)
-			    (object ObjectView "$UNNAMED$12" @185
+			    (object ObjectView "$UNNAMED$12" @191
 				location   	(372, 1017)
 				font       	(object Font
 				    size       	10
@@ -3968,7 +4071,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@185
+				    Parent_View 	@191
 				    location   	(291, 966)
 				    fill_color 	13434879
 				    nlines     	2
@@ -3985,7 +4088,7 @@
 				subobjects 	0
 				x_offset   	0.000000
 				y_offset   	0.000000)
-			    (object ObjectView "$UNNAMED$13" @186
+			    (object ObjectView "$UNNAMED$13" @192
 				location   	(1001, 1114)
 				font       	(object Font
 				    size       	10
@@ -3997,7 +4100,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@186
+				    Parent_View 	@192
 				    location   	(905, 1063)
 				    fill_color 	13434879
 				    nlines     	2
@@ -4015,18 +4118,18 @@
 				subobjects 	0
 				x_offset   	0.000000
 				y_offset   	0.000000)
-			    (object LinkSelfView "" @187
+			    (object LinkSelfView "" @193
 				location   	(330, 177)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5B28B817014E"
-				client     	@183
-				supplier   	@183
+				client     	@189
+				supplier   	@189
 				vertices   	(list Points
 				    (273, 327)
 				    (387, 327))
 				line_style 	4)
-			    (object MessView "" @188
+			    (object MessView "" @194
 				location   	(330, 133)
 				font       	(object Font
 				    size       	10
@@ -4038,8 +4141,8 @@
 				    color      	0
 				    default_color 	TRUE)
 				line_color 	3342489
-				label      	(object SegLabel @189
-				    Parent_View 	@188
+				label      	(object SegLabel @195
+				    Parent_View 	@194
 				    location   	(330, 89)
 				    font       	(object Font
 					size       	10
@@ -4059,24 +4162,24 @@
 				    pctDist    	0.500000
 				    height     	45
 				    orientation 	0)
-				object_arc 	@187
+				object_arc 	@193
 				pctDist    	0.500000
 				height     	45
 				orientation 	0
 				dir        	1
 				origin     	(270, 133)
 				terminus   	(390, 133))
-			    (object LinkView "" @190
+			    (object LinkView "" @196
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5B28B2310108"
-				client     	@182
-				supplier   	@183
+				client     	@188
+				supplier   	@189
 				vertices   	(list Points
 				    (184, 659)
 				    (294, 453))
 				line_style 	0)
-			    (object MessView "" @191
+			    (object MessView "" @197
 				location   	(200, 536)
 				font       	(object Font
 				    size       	10
@@ -4088,8 +4191,8 @@
 				    color      	0
 				    default_color 	TRUE)
 				line_color 	3342489
-				label      	(object SegLabel @192
-				    Parent_View 	@191
+				label      	(object SegLabel @198
+				    Parent_View 	@197
 				    location   	(161, 516)
 				    font       	(object Font
 					size       	10
@@ -4109,24 +4212,24 @@
 				    pctDist    	0.500000
 				    height     	45
 				    orientation 	0)
-				object_arc 	@190
+				object_arc 	@196
 				pctDist    	0.500000
 				height     	45
 				orientation 	0
 				dir        	1
 				origin     	(172, 588)
 				terminus   	(228, 484))
-			    (object LinkView "" @193
+			    (object LinkView "" @199
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5B28B2BE032E"
-				client     	@183
-				supplier   	@184
+				client     	@189
+				supplier   	@190
 				vertices   	(list Points
 				    (420, 385)
 				    (820, 365))
 				line_style 	0)
-			    (object MessView "" @194
+			    (object MessView "" @200
 				location   	(619, 331)
 				font       	(object Font
 				    size       	10
@@ -4138,8 +4241,8 @@
 				    color      	0
 				    default_color 	TRUE)
 				line_color 	3342489
-				label      	(object SegLabel @195
-				    Parent_View 	@194
+				label      	(object SegLabel @201
+				    Parent_View 	@200
 				    location   	(619, 287)
 				    font       	(object Font
 					size       	10
@@ -4159,14 +4262,14 @@
 				    pctDist    	0.500000
 				    height     	45
 				    orientation 	0)
-				object_arc 	@193
+				object_arc 	@199
 				pctDist    	0.500000
 				height     	45
 				orientation 	0
 				dir        	1
 				origin     	(559, 333)
 				terminus   	(679, 329))
-			    (object MessView "" @196
+			    (object MessView "" @202
 				location   	(622, 420)
 				font       	(object Font
 				    size       	10
@@ -4178,8 +4281,8 @@
 				    color      	0
 				    default_color 	TRUE)
 				line_color 	3342489
-				label      	(object SegLabel @197
-				    Parent_View 	@196
+				label      	(object SegLabel @203
+				    Parent_View 	@202
 				    location   	(624, 465)
 				    font       	(object Font
 					size       	10
@@ -4199,24 +4302,24 @@
 				    pctDist    	0.500000
 				    height     	45
 				    orientation 	0)
-				object_arc 	@193
+				object_arc 	@199
 				pctDist    	0.500000
 				height     	45
 				orientation 	1
 				dir        	-1
 				origin     	(681, 417)
 				terminus   	(563, 423))
-			    (object LinkView "" @198
+			    (object LinkView "" @204
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5B28B466012C"
-				client     	@184
-				supplier   	@185
+				client     	@190
+				supplier   	@191
 				vertices   	(list Points
 				    (856, 425)
 				    (423, 953))
 				line_style 	0)
-			    (object MessView "" @199
+			    (object MessView "" @205
 				location   	(675, 718)
 				font       	(object Font
 				    size       	10
@@ -4228,9 +4331,9 @@
 				    color      	0
 				    default_color 	TRUE)
 				line_color 	3342489
-				label      	(object SegLabel @200
-				    Parent_View 	@199
-				    location   	(710, 746)
+				label      	(object SegLabel @206
+				    Parent_View 	@205
+				    location   	(710, 840)
 				    font       	(object Font
 					size       	10
 					face       	"Arial"
@@ -4249,8 +4352,8 @@
 				    pctDist    	0.500000
 				    height     	45
 				    orientation 	0)
-				label      	(object SegLabel @201
-				    Parent_View 	@199
+				label      	(object SegLabel @207
+				    Parent_View 	@205
 				    location   	(710, 793)
 				    font       	(object Font
 					size       	10
@@ -4270,24 +4373,24 @@
 				    pctDist    	0.500000
 				    height     	45
 				    orientation 	0)
-				object_arc 	@198
+				object_arc 	@204
 				pctDist    	0.500000
 				height     	45
 				orientation 	0
 				dir        	1
 				origin     	(712, 672)
 				terminus   	(638, 764))
-			    (object LinkView "" @202
+			    (object LinkView "" @208
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5B28B4AB031F"
-				client     	@185
-				supplier   	@184
+				client     	@191
+				supplier   	@190
 				vertices   	(list Points
 				    (423, 953)
 				    (856, 425))
 				line_style 	0)
-			    (object MessView "" @203
+			    (object MessView "" @209
 				location   	(605, 661)
 				font       	(object Font
 				    size       	10
@@ -4299,8 +4402,8 @@
 				    color      	0
 				    default_color 	TRUE)
 				line_color 	3342489
-				label      	(object SegLabel @204
-				    Parent_View 	@203
+				label      	(object SegLabel @210
+				    Parent_View 	@209
 				    location   	(572, 633)
 				    font       	(object Font
 					size       	10
@@ -4320,24 +4423,24 @@
 				    pctDist    	0.500000
 				    height     	45
 				    orientation 	0)
-				object_arc 	@202
+				object_arc 	@208
 				pctDist    	0.500000
 				height     	45
 				orientation 	0
 				dir        	1
 				origin     	(567, 706)
 				terminus   	(643, 616))
-			    (object LinkView "" @205
+			    (object LinkView "" @211
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5B28B5C701C0"
-				client     	@185
-				supplier   	@186
+				client     	@191
+				supplier   	@192
 				vertices   	(list Points
 				    (462, 1030)
 				    (895, 1096))
 				line_style 	0)
-			    (object MessView "" @206
+			    (object MessView "" @212
 				location   	(685, 1020)
 				font       	(object Font
 				    size       	10
@@ -4349,8 +4452,8 @@
 				    color      	0
 				    default_color 	TRUE)
 				line_color 	3342489
-				label      	(object SegLabel @207
-				    Parent_View 	@206
+				label      	(object SegLabel @213
+				    Parent_View 	@212
 				    location   	(691, 977)
 				    font       	(object Font
 					size       	10
@@ -4370,14 +4473,14 @@
 				    pctDist    	0.500000
 				    height     	45
 				    orientation 	0)
-				object_arc 	@205
+				object_arc 	@211
 				pctDist    	0.500000
 				height     	45
 				orientation 	0
 				dir        	1
 				origin     	(626, 1011)
 				terminus   	(744, 1029))
-			    (object MessView "" @208
+			    (object MessView "" @214
 				location   	(672, 1107)
 				font       	(object Font
 				    size       	10
@@ -4389,8 +4492,8 @@
 				    color      	0
 				    default_color 	TRUE)
 				line_color 	3342489
-				label      	(object SegLabel @209
-				    Parent_View 	@208
+				label      	(object SegLabel @215
+				    Parent_View 	@214
 				    location   	(668, 1152)
 				    font       	(object Font
 					size       	10
@@ -4410,7 +4513,7 @@
 				    pctDist    	0.500000
 				    height     	45
 				    orientation 	0)
-				object_arc 	@205
+				object_arc 	@211
 				pctDist    	0.500000
 				height     	45
 				orientation 	1
@@ -4475,7 +4578,7 @@
 			origin_x   	0
 			origin_y   	0
 			items      	(list diagram_item_list
-			    (object UseCaseView "Use Case View::Initialization::NumOfStrategy" @210
+			    (object UseCaseView "Use Case View::Initialization::NumOfStrategy" @216
 				location   	(706, 775)
 				font       	(object Font
 				    size       	10
@@ -4487,7 +4590,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@210
+				    Parent_View 	@216
 				    location   	(706, 913)
 				    anchor_loc 	1
 				    nlines     	2
@@ -4498,7 +4601,7 @@
 				line_color 	3342489
 				fill_color 	13434879
 				quidu      	"5B27D03102C8")
-			    (object UseCaseView "Use Case View::Initialization::NumOfIteration" @211
+			    (object UseCaseView "Use Case View::Initialization::NumOfIteration" @217
 				location   	(1087, 787)
 				font       	(object Font
 				    size       	10
@@ -4510,7 +4613,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@211
+				    Parent_View 	@217
 				    location   	(1087, 925)
 				    anchor_loc 	1
 				    nlines     	2
@@ -4521,7 +4624,7 @@
 				line_color 	3342489
 				fill_color 	13434879
 				quidu      	"5B27D0F201EC")
-			    (object UseCaseView "Use Case View::Initialization::NumOfAgent" @212
+			    (object UseCaseView "Use Case View::Initialization::NumOfAgent" @218
 				location   	(1428, 753)
 				font       	(object Font
 				    size       	10
@@ -4533,7 +4636,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@212
+				    Parent_View 	@218
 				    location   	(1428, 891)
 				    anchor_loc 	1
 				    nlines     	2
@@ -4544,7 +4647,7 @@
 				line_color 	3342489
 				fill_color 	13434879
 				quidu      	"5B27D12A00BC")
-			    (object UseCaseView "Use Case View::Initialization::LenOfMemory" @213
+			    (object UseCaseView "Use Case View::Initialization::LenOfMemory" @219
 				location   	(1713, 447)
 				font       	(object Font
 				    size       	10
@@ -4556,7 +4659,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@213
+				    Parent_View 	@219
 				    location   	(1713, 585)
 				    anchor_loc 	1
 				    nlines     	2
@@ -4567,7 +4670,7 @@
 				line_color 	3342489
 				fill_color 	13434879
 				quidu      	"5B27D1780118")
-			    (object UseCaseView "Use Case View::Initialize" @214
+			    (object UseCaseView "Use Case View::Initialize" @220
 				location   	(906, 397)
 				font       	(object Font
 				    size       	10
@@ -4579,7 +4682,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@214
+				    Parent_View 	@220
 				    location   	(906, 535)
 				    anchor_loc 	1
 				    nlines     	2
@@ -4590,42 +4693,42 @@
 				line_color 	3342489
 				fill_color 	13434879
 				quidu      	"5B27BA880228")
-			    (object InheritView "" @215
+			    (object InheritView "" @221
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5B27D1B8010E"
-				client     	@210
-				supplier   	@214
+				client     	@216
+				supplier   	@220
 				vertices   	(list Points
 				    (733, 717)
-				    (827, 536))
+				    (816, 560))
 				line_style 	0)
-			    (object InheritView "" @216
+			    (object InheritView "" @222
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5B27D1BE01F3"
-				client     	@211
-				supplier   	@214
+				client     	@217
+				supplier   	@220
 				vertices   	(list Points
 				    (1059, 729)
-				    (1000, 604))
+				    (980, 560))
 				line_style 	0)
-			    (object InheritView "" @217
+			    (object InheritView "" @223
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5B27D1C200BF"
-				client     	@212
-				supplier   	@214
+				client     	@218
+				supplier   	@220
 				vertices   	(list Points
 				    (1345, 695)
-				    (989, 453))
+				    (1144, 560))
 				line_style 	0)
-			    (object InheritView "" @218
+			    (object InheritView "" @224
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5B27D1C6011D"
-				client     	@213
-				supplier   	@214
+				client     	@219
+				supplier   	@220
 				vertices   	(list Points
 				    (1603, 436)
 				    (1014, 400))
@@ -4669,7 +4772,7 @@
 			origin_x   	0
 			origin_y   	0
 			items      	(list diagram_item_list
-			    (object UseCaseView "Use Case View::Display::DisplayMemory" @219
+			    (object UseCaseView "Use Case View::Display::DisplayMemory" @225
 				location   	(1040, 812)
 				font       	(object Font
 				    size       	10
@@ -4681,7 +4784,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@219
+				    Parent_View 	@225
 				    location   	(1040, 950)
 				    anchor_loc 	1
 				    nlines     	2
@@ -4693,7 +4796,7 @@
 				fill_color 	13434879
 				quidu      	"5B27D4580224"
 				height     	118)
-			    (object UseCaseView "Use Case View::Display::DisplayScore" @220
+			    (object UseCaseView "Use Case View::Display::DisplayScore" @226
 				location   	(278, 834)
 				font       	(object Font
 				    size       	10
@@ -4705,7 +4808,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@220
+				    Parent_View 	@226
 				    location   	(278, 972)
 				    anchor_loc 	1
 				    nlines     	2
@@ -4717,7 +4820,7 @@
 				fill_color 	13434879
 				quidu      	"5B27D63000DC"
 				height     	118)
-			    (object UseCaseView "Use Case View::Display" @221
+			    (object UseCaseView "Use Case View::Display" @227
 				location   	(388, 419)
 				font       	(object Font
 				    size       	10
@@ -4729,7 +4832,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@221
+				    Parent_View 	@227
 				    location   	(388, 557)
 				    anchor_loc 	1
 				    nlines     	2
@@ -4740,27 +4843,27 @@
 				line_color 	3342489
 				fill_color 	13434879
 				quidu      	"5B27DC940103")
-			    (object InheritView "" @222
+			    (object InheritView "" @228
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5B28A7AF0393"
-				client     	@220
-				supplier   	@221
+				client     	@226
+				supplier   	@227
 				vertices   	(list Points
 				    (291, 775)
-				    (327, 626))
+				    (340, 582))
 				line_style 	0)
-			    (object InheritView "" @223
+			    (object InheritView "" @229
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5B28A7B500E8"
-				client     	@219
-				supplier   	@221
+				client     	@225
+				supplier   	@227
 				vertices   	(list Points
 				    (945, 754)
-				    (485, 475))
+				    (659, 582))
 				line_style 	0)
-			    (object UseCaseView "Use Case View::Display::DisplayAccount" @224
+			    (object UseCaseView "Use Case View::Display::DisplayAccount" @230
 				location   	(1009, 463)
 				font       	(object Font
 				    size       	10
@@ -4772,7 +4875,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@224
+				    Parent_View 	@230
 				    location   	(1009, 601)
 				    anchor_loc 	1
 				    nlines     	2
@@ -4783,12 +4886,12 @@
 				line_color 	3342489
 				fill_color 	13434879
 				quidu      	"5B27D4100014")
-			    (object InheritView "" @225
+			    (object InheritView "" @231
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5B28A7A100D9"
-				client     	@224
-				supplier   	@221
+				client     	@230
+				supplier   	@227
 				vertices   	(list Points
 				    (899, 452)
 				    (496, 424))
@@ -4831,7 +4934,7 @@
 			origin_x   	0
 			origin_y   	0
 			items      	(list diagram_item_list
-			    (object UseCaseView "Use Case View::Choose" @226
+			    (object UseCaseView "Use Case View::Choose" @232
 				location   	(434, 409)
 				font       	(object Font
 				    size       	10
@@ -4843,7 +4946,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@226
+				    Parent_View 	@232
 				    location   	(434, 547)
 				    anchor_loc 	1
 				    nlines     	2
@@ -4854,7 +4957,7 @@
 				line_color 	3342489
 				fill_color 	13434879
 				quidu      	"5B27BB7D03CC")
-			    (object UseCaseView "Use Case View::Choose::UpdateAccount" @227
+			    (object UseCaseView "Use Case View::Choose::UpdateAccount" @233
 				location   	(316, 859)
 				font       	(object Font
 				    size       	10
@@ -4866,7 +4969,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@227
+				    Parent_View 	@233
 				    location   	(316, 997)
 				    anchor_loc 	1
 				    nlines     	2
@@ -4878,7 +4981,7 @@
 				fill_color 	13434879
 				quidu      	"5B27D1F80166"
 				height     	118)
-			    (object UseCaseView "Use Case View::Choose::UpdateScore" @228
+			    (object UseCaseView "Use Case View::Choose::UpdateScore" @234
 				location   	(794, 816)
 				font       	(object Font
 				    size       	10
@@ -4890,7 +4993,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@228
+				    Parent_View 	@234
 				    location   	(794, 954)
 				    anchor_loc 	1
 				    nlines     	2
@@ -4902,7 +5005,7 @@
 				fill_color 	13434879
 				quidu      	"5B27D2400330"
 				height     	118)
-			    (object UseCaseView "Use Case View::Choose::UpdateMemory" @229
+			    (object UseCaseView "Use Case View::Choose::UpdateMemory" @235
 				location   	(991, 469)
 				font       	(object Font
 				    size       	10
@@ -4914,7 +5017,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@229
+				    Parent_View 	@235
 				    location   	(991, 607)
 				    anchor_loc 	1
 				    nlines     	2
@@ -4926,32 +5029,32 @@
 				fill_color 	13434879
 				quidu      	"5B27D253025C"
 				height     	118)
-			    (object InheritView "" @230
+			    (object InheritView "" @236
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5B27D3E1035C"
-				client     	@227
-				supplier   	@226
+				client     	@233
+				supplier   	@232
 				vertices   	(list Points
 				    (329, 799)
-				    (378, 616))
+				    (389, 572))
 				line_style 	0)
-			    (object InheritView "" @231
+			    (object InheritView "" @237
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5B27D3E402F3"
-				client     	@228
-				supplier   	@226
+				client     	@234
+				supplier   	@232
 				vertices   	(list Points
 				    (741, 758)
-				    (587, 581))
+				    (578, 572))
 				line_style 	0)
-			    (object InheritView "" @232
+			    (object InheritView "" @238
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5B27D3E702CE"
-				client     	@229
-				supplier   	@226
+				client     	@235
+				supplier   	@232
 				vertices   	(list Points
 				    (879, 453)
 				    (542, 418))
@@ -5203,12 +5306,12 @@
 		    origin_x   	0
 		    origin_y   	131
 		    items      	(list diagram_item_list
-			(object Swimlane "User" @233
+			(object Swimlane "User" @239
 			    line_color 	3342489
 			    quidu      	"5B27DDD60066"
 			    width      	732)
-			(object StateView "StartState" "Start Simulation" @234
-			    Parent_View 	@233
+			(object StateView "StartState" "Start Simulation" @240
+			    Parent_View 	@239
 			    location   	(242, 176)
 			    font       	(object Font
 				size       	10
@@ -5219,8 +5322,8 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    label      	(object SegLabel @235
-				Parent_View 	@234
+			    label      	(object SegLabel @241
+				Parent_View 	@240
 				location   	(284, 146)
 				font       	(object Font
 				    size       	10
@@ -5242,8 +5345,8 @@
 			    line_color 	3342489
 			    quidu      	"5B2856590360"
 			    autoResize 	TRUE)
-			(object ActivityStateView "Make Decision" @236
-			    Parent_View 	@233
+			(object ActivityStateView "Make Decision" @242
+			    Parent_View 	@239
 			    location   	(259, 564)
 			    font       	(object Font
 				size       	10
@@ -5255,7 +5358,7 @@
 				color      	0
 				default_color 	TRUE)
 			    label      	(object ItemLabel
-				Parent_View 	@236
+				Parent_View 	@242
 				location   	(259, 567)
 				fill_color 	13434879
 				anchor_loc 	1
@@ -5270,8 +5373,8 @@
 			    height     	106
 			    annotation 	1
 			    autoResize 	TRUE)
-			(object ActivityStateView "Input choice" @237
-			    Parent_View 	@233
+			(object ActivityStateView "Input choice" @243
+			    Parent_View 	@239
 			    location   	(485, 903)
 			    font       	(object Font
 				size       	10
@@ -5283,7 +5386,7 @@
 				color      	0
 				default_color 	TRUE)
 			    label      	(object ItemLabel
-				Parent_View 	@237
+				Parent_View 	@243
 				location   	(485, 906)
 				fill_color 	13434879
 				anchor_loc 	1
@@ -5298,8 +5401,8 @@
 			    height     	106
 			    annotation 	1
 			    autoResize 	TRUE)
-			(object ActivityStateView "Input agents" @238
-			    Parent_View 	@233
+			(object ActivityStateView "Input agents" @244
+			    Parent_View 	@239
 			    location   	(287, 1197)
 			    font       	(object Font
 				size       	10
@@ -5311,7 +5414,7 @@
 				color      	0
 				default_color 	TRUE)
 			    label      	(object ItemLabel
-				Parent_View 	@238
+				Parent_View 	@244
 				location   	(287, 1200)
 				fill_color 	13434879
 				anchor_loc 	1
@@ -5326,8 +5429,8 @@
 			    height     	106
 			    annotation 	1
 			    autoResize 	TRUE)
-			(object StateView "EndState" "Exit simulation" @239
-			    Parent_View 	@233
+			(object StateView "EndState" "Exit simulation" @245
+			    Parent_View 	@239
 			    location   	(316, 403)
 			    font       	(object Font
 				size       	10
@@ -5338,8 +5441,8 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    label      	(object SegLabel @240
-				Parent_View 	@239
+			    label      	(object SegLabel @246
+				Parent_View 	@245
 				location   	(370, 361)
 				font       	(object Font
 				    size       	10
@@ -5361,8 +5464,8 @@
 			    line_color 	3342489
 			    quidu      	"5B286A9E02AE"
 			    autoResize 	TRUE)
-			(object DecisionView "decide next" @241
-			    Parent_View 	@233
+			(object DecisionView "decide next" @247
+			    Parent_View 	@239
 			    location   	(135, 749)
 			    font       	(object Font
 				size       	10
@@ -5373,8 +5476,8 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    label      	(object SegLabel @242
-				Parent_View 	@241
+			    label      	(object SegLabel @248
+				Parent_View 	@247
 				location   	(191, 700)
 				font       	(object Font
 				    size       	10
@@ -5398,18 +5501,18 @@
 			    fill_color 	13434879
 			    quidu      	"5B285F3D00F2"
 			    autoResize 	TRUE)
-			(object TransView "" @243
+			(object TransView "" @249
 			    stereotype 	TRUE
 			    line_color 	3342489
 			    quidu      	"5B285F6B0165"
-			    client     	@236
-			    supplier   	@241
+			    client     	@242
+			    supplier   	@247
 			    vertices   	(list Points
 				(222, 617)
 				(135, 712))
 			    line_style 	0
 			    x_offset   	FALSE)
-			(object TransView "" @244
+			(object TransView "" @250
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -5419,8 +5522,8 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    label      	(object SegLabel @245
-				Parent_View 	@244
+			    label      	(object SegLabel @251
+				Parent_View 	@250
 				location   	(322, 761)
 				font       	(object Font
 				    size       	10
@@ -5442,14 +5545,14 @@
 			    stereotype 	TRUE
 			    line_color 	3342489
 			    quidu      	"5B285F7700C3"
-			    client     	@241
-			    supplier   	@237
+			    client     	@247
+			    supplier   	@243
 			    vertices   	(list Points
 				(210, 749)
 				(390, 849))
 			    line_style 	0
 			    x_offset   	FALSE)
-			(object TransView "" @246
+			(object TransView "" @252
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -5459,8 +5562,8 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    label      	(object SegLabel @247
-				Parent_View 	@246
+			    label      	(object SegLabel @253
+				Parent_View 	@252
 				location   	(243, 950)
 				font       	(object Font
 				    size       	10
@@ -5482,20 +5585,20 @@
 			    stereotype 	TRUE
 			    line_color 	3342489
 			    quidu      	"5B286286011D"
-			    client     	@241
-			    supplier   	@238
+			    client     	@247
+			    supplier   	@244
 			    vertices   	(list Points
 				(135, 786)
 				(267, 1144))
 			    line_style 	0
 			    x_offset   	FALSE)
-			(object Swimlane "UI" @248
+			(object Swimlane "UI" @254
 			    location   	(732, 0)
 			    line_color 	3342489
 			    quidu      	"5B2855FB00A6"
 			    width      	686)
-			(object ActivityStateView "Input conditions" @249
-			    Parent_View 	@248
+			(object ActivityStateView "Input conditions" @255
+			    Parent_View 	@254
 			    location   	(984, 187)
 			    font       	(object Font
 				size       	10
@@ -5507,7 +5610,7 @@
 				color      	0
 				default_color 	TRUE)
 			    label      	(object ItemLabel
-				Parent_View 	@249
+				Parent_View 	@255
 				location   	(984, 190)
 				fill_color 	13434879
 				anchor_loc 	1
@@ -5522,19 +5625,19 @@
 			    height     	106
 			    annotation 	1
 			    autoResize 	TRUE)
-			(object TransView "" @250
+			(object TransView "" @256
 			    stereotype 	TRUE
 			    line_color 	3342489
 			    quidu      	"5B2856AD0101"
-			    client     	@234
-			    supplier   	@249
+			    client     	@240
+			    supplier   	@255
 			    vertices   	(list Points
 				(272, 176)
 				(812, 184))
 			    line_style 	0
 			    x_offset   	FALSE)
-			(object DecisionView "Check input" @251
-			    Parent_View 	@248
+			(object DecisionView "Check input" @257
+			    Parent_View 	@254
 			    location   	(982, 378)
 			    font       	(object Font
 				size       	10
@@ -5545,8 +5648,8 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    label      	(object SegLabel @252
-				Parent_View 	@251
+			    label      	(object SegLabel @258
+				Parent_View 	@257
 				location   	(1038, 329)
 				font       	(object Font
 				    size       	10
@@ -5570,18 +5673,18 @@
 			    fill_color 	13434879
 			    quidu      	"5B285B5E0018"
 			    autoResize 	TRUE)
-			(object TransView "" @253
+			(object TransView "" @259
 			    stereotype 	TRUE
 			    line_color 	3342489
 			    quidu      	"5B285C11032E"
-			    client     	@249
-			    supplier   	@251
+			    client     	@255
+			    supplier   	@257
 			    vertices   	(list Points
 				(983, 239)
 				(982, 341))
 			    line_style 	0
 			    x_offset   	FALSE)
-			(object TransView "" @254
+			(object TransView "" @260
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -5591,8 +5694,8 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    label      	(object SegLabel @255
-				Parent_View 	@254
+			    label      	(object SegLabel @261
+				Parent_View 	@260
 				location   	(938, 290)
 				font       	(object Font
 				    size       	10
@@ -5614,15 +5717,15 @@
 			    stereotype 	TRUE
 			    line_color 	3342489
 			    quidu      	"5B285C6C02B6"
-			    client     	@251
-			    supplier   	@249
+			    client     	@257
+			    supplier   	@255
 			    vertices   	(list Points
 				(982, 341)
 				(983, 239))
 			    line_style 	0
 			    x_offset   	FALSE)
-			(object ActivityStateView "Display result" @256
-			    Parent_View 	@248
+			(object ActivityStateView "Display result" @262
+			    Parent_View 	@254
 			    location   	(979, 844)
 			    font       	(object Font
 				size       	10
@@ -5634,7 +5737,7 @@
 				color      	0
 				default_color 	TRUE)
 			    label      	(object ItemLabel
-				Parent_View 	@256
+				Parent_View 	@262
 				location   	(979, 847)
 				fill_color 	13434879
 				anchor_loc 	1
@@ -5649,8 +5752,8 @@
 			    height     	106
 			    annotation 	1
 			    autoResize 	TRUE)
-			(object ActivityStateView "Ask next step" @257
-			    Parent_View 	@248
+			(object ActivityStateView "Ask next step" @263
+			    Parent_View 	@254
 			    location   	(980, 548)
 			    font       	(object Font
 				size       	10
@@ -5662,7 +5765,7 @@
 				color      	0
 				default_color 	TRUE)
 			    label      	(object ItemLabel
-				Parent_View 	@257
+				Parent_View 	@263
 				location   	(980, 551)
 				fill_color 	13434879
 				anchor_loc 	1
@@ -5677,41 +5780,41 @@
 			    height     	106
 			    annotation 	1
 			    autoResize 	TRUE)
-			(object TransView "" @258
+			(object TransView "" @264
 			    stereotype 	TRUE
 			    line_color 	3342489
 			    quidu      	"5B285F6800BC"
-			    client     	@257
-			    supplier   	@236
+			    client     	@263
+			    supplier   	@242
 			    vertices   	(list Points
 				(808, 551)
 				(430, 560))
 			    line_style 	0
 			    x_offset   	FALSE)
-			(object TransView "" @259
+			(object TransView "" @265
 			    stereotype 	TRUE
 			    line_color 	3342489
 			    quidu      	"5B285FA9024C"
-			    client     	@256
-			    supplier   	@257
+			    client     	@262
+			    supplier   	@263
 			    vertices   	(list Points
 				(979, 790)
 				(979, 601))
 			    line_style 	0
 			    x_offset   	FALSE)
-			(object TransView "" @260
+			(object TransView "" @266
 			    stereotype 	TRUE
 			    line_color 	3342489
 			    quidu      	"5B286AB500BA"
-			    client     	@257
-			    supplier   	@239
+			    client     	@263
+			    supplier   	@245
 			    vertices   	(list Points
 				(823, 513)
 				(358, 412))
 			    line_style 	0
 			    x_offset   	FALSE)
-			(object ActivityStateView "Display status" @261
-			    Parent_View 	@248
+			(object ActivityStateView "Display status" @267
+			    Parent_View 	@254
 			    location   	(1104, 1169)
 			    font       	(object Font
 				size       	10
@@ -5723,7 +5826,7 @@
 				color      	0
 				default_color 	TRUE)
 			    label      	(object ItemLabel
-				Parent_View 	@261
+				Parent_View 	@267
 				location   	(1104, 1172)
 				fill_color 	13434879
 				anchor_loc 	1
@@ -5738,24 +5841,24 @@
 			    height     	106
 			    annotation 	1
 			    autoResize 	TRUE)
-			(object TransView "" @262
+			(object TransView "" @268
 			    stereotype 	TRUE
 			    line_color 	3342489
 			    quidu      	"5B286A7C0280"
-			    client     	@261
-			    supplier   	@257
+			    client     	@267
+			    supplier   	@263
 			    vertices   	(list Points
 				(1093, 1115)
 				(990, 600))
 			    line_style 	0
 			    x_offset   	FALSE)
-			(object Swimlane "Data" @263
+			(object Swimlane "Data" @269
 			    location   	(1418, 0)
 			    line_color 	3342489
 			    quidu      	"5B28561B0372"
 			    width      	696)
-			(object ActivityStateView "initialize Data" @264
-			    Parent_View 	@263
+			(object ActivityStateView "initialize Data" @270
+			    Parent_View 	@269
 			    location   	(1772, 553)
 			    font       	(object Font
 				size       	10
@@ -5767,7 +5870,7 @@
 				color      	0
 				default_color 	TRUE)
 			    label      	(object ItemLabel
-				Parent_View 	@264
+				Parent_View 	@270
 				location   	(1772, 544)
 				fill_color 	13434879
 				anchor_loc 	1
@@ -5782,7 +5885,7 @@
 			    height     	131
 			    annotation 	1
 			    autoResize 	TRUE)
-			(object TransView "" @265
+			(object TransView "" @271
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -5792,8 +5895,8 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    label      	(object SegLabel @266
-				Parent_View 	@265
+			    label      	(object SegLabel @272
+				Parent_View 	@271
 				location   	(1345, 403)
 				font       	(object Font
 				    size       	10
@@ -5815,26 +5918,26 @@
 			    stereotype 	TRUE
 			    line_color 	3342489
 			    quidu      	"5B285C18012F"
-			    client     	@251
-			    supplier   	@264
+			    client     	@257
+			    supplier   	@270
 			    vertices   	(list Points
 				(1057, 378)
 				(1610, 513))
 			    line_style 	0
 			    x_offset   	FALSE)
-			(object TransView "" @267
+			(object TransView "" @273
 			    stereotype 	TRUE
 			    line_color 	3342489
 			    quidu      	"5B285F640380"
-			    client     	@264
-			    supplier   	@257
+			    client     	@270
+			    supplier   	@263
 			    vertices   	(list Points
 				(1593, 551)
 				(1151, 549))
 			    line_style 	0
 			    x_offset   	FALSE)
-			(object ActivityStateView "Run one iteration" @268
-			    Parent_View 	@263
+			(object ActivityStateView "Run one iteration" @274
+			    Parent_View 	@269
 			    location   	(1846, 1078)
 			    font       	(object Font
 				size       	10
@@ -5846,7 +5949,7 @@
 				color      	0
 				default_color 	TRUE)
 			    label      	(object ItemLabel
-				Parent_View 	@268
+				Parent_View 	@274
 				location   	(1846, 1081)
 				fill_color 	13434879
 				anchor_loc 	1
@@ -5861,30 +5964,30 @@
 			    height     	106
 			    annotation 	1
 			    autoResize 	TRUE)
-			(object TransView "" @269
+			(object TransView "" @275
 			    stereotype 	TRUE
 			    line_color 	3342489
 			    quidu      	"5B285E1500C7"
-			    client     	@268
-			    supplier   	@256
+			    client     	@274
+			    supplier   	@262
 			    vertices   	(list Points
 				(1695, 1037)
 				(1129, 884))
 			    line_style 	0
 			    x_offset   	FALSE)
-			(object TransView "" @270
+			(object TransView "" @276
 			    stereotype 	TRUE
 			    line_color 	3342489
 			    quidu      	"5B285E0F03C5"
-			    client     	@237
-			    supplier   	@268
+			    client     	@243
+			    supplier   	@274
 			    vertices   	(list Points
 				(650, 924)
 				(1680, 1056))
 			    line_style 	0
 			    x_offset   	FALSE)
-			(object ActivityStateView "Read Status" @271
-			    Parent_View 	@263
+			(object ActivityStateView "Read Status" @277
+			    Parent_View 	@269
 			    location   	(1759, 1337)
 			    font       	(object Font
 				size       	10
@@ -5896,7 +5999,7 @@
 				color      	0
 				default_color 	TRUE)
 			    label      	(object ItemLabel
-				Parent_View 	@271
+				Parent_View 	@277
 				location   	(1759, 1340)
 				fill_color 	13434879
 				anchor_loc 	1
@@ -5911,29 +6014,29 @@
 			    height     	106
 			    annotation 	1
 			    autoResize 	TRUE)
-			(object TransView "" @272
+			(object TransView "" @278
 			    stereotype 	TRUE
 			    line_color 	3342489
 			    quidu      	"5B286A700359"
-			    client     	@238
-			    supplier   	@271
+			    client     	@244
+			    supplier   	@277
 			    vertices   	(list Points
 				(456, 1213)
 				(1589, 1320))
 			    line_style 	0
 			    x_offset   	FALSE)
-			(object TransView "" @273
+			(object TransView "" @279
 			    stereotype 	TRUE
 			    line_color 	3342489
 			    quidu      	"5B286A7602AB"
-			    client     	@271
-			    supplier   	@261
+			    client     	@277
+			    supplier   	@267
 			    vertices   	(list Points
 				(1606, 1298)
 				(1256, 1207))
 			    line_style 	0
 			    x_offset   	FALSE)
-			(object Swimlane "" @274
+			(object Swimlane "" @280
 			    location   	(2114, 0)
 			    line_color 	3342489
 			    width      	450)))))
@@ -5947,7 +6050,7 @@
 		origin_x   	0
 		origin_y   	0
 		items      	(list diagram_item_list
-		    (object UseCaseView "Use Case View::Choose" @275
+		    (object UseCaseView "Use Case View::Choose" @281
 			location   	(772, 518)
 			font       	(object Font
 			    size       	10
@@ -5959,7 +6062,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@275
+			    Parent_View 	@281
 			    location   	(772, 656)
 			    anchor_loc 	1
 			    nlines     	2
@@ -5970,7 +6073,7 @@
 			line_color 	3342489
 			fill_color 	13434879
 			quidu      	"5B27BB7D03CC")
-		    (object UseCaseView "Use Case View::Initialize" @276
+		    (object UseCaseView "Use Case View::Initialize" @282
 			location   	(775, 240)
 			font       	(object Font
 			    size       	10
@@ -5982,7 +6085,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@276
+			    Parent_View 	@282
 			    location   	(775, 378)
 			    anchor_loc 	1
 			    nlines     	2
@@ -5993,7 +6096,7 @@
 			line_color 	3342489
 			fill_color 	13434879
 			quidu      	"5B27BA880228")
-		    (object UseCaseView "Use Case View::Operate" @277
+		    (object UseCaseView "Use Case View::Operate" @283
 			location   	(434, 372)
 			font       	(object Font
 			    size       	10
@@ -6005,7 +6108,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@277
+			    Parent_View 	@283
 			    location   	(434, 510)
 			    anchor_loc 	1
 			    nlines     	2
@@ -6016,7 +6119,7 @@
 			line_color 	3342489
 			fill_color 	13434879
 			quidu      	"5B27CBA60341")
-		    (object ClassView "Class" "Use Case View::User" @278
+		    (object ClassView "Class" "Use Case View::User" @284
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -6031,11 +6134,11 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@278
+			    Parent_View 	@284
 			    location   	(148, 566)
 			    anchor_loc 	1
 			    nlines     	2
-			    max_width  	325
+			    max_width  	335
 			    justify    	0
 			    label      	"User")
 			icon       	"Actor"
@@ -6044,7 +6147,7 @@
 			quidu      	"5B27B22D00F7"
 			annotation 	8
 			autoResize 	TRUE)
-		    (object AssociationViewNew "$UNNAMED$14" @279
+		    (object AssociationViewNew "$UNNAMED$14" @285
 			location   	(264, 389)
 			font       	(object Font
 			    size       	10
@@ -6059,51 +6162,51 @@
 			line_color 	3342489
 			quidu      	"5B27CBC200A5"
 			roleview_list 	(list RoleViews
-			    (object RoleView "$UNNAMED$15" @280
-				Parent_View 	@279
+			    (object RoleView "$UNNAMED$15" @286
+				Parent_View 	@285
 				location   	(116, -17)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5B27CBC40134"
-				client     	@279
-				supplier   	@277
+				client     	@285
+				supplier   	@283
 				vertices   	(list Points
 				    (264, 389)
-				    (323, 383))
+				    (434, 372))
 				line_style 	0)
-			    (object RoleView "$UNNAMED$16" @281
-				Parent_View 	@279
+			    (object RoleView "$UNNAMED$16" @287
+				Parent_View 	@285
 				location   	(116, -17)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5B27CBC4018C"
-				client     	@279
-				supplier   	@278
+				client     	@285
+				supplier   	@284
 				vertices   	(list Points
 				    (264, 389)
-				    (205, 396))
+				    (148, 406))
 				line_style 	0)))
-		    (object InheritView "" @282
+		    (object InheritView "" @288
 			stereotype 	TRUE
 			line_color 	3342489
 			quidu      	"5B27CBD5018F"
-			client     	@276
-			supplier   	@277
+			client     	@282
+			supplier   	@283
 			vertices   	(list Points
-			    (664, 280)
+			    (454, 363)
 			    (542, 326))
 			line_style 	0)
-		    (object InheritView "" @283
+		    (object InheritView "" @289
 			stereotype 	TRUE
 			line_color 	3342489
 			quidu      	"5B27CBDC021F"
-			client     	@275
-			supplier   	@277
+			client     	@281
+			supplier   	@283
 			vertices   	(list Points
 			    (662, 467)
-			    (542, 417))
+			    (754, 509))
 			line_style 	0)
-		    (object UseCaseView "Use Case View::Display" @284
+		    (object UseCaseView "Use Case View::Display" @290
 			location   	(456, 681)
 			font       	(object Font
 			    size       	10
@@ -6115,7 +6218,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@284
+			    Parent_View 	@290
 			    location   	(456, 819)
 			    anchor_loc 	1
 			    nlines     	2
@@ -6127,12 +6230,12 @@
 			fill_color 	13434879
 			quidu      	"5B27DC940103"
 			height     	118)
-		    (object InheritView "" @285
+		    (object InheritView "" @291
 			stereotype 	TRUE
 			line_color 	3342489
 			quidu      	"5B27DCA5030C"
-			client     	@284
-			supplier   	@277
+			client     	@290
+			supplier   	@283
 			vertices   	(list Points
 			    (449, 622)
 			    (444, 535))
@@ -6242,7 +6345,807 @@
 			quid       	"5B28700C0254"
 			documentation 	"agent的从开始到现在的累计账户分数的列表：正确预测的奖励和错误预测的惩罚总和"
 			type       	"Variant"
-			initv      	"[0.0]")))
+			initv      	"[0.0]"))
+		statemachine 	(object State_Machine "State/Activity Model4"
+		    quid       	"5B29FB4302AA"
+		    states     	(list States
+			(object State "开始"
+			    quid       	"5B29FB51009F"
+			    type       	"StartState")
+			(object State "初始化"
+			    quid       	"5B29FB54010B"
+			    type       	"Normal")
+			(object State "读信息"
+			    quid       	"5B29FBAF02F2"
+			    type       	"Normal")
+			(object State "更新信息"
+			    quid       	"5B29FBBC02BC"
+			    type       	"Normal")
+			(object State "做决策"
+			    quid       	"5B29FBC900D6"
+			    type       	"Normal")
+			(object State "结束"
+			    quid       	"5B29FBD40294"
+			    type       	"EndState"))
+		    partitions 	(list Partitions)
+		    objects    	(list Objects)
+		    transitions 	(list transition_list
+			(object State_Transition
+			    quid       	"5B29FBDC0063"
+			    supplier   	"Logical View::Agent::State/Activity Model4::初始化"
+			    supplier_quidu 	"5B29FB54010B"
+			    client     	"Logical View::Agent::State/Activity Model4::开始"
+			    client_quidu 	"5B29FB51009F"
+			    sendEvent  	(object sendEvent
+				quid       	"5B29FBDC0066"))
+			(object State_Transition
+			    quid       	"5B29FCD0025E"
+			    label      	""
+			    supplier   	"Logical View::Agent::State/Activity Model4::读信息"
+			    supplier_quidu 	"5B29FBAF02F2"
+			    client     	"Logical View::Agent::State/Activity Model4::初始化"
+			    client_quidu 	"5B29FB54010B"
+			    Event      	(object Event "初始化成功"
+				quid       	"5B29FCD0025F")
+			    sendEvent  	(object sendEvent
+				quid       	"5B29FCD00261"))
+			(object State_Transition
+			    quid       	"5B29FCD5025E"
+			    label      	""
+			    supplier   	"Logical View::Agent::State/Activity Model4::做决策"
+			    supplier_quidu 	"5B29FBC900D6"
+			    client     	"Logical View::Agent::State/Activity Model4::读信息"
+			    client_quidu 	"5B29FBAF02F2"
+			    Event      	(object Event "电脑运行"
+				quid       	"5B29FCD5025F")
+			    sendEvent  	(object sendEvent
+				quid       	"5B29FCD50261"))
+			(object State_Transition
+			    quid       	"5B29FCD900C6"
+			    label      	""
+			    supplier   	"Logical View::Agent::State/Activity Model4::更新信息"
+			    supplier_quidu 	"5B29FBBC02BC"
+			    client     	"Logical View::Agent::State/Activity Model4::做决策"
+			    client_quidu 	"5B29FBC900D6"
+			    Event      	(object Event "酒吧情况确定"
+				quid       	"5B29FCD900C7")
+			    sendEvent  	(object sendEvent
+				quid       	"5B29FCD900C9"))
+			(object State_Transition
+			    quid       	"5B29FCDF00B1"
+			    label      	""
+			    supplier   	"Logical View::Agent::State/Activity Model4::读信息"
+			    supplier_quidu 	"5B29FBAF02F2"
+			    client     	"Logical View::Agent::State/Activity Model4::更新信息"
+			    client_quidu 	"5B29FBBC02BC"
+			    Event      	(object Event "检查状态/运行"
+				quid       	"5B29FCDF00B2")
+			    sendEvent  	(object sendEvent
+				quid       	"5B29FCDF00B4"))
+			(object State_Transition
+			    quid       	"5B29FD2202C0"
+			    label      	""
+			    supplier   	"Logical View::Agent::State/Activity Model4::读信息"
+			    supplier_quidu 	"5B29FBAF02F2"
+			    client     	"Logical View::Agent::State/Activity Model4::读信息"
+			    client_quidu 	"5B29FBAF02F2"
+			    Event      	(object Event "检查状态"
+				quid       	"5B29FD2202C1")
+			    sendEvent  	(object sendEvent
+				quid       	"5B29FD2202C3"))
+			(object State_Transition
+			    quid       	"5B29FE6002A5"
+			    label      	""
+			    supplier   	"Logical View::Agent::State/Activity Model4::结束"
+			    supplier_quidu 	"5B29FBD40294"
+			    client     	"Logical View::Agent::State/Activity Model4::读信息"
+			    client_quidu 	"5B29FBAF02F2"
+			    Event      	(object Event "模拟完成/停止"
+				quid       	"5B29FE6002A6")
+			    sendEvent  	(object sendEvent
+				quid       	"5B29FE6002A8"))
+			(object State_Transition
+			    quid       	"5B2A01AA01DC"
+			    label      	""
+			    supplier   	"Logical View::Agent::State/Activity Model4::更新信息"
+			    supplier_quidu 	"5B29FBBC02BC"
+			    client     	"Logical View::Agent::State/Activity Model4::读信息"
+			    client_quidu 	"5B29FBAF02F2"
+			    Event      	(object Event "用户运行"
+				quid       	"5B2A01AA01DD")
+			    sendEvent  	(object sendEvent
+				quid       	"5B2A01AA01DF"))
+			(object State_Transition
+			    quid       	"5B2A062D00C1"
+			    label      	""
+			    supplier   	"Logical View::Agent::State/Activity Model4::更新信息"
+			    supplier_quidu 	"5B29FBBC02BC"
+			    client     	"Logical View::Agent::State/Activity Model4::初始化"
+			    client_quidu 	"5B29FB54010B"
+			    Event      	(object Event "用户运行"
+				quid       	"5B2A062D00C2")
+			    sendEvent  	(object sendEvent
+				quid       	"5B2A062D00C4"))
+			(object State_Transition
+			    quid       	"5B2A06410277"
+			    label      	""
+			    supplier   	"Logical View::Agent::State/Activity Model4::更新信息"
+			    supplier_quidu 	"5B29FBBC02BC"
+			    client     	"Logical View::Agent::State/Activity Model4::更新信息"
+			    client_quidu 	"5B29FBBC02BC"
+			    Event      	(object Event "用户运行"
+				quid       	"5B2A06410278")
+			    sendEvent  	(object sendEvent
+				quid       	"5B2A0641027A"))
+			(object State_Transition
+			    quid       	"5B2A067D026B"
+			    label      	""
+			    supplier   	"Logical View::Agent::State/Activity Model4::读信息"
+			    supplier_quidu 	"5B29FBAF02F2"
+			    client     	"Logical View::Agent::State/Activity Model4::更新信息"
+			    client_quidu 	"5B29FBBC02BC"
+			    Event      	(object Event "用户检查"
+				quid       	"5B2A067D026C")
+			    sendEvent  	(object sendEvent
+				quid       	"5B2A067D026E"))
+			(object State_Transition
+			    quid       	"5B2A06AC0302"
+			    label      	""
+			    supplier   	"Logical View::Agent::State/Activity Model4::更新信息"
+			    supplier_quidu 	"5B29FBBC02BC"
+			    client     	"Logical View::Agent::State/Activity Model4::读信息"
+			    client_quidu 	"5B29FBAF02F2"
+			    Event      	(object Event "用户运行"
+				quid       	"5B2A06AC0303")
+			    sendEvent  	(object sendEvent
+				quid       	"5B2A06AC0305"))
+			(object State_Transition
+			    quid       	"5B2A06E00351"
+			    label      	""
+			    supplier   	"Logical View::Agent::State/Activity Model4::结束"
+			    supplier_quidu 	"5B29FBD40294"
+			    client     	"Logical View::Agent::State/Activity Model4::更新信息"
+			    client_quidu 	"5B29FBBC02BC"
+			    Event      	(object Event "用户停止"
+				quid       	"5B2A06E00352")
+			    sendEvent  	(object sendEvent
+				quid       	"5B2A06E00354")))
+		    objectflows 	(list objectflow_list)
+		    statediagrams 	(list StateDiagrams
+			(object State_Diagram "Agent"
+			    quid       	"5B29FB430306"
+			    title      	"Agent"
+			    zoom       	100
+			    max_height 	28350
+			    max_width  	21600
+			    origin_x   	0
+			    origin_y   	0
+			    items      	(list diagram_item_list
+				(object StateView "StartState" "开始" @292
+				    location   	(359, 423)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @293
+					Parent_View 	@292
+					location   	(401, 393)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	TRUE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					nlines     	2
+					max_width  	600
+					justify    	1
+					label      	"开始"
+					pctDist    	1.000000
+					height     	0
+					orientation 	0)
+				    icon_style 	"Icon"
+				    line_color 	3342489
+				    quidu      	"5B29FB51009F"
+				    autoResize 	TRUE)
+				(object StateView "Normal" "初始化" @294
+				    location   	(459, 650)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object ItemLabel
+					Parent_View 	@294
+					location   	(459, 639)
+					fill_color 	13434879
+					anchor_loc 	1
+					nlines     	2
+					max_width  	204
+					justify    	0
+					label      	"初始化")
+				    icon_style 	"Icon"
+				    line_color 	3342489
+				    fill_color 	13434879
+				    quidu      	"5B29FB54010B"
+				    height     	134
+				    autoResize 	TRUE)
+				(object StateView "Normal" "读信息" @295
+				    location   	(1081, 670)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object ItemLabel
+					Parent_View 	@295
+					location   	(1081, 659)
+					fill_color 	13434879
+					anchor_loc 	1
+					nlines     	2
+					max_width  	204
+					justify    	0
+					label      	"读信息")
+				    icon_style 	"Icon"
+				    line_color 	3342489
+				    fill_color 	13434879
+				    quidu      	"5B29FBAF02F2"
+				    height     	134
+				    autoResize 	TRUE)
+				(object StateView "Normal" "更新信息" @296
+				    location   	(263, 1039)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object ItemLabel
+					Parent_View 	@296
+					location   	(263, 1028)
+					fill_color 	13434879
+					anchor_loc 	1
+					nlines     	2
+					max_width  	204
+					justify    	0
+					label      	"更新信息")
+				    icon_style 	"Icon"
+				    line_color 	3342489
+				    fill_color 	13434879
+				    quidu      	"5B29FBBC02BC"
+				    height     	134
+				    autoResize 	TRUE)
+				(object StateView "Normal" "做决策" @297
+				    location   	(875, 1070)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object ItemLabel
+					Parent_View 	@297
+					location   	(875, 1059)
+					fill_color 	13434879
+					anchor_loc 	1
+					nlines     	2
+					max_width  	204
+					justify    	0
+					label      	"做决策")
+				    icon_style 	"Icon"
+				    line_color 	3342489
+				    fill_color 	13434879
+				    quidu      	"5B29FBC900D6"
+				    height     	134
+				    autoResize 	TRUE)
+				(object StateView "EndState" "结束" @298
+				    location   	(1258, 1405)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @299
+					Parent_View 	@298
+					location   	(1312, 1363)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	TRUE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					nlines     	2
+					max_width  	600
+					justify    	1
+					label      	"结束"
+					pctDist    	1.000000
+					height     	0
+					orientation 	0)
+				    icon_style 	"Icon"
+				    line_color 	3342489
+				    quidu      	"5B29FBD40294"
+				    autoResize 	TRUE)
+				(object TransView "" @300
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B29FBDC0063"
+				    client     	@292
+				    supplier   	@294
+				    vertices   	(list Points
+					(372, 452)
+					(429, 583))
+				    line_style 	0
+				    x_offset   	FALSE)
+				(object TransView "" @301
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @302
+					Parent_View 	@301
+					location   	(772, 615)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor_loc 	1
+					nlines     	1
+					max_width  	450
+					justify    	0
+					label      	"初始化成功"
+					pctDist    	0.500000
+					height     	45
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B29FCD0025E"
+				    client     	@294
+				    supplier   	@295
+				    vertices   	(list Points
+					(609, 654)
+					(931, 665))
+				    line_style 	0
+				    x_offset   	FALSE)
+				(object TransView "" @303
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @304
+					Parent_View 	@303
+					location   	(1017, 890)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor_loc 	1
+					nlines     	1
+					max_width  	210
+					justify    	0
+					label      	"电脑运行"
+					pctDist    	0.500000
+					height     	45
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B29FCD5025E"
+				    client     	@295
+				    supplier   	@297
+				    vertices   	(list Points
+					(1046, 736)
+					(909, 1002))
+				    line_style 	0
+				    x_offset   	FALSE)
+				(object TransView "" @305
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @306
+					Parent_View 	@305
+					location   	(568, 1099)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor_loc 	1
+					nlines     	1
+					max_width  	450
+					justify    	0
+					label      	"酒吧情况确定"
+					pctDist    	0.500000
+					height     	45
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B29FCD900C6"
+				    client     	@297
+				    supplier   	@296
+				    vertices   	(list Points
+					(725, 1062)
+					(413, 1046))
+				    line_style 	0
+				    x_offset   	FALSE)
+				(object TransView "" @307
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @308
+					Parent_View 	@307
+					location   	(661, 851)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor_loc 	1
+					nlines     	1
+					max_width  	450
+					justify    	0
+					label      	"检查状态/运行"
+					pctDist    	0.485521
+					height     	9
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B29FCDF00B1"
+				    client     	@296
+				    supplier   	@295
+				    vertices   	(list Points
+					(413, 971)
+					(931, 737))
+				    line_style 	0
+				    x_offset   	FALSE)
+				(object SelfTransView "" @309
+				    location   	(1081, 453)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @310
+					Parent_View 	@309
+					location   	(1088, 456)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor_loc 	1
+					nlines     	1
+					max_width  	210
+					justify    	0
+					label      	"检查状态"
+					pctDist    	0.572671
+					height     	146
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B29FD2202C0"
+				    client     	@295
+				    supplier   	@295
+				    vertices   	(list Points
+					(1024, 603)
+					(1138, 602))
+				    line_style 	4)
+				(object TransView "" @311
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @312
+					Parent_View 	@311
+					location   	(1176, 1052)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor_loc 	1
+					nlines     	1
+					max_width  	450
+					justify    	0
+					label      	"模拟完成/停止"
+					pctDist    	0.505103
+					height     	3
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B29FE6002A5"
+				    client     	@295
+				    supplier   	@298
+				    vertices   	(list Points
+					(1097, 737)
+					(1247, 1362))
+				    line_style 	0
+				    x_offset   	FALSE)
+				(object TransView "" @313
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @314
+					Parent_View 	@313
+					location   	(405, 815)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor_loc 	1
+					nlines     	1
+					max_width  	450
+					justify    	0
+					label      	"用户运行"
+					pctDist    	0.344291
+					height     	27
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B2A062D00C1"
+				    client     	@294
+				    supplier   	@296
+				    vertices   	(list Points
+					(425, 717)
+					(296, 971))
+				    line_style 	0
+				    x_offset   	FALSE)
+				(object SelfTransView "" @315
+				    location   	(263, 822)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @316
+					Parent_View 	@315
+					location   	(245, 853)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor_loc 	1
+					nlines     	1
+					max_width  	450
+					justify    	0
+					label      	"用户运行"
+					pctDist    	0.333333
+					height     	119
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B2A06410277"
+				    client     	@296
+				    supplier   	@296
+				    vertices   	(list Points
+					(206, 971)
+					(320, 972))
+				    line_style 	4)
+				(object TransView "" @317
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @318
+					Parent_View 	@317
+					location   	(595, 767)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor_loc 	1
+					nlines     	1
+					max_width  	450
+					justify    	0
+					label      	"用户检查"
+					pctDist    	0.491208
+					height     	6
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B2A067D026B"
+				    client     	@296
+				    supplier   	@295
+				    vertices   	(list Points
+					(340, 972)
+					(584, 763)
+					(931, 698))
+				    line_style 	0
+				    x_offset   	FALSE)
+				(object TransView "" @319
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @320
+					Parent_View 	@319
+					location   	(751, 961)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor_loc 	1
+					nlines     	1
+					max_width  	450
+					justify    	0
+					label      	"用户运行"
+					pctDist    	0.502042
+					height     	3
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B2A06AC0302"
+				    client     	@295
+				    supplier   	@296
+				    vertices   	(list Points
+					(1009, 737)
+					(781, 953)
+					(413, 1014))
+				    line_style 	0
+				    x_offset   	FALSE)
+				(object TransView "" @321
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @322
+					Parent_View 	@321
+					location   	(820, 1241)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor_loc 	1
+					nlines     	1
+					max_width  	450
+					justify    	0
+					label      	"用户停止"
+					pctDist    	0.505833
+					height     	2
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B2A06E00351"
+				    client     	@296
+				    supplier   	@298
+				    vertices   	(list Points
+					(413, 1094)
+					(1216, 1389))
+				    line_style 	0
+				    x_offset   	FALSE))))))
 	    (object Class "Strategy"
 		quid       	"5B286E370090"
 		operations 	(list Operations
@@ -6286,11 +7189,433 @@
 			quid       	"5B2879E8021C"
 			documentation 	"存储当前策略的分数：根据预测正确的奖励和错误的惩罚和计算"
 			type       	"Double"
-			initv      	"0.0"
-			exportControl 	"Public")
+			initv      	"0.0")
 		    (object ClassAttribute "s_Strategy"
 			quid       	"5B2879FD0141"
-			documentation 	"列表形式存储单个策略中所有情况和预测。")))
+			documentation 	"列表形式存储单个策略中所有情况和预测。"))
+		statemachine 	(object State_Machine "State/Activity Model5"
+		    quid       	"5B2A0A640159"
+		    states     	(list States
+			(object State "开始"
+			    quid       	"5B2A0A7801E9"
+			    type       	"StartState")
+			(object State "结束"
+			    quid       	"5B2A0A7B0157"
+			    type       	"EndState")
+			(object State "初始化"
+			    quid       	"5B2A0AC201BA"
+			    type       	"Normal")
+			(object State "读信息"
+			    quid       	"5B2A0AD40005"
+			    type       	"Normal")
+			(object State "修改信息"
+			    quid       	"5B2A0ADC02F6"
+			    type       	"Normal"))
+		    partitions 	(list Partitions)
+		    objects    	(list Objects)
+		    transitions 	(list transition_list
+			(object State_Transition
+			    quid       	"5B2A0B240384"
+			    supplier   	"Logical View::Strategy::State/Activity Model5::初始化"
+			    supplier_quidu 	"5B2A0AC201BA"
+			    client     	"Logical View::Strategy::State/Activity Model5::开始"
+			    client_quidu 	"5B2A0A7801E9"
+			    sendEvent  	(object sendEvent
+				quid       	"5B2A0B240387"))
+			(object State_Transition
+			    quid       	"5B2A0B2D026D"
+			    label      	""
+			    supplier   	"Logical View::Strategy::State/Activity Model5::读信息"
+			    supplier_quidu 	"5B2A0AD40005"
+			    client     	"Logical View::Strategy::State/Activity Model5::初始化"
+			    client_quidu 	"5B2A0AC201BA"
+			    Event      	(object Event "检查/做决策"
+				quid       	"5B2A0B2D026E")
+			    sendEvent  	(object sendEvent
+				quid       	"5B2A0B2D0270"))
+			(object State_Transition
+			    quid       	"5B2A0B7003E0"
+			    label      	""
+			    supplier   	"Logical View::Strategy::State/Activity Model5::读信息"
+			    supplier_quidu 	"5B2A0AD40005"
+			    client     	"Logical View::Strategy::State/Activity Model5::读信息"
+			    client_quidu 	"5B2A0AD40005"
+			    Event      	(object Event "检查"
+				quid       	"5B2A0B7003E1")
+			    action     	(object action "做决策"
+				quid       	"5B2A0B7003E2")
+			    sendEvent  	(object sendEvent
+				quid       	"5B2A0B7003E3"))
+			(object State_Transition
+			    quid       	"5B2A0BBE00DA"
+			    label      	""
+			    supplier   	"Logical View::Strategy::State/Activity Model5::修改信息"
+			    supplier_quidu 	"5B2A0ADC02F6"
+			    client     	"Logical View::Strategy::State/Activity Model5::读信息"
+			    client_quidu 	"5B2A0AD40005"
+			    Event      	(object Event "得到酒吧情况"
+				quid       	"5B2A0BBE00DB")
+			    sendEvent  	(object sendEvent
+				quid       	"5B2A0BBE00DD"))
+			(object State_Transition
+			    quid       	"5B2A0E2400EC"
+			    label      	""
+			    supplier   	"Logical View::Strategy::State/Activity Model5::读信息"
+			    supplier_quidu 	"5B2A0AD40005"
+			    client     	"Logical View::Strategy::State/Activity Model5::修改信息"
+			    client_quidu 	"5B2A0ADC02F6"
+			    Event      	(object Event "检查/做决策"
+				quid       	"5B2A0E2400ED")
+			    sendEvent  	(object sendEvent
+				quid       	"5B2A0E2400EF"))
+			(object State_Transition
+			    quid       	"5B2A0E3602E3"
+			    supplier   	"Logical View::Strategy::State/Activity Model5::结束"
+			    supplier_quidu 	"5B2A0A7B0157"
+			    client     	"Logical View::Strategy::State/Activity Model5::读信息"
+			    client_quidu 	"5B2A0AD40005"
+			    sendEvent  	(object sendEvent
+				quid       	"5B2A0E3602E6")))
+		    objectflows 	(list objectflow_list)
+		    statediagrams 	(list StateDiagrams
+			(object State_Diagram "Strategy"
+			    quid       	"5B2A0A6402E6"
+			    title      	"Strategy"
+			    zoom       	100
+			    max_height 	28350
+			    max_width  	21600
+			    origin_x   	0
+			    origin_y   	0
+			    items      	(list diagram_item_list
+				(object StateView "StartState" "开始" @323
+				    location   	(333, 540)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @324
+					Parent_View 	@323
+					location   	(375, 510)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	TRUE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					nlines     	2
+					max_width  	600
+					justify    	1
+					label      	"开始"
+					pctDist    	1.000000
+					height     	0
+					orientation 	0)
+				    icon_style 	"Icon"
+				    line_color 	3342489
+				    quidu      	"5B2A0A7801E9"
+				    autoResize 	TRUE)
+				(object StateView "EndState" "结束" @325
+				    location   	(900, 1105)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @326
+					Parent_View 	@325
+					location   	(954, 1063)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	TRUE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					nlines     	2
+					max_width  	600
+					justify    	1
+					label      	"结束"
+					pctDist    	1.000000
+					height     	0
+					orientation 	0)
+				    icon_style 	"Icon"
+				    line_color 	3342489
+				    quidu      	"5B2A0A7B0157"
+				    autoResize 	TRUE)
+				(object StateView "Normal" "初始化" @327
+				    location   	(334, 755)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object ItemLabel
+					Parent_View 	@327
+					location   	(334, 744)
+					fill_color 	13434879
+					anchor_loc 	1
+					nlines     	2
+					max_width  	204
+					justify    	0
+					label      	"初始化")
+				    icon_style 	"Icon"
+				    line_color 	3342489
+				    fill_color 	13434879
+				    quidu      	"5B2A0AC201BA"
+				    height     	134
+				    autoResize 	TRUE)
+				(object StateView "Normal" "读信息" @328
+				    location   	(900, 834)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object ItemLabel
+					Parent_View 	@328
+					location   	(900, 823)
+					fill_color 	13434879
+					anchor_loc 	1
+					nlines     	2
+					max_width  	204
+					justify    	0
+					label      	"读信息")
+				    icon_style 	"Icon"
+				    line_color 	3342489
+				    fill_color 	13434879
+				    quidu      	"5B2A0AD40005"
+				    height     	134
+				    autoResize 	TRUE)
+				(object StateView "Normal" "修改信息" @329
+				    location   	(406, 1101)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object ItemLabel
+					Parent_View 	@329
+					location   	(406, 1090)
+					fill_color 	13434879
+					anchor_loc 	1
+					nlines     	2
+					max_width  	204
+					justify    	0
+					label      	"修改信息")
+				    icon_style 	"Icon"
+				    line_color 	3342489
+				    fill_color 	13434879
+				    quidu      	"5B2A0ADC02F6"
+				    height     	134
+				    autoResize 	TRUE)
+				(object TransView "" @330
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B2A0B240384"
+				    client     	@323
+				    supplier   	@327
+				    vertices   	(list Points
+					(333, 569)
+					(333, 688))
+				    line_style 	0
+				    x_offset   	FALSE)
+				(object TransView "" @331
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @332
+					Parent_View 	@331
+					location   	(623, 750)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor_loc 	1
+					nlines     	1
+					max_width  	450
+					justify    	0
+					label      	"检查/做决策"
+					pctDist    	0.500000
+					height     	45
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B2A0B2D026D"
+				    client     	@327
+				    supplier   	@328
+				    vertices   	(list Points
+					(484, 775)
+					(750, 813))
+				    line_style 	0
+				    x_offset   	FALSE)
+				(object SelfTransView "" @333
+				    location   	(900, 617)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @334
+					Parent_View 	@333
+					location   	(897, 623)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor_loc 	1
+					nlines     	1
+					max_width  	302
+					justify    	0
+					label      	"检查 / 做决策"
+					pctDist    	0.484727
+					height     	144
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B2A0B7003E0"
+				    client     	@328
+				    supplier   	@328
+				    vertices   	(list Points
+					(843, 767)
+					(957, 766))
+				    line_style 	4)
+				(object TransView "" @335
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @336
+					Parent_View 	@335
+					location   	(700, 954)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor_loc 	1
+					nlines     	1
+					max_width  	309
+					justify    	0
+					label      	"得到酒吧情况"
+					pctDist    	0.326529
+					height     	10
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B2A0BBE00DA"
+				    client     	@328
+				    supplier   	@329
+				    vertices   	(list Points
+					(776, 901)
+					(529, 1034))
+				    line_style 	0
+				    x_offset   	FALSE)
+				(object TransView "" @337
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @338
+					Parent_View 	@337
+					location   	(546, 874)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor_loc 	1
+					nlines     	1
+					max_width  	450
+					justify    	0
+					label      	"检查/做决策"
+					pctDist    	0.500000
+					height     	45
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B2A0E2400EC"
+				    client     	@329
+				    supplier   	@328
+				    vertices   	(list Points
+					(464, 1033)
+					(584, 897)
+					(750, 863))
+				    line_style 	0
+				    x_offset   	FALSE)
+				(object TransView "" @339
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B2A0E3602E3"
+				    client     	@328
+				    supplier   	@325
+				    vertices   	(list Points
+					(900, 901)
+					(900, 1063))
+				    line_style 	0
+				    x_offset   	FALSE))))))
 	    (object Class "Game"
 		quid       	"5B287EAD024B"
 		documentation 	"The control logic of whole simulator"
@@ -6346,7 +7671,7 @@
 			quid       	"5B287ED00227")
 		    (object ClassAttribute "g_lastMem"
 			quid       	"5B287EF20125")
-		    (object ClassAttribute "g_iterationTimes"
+		    (object ClassAttribute "g_timesOfRun"
 			quid       	"5B287EFF0302")
 		    (object ClassAttribute "g_numOfStrategies"
 			quid       	"5B287F0C02B2")
@@ -6499,7 +7824,7 @@
 			    origin_x   	0
 			    origin_y   	0
 			    items      	(list diagram_item_list
-				(object StateView "StartState" "Start" @286
+				(object StateView "StartState" "Start" @340
 				    location   	(322, 275)
 				    font       	(object Font
 					size       	10
@@ -6510,8 +7835,8 @@
 					strike     	FALSE
 					color      	0
 					default_color 	TRUE)
-				    label      	(object SegLabel @287
-					Parent_View 	@286
+				    label      	(object SegLabel @341
+					Parent_View 	@340
 					location   	(364, 245)
 					font       	(object Font
 					    size       	10
@@ -6533,7 +7858,7 @@
 				    line_color 	3342489
 				    quidu      	"5B28A00A00E9"
 				    autoResize 	TRUE)
-				(object StateView "Normal" "初始化" @288
+				(object StateView "Normal" "初始化" @342
 				    location   	(597, 494)
 				    font       	(object Font
 					size       	10
@@ -6545,7 +7870,7 @@
 					color      	0
 					default_color 	TRUE)
 				    label      	(object ItemLabel
-					Parent_View 	@288
+					Parent_View 	@342
 					location   	(597, 483)
 					fill_color 	13434879
 					anchor_loc 	1
@@ -6559,18 +7884,18 @@
 				    quidu      	"5B28A01F0064"
 				    height     	134
 				    autoResize 	TRUE)
-				(object TransView "" @289
+				(object TransView "" @343
 				    stereotype 	TRUE
 				    line_color 	3342489
 				    quidu      	"5B28A0790257"
-				    client     	@286
-				    supplier   	@288
+				    client     	@340
+				    supplier   	@342
 				    vertices   	(list Points
 					(352, 298)
 					(512, 426))
 				    line_style 	0
 				    x_offset   	FALSE)
-				(object SelfTransView "" @290
+				(object SelfTransView "" @344
 				    location   	(597, 277)
 				    font       	(object Font
 					size       	10
@@ -6581,8 +7906,8 @@
 					strike     	FALSE
 					color      	0
 					default_color 	TRUE)
-				    label      	(object SegLabel @291
-					Parent_View 	@290
+				    label      	(object SegLabel @345
+					Parent_View 	@344
 					location   	(596, 218)
 					font       	(object Font
 					    size       	10
@@ -6604,13 +7929,13 @@
 				    stereotype 	TRUE
 				    line_color 	3342489
 				    quidu      	"5B28A081024F"
-				    client     	@288
-				    supplier   	@288
+				    client     	@342
+				    supplier   	@342
 				    vertices   	(list Points
 					(540, 427)
 					(653, 427))
 				    line_style 	4)
-				(object StateView "Normal" "运行" @292
+				(object StateView "Normal" "运行" @346
 				    location   	(1072, 489)
 				    font       	(object Font
 					size       	10
@@ -6622,7 +7947,7 @@
 					color      	0
 					default_color 	TRUE)
 				    label      	(object ItemLabel
-					Parent_View 	@292
+					Parent_View 	@346
 					location   	(1072, 478)
 					fill_color 	13434879
 					anchor_loc 	1
@@ -6636,7 +7961,7 @@
 				    quidu      	"5B28A0A50240"
 				    height     	134
 				    autoResize 	TRUE)
-				(object TransView "" @293
+				(object TransView "" @347
 				    font       	(object Font
 					size       	10
 					face       	"Arial"
@@ -6646,8 +7971,8 @@
 					strike     	FALSE
 					color      	0
 					default_color 	TRUE)
-				    label      	(object SegLabel @294
-					Parent_View 	@293
+				    label      	(object SegLabel @348
+					Parent_View 	@347
 					location   	(835, 447)
 					font       	(object Font
 					    size       	10
@@ -6669,14 +7994,14 @@
 				    stereotype 	TRUE
 				    line_color 	3342489
 				    quidu      	"5B28A0EB024A"
-				    client     	@288
-				    supplier   	@292
+				    client     	@342
+				    supplier   	@346
 				    vertices   	(list Points
 					(747, 492)
 					(922, 490))
 				    line_style 	0
 				    x_offset   	FALSE)
-				(object SelfTransView "" @295
+				(object SelfTransView "" @349
 				    location   	(1072, 272)
 				    font       	(object Font
 					size       	10
@@ -6687,8 +8012,8 @@
 					strike     	FALSE
 					color      	0
 					default_color 	TRUE)
-				    label      	(object SegLabel @296
-					Parent_View 	@295
+				    label      	(object SegLabel @350
+					Parent_View 	@349
 					location   	(1072, 212)
 					font       	(object Font
 					    size       	10
@@ -6710,13 +8035,13 @@
 				    stereotype 	TRUE
 				    line_color 	3342489
 				    quidu      	"5B28A0F8022D"
-				    client     	@292
-				    supplier   	@292
+				    client     	@346
+				    supplier   	@346
 				    vertices   	(list Points
 					(1015, 421)
 					(1129, 421))
 				    line_style 	4)
-				(object StateView "Normal" "检查" @297
+				(object StateView "Normal" "检查" @351
 				    location   	(1553, 489)
 				    font       	(object Font
 					size       	10
@@ -6728,7 +8053,7 @@
 					color      	0
 					default_color 	TRUE)
 				    label      	(object ItemLabel
-					Parent_View 	@297
+					Parent_View 	@351
 					location   	(1553, 478)
 					fill_color 	13434879
 					anchor_loc 	1
@@ -6742,7 +8067,7 @@
 				    quidu      	"5B28A12A012E"
 				    height     	134
 				    autoResize 	TRUE)
-				(object StateView "EndState" "End" @298
+				(object StateView "EndState" "End" @352
 				    location   	(1142, 873)
 				    font       	(object Font
 					size       	10
@@ -6753,8 +8078,8 @@
 					strike     	FALSE
 					color      	0
 					default_color 	TRUE)
-				    label      	(object SegLabel @299
-					Parent_View 	@298
+				    label      	(object SegLabel @353
+					Parent_View 	@352
 					location   	(1196, 831)
 					font       	(object Font
 					    size       	10
@@ -6776,7 +8101,7 @@
 				    line_color 	3342489
 				    quidu      	"5B28A2390186"
 				    autoResize 	TRUE)
-				(object TransView "" @300
+				(object TransView "" @354
 				    font       	(object Font
 					size       	10
 					face       	"Arial"
@@ -6786,8 +8111,8 @@
 					strike     	FALSE
 					color      	0
 					default_color 	TRUE)
-				    label      	(object SegLabel @301
-					Parent_View 	@300
+				    label      	(object SegLabel @355
+					Parent_View 	@354
 					location   	(1153, 687)
 					font       	(object Font
 					    size       	10
@@ -6809,14 +8134,14 @@
 				    stereotype 	TRUE
 				    line_color 	3342489
 				    quidu      	"5B28A24D01B7"
-				    client     	@292
-				    supplier   	@298
+				    client     	@346
+				    supplier   	@352
 				    vertices   	(list Points
 					(1084, 556)
 					(1134, 830))
 				    line_style 	0
 				    x_offset   	FALSE)
-				(object TransView "" @302
+				(object TransView "" @356
 				    font       	(object Font
 					size       	10
 					face       	"Arial"
@@ -6826,8 +8151,8 @@
 					strike     	FALSE
 					color      	0
 					default_color 	TRUE)
-				    label      	(object SegLabel @303
-					Parent_View 	@302
+				    label      	(object SegLabel @357
+					Parent_View 	@356
 					location   	(923, 666)
 					font       	(object Font
 					    size       	10
@@ -6849,14 +8174,14 @@
 				    stereotype 	TRUE
 				    line_color 	3342489
 				    quidu      	"5B28A275001B"
-				    client     	@288
-				    supplier   	@298
+				    client     	@342
+				    supplier   	@352
 				    vertices   	(list Points
 					(693, 561)
 					(1100, 843))
 				    line_style 	0
 				    x_offset   	FALSE)
-				(object TransView "" @304
+				(object TransView "" @358
 				    font       	(object Font
 					size       	10
 					face       	"Arial"
@@ -6866,8 +8191,8 @@
 					strike     	FALSE
 					color      	0
 					default_color 	TRUE)
-				    label      	(object SegLabel @305
-					Parent_View 	@304
+				    label      	(object SegLabel @359
+					Parent_View 	@358
 					location   	(1301, 374)
 					font       	(object Font
 					    size       	10
@@ -6889,15 +8214,15 @@
 				    stereotype 	TRUE
 				    line_color 	3342489
 				    quidu      	"5B28A4E5010E"
-				    client     	@292
-				    supplier   	@297
+				    client     	@346
+				    supplier   	@351
 				    vertices   	(list Points
 					(1222, 443)
 					(1322, 413)
 					(1403, 439))
 				    line_style 	0
 				    x_offset   	FALSE)
-				(object SelfTransView "" @306
+				(object SelfTransView "" @360
 				    location   	(1553, 272)
 				    font       	(object Font
 					size       	10
@@ -6908,8 +8233,8 @@
 					strike     	FALSE
 					color      	0
 					default_color 	TRUE)
-				    label      	(object SegLabel @307
-					Parent_View 	@306
+				    label      	(object SegLabel @361
+					Parent_View 	@360
 					location   	(1552, 213)
 					font       	(object Font
 					    size       	10
@@ -6931,13 +8256,13 @@
 				    stereotype 	TRUE
 				    line_color 	3342489
 				    quidu      	"5B28A4F00136"
-				    client     	@297
-				    supplier   	@297
+				    client     	@351
+				    supplier   	@351
 				    vertices   	(list Points
 					(1496, 422)
 					(1610, 421))
 				    line_style 	4)
-				(object TransView "" @308
+				(object TransView "" @362
 				    font       	(object Font
 					size       	10
 					face       	"Arial"
@@ -6947,8 +8272,8 @@
 					strike     	FALSE
 					color      	0
 					default_color 	TRUE)
-				    label      	(object SegLabel @309
-					Parent_View 	@308
+				    label      	(object SegLabel @363
+					Parent_View 	@362
 					location   	(1364, 726)
 					font       	(object Font
 					    size       	10
@@ -6970,14 +8295,14 @@
 				    stereotype 	TRUE
 				    line_color 	3342489
 				    quidu      	"5B28A2810083"
-				    client     	@297
-				    supplier   	@298
+				    client     	@351
+				    supplier   	@352
 				    vertices   	(list Points
 					(1481, 555)
 					(1186, 831))
 				    line_style 	0
 				    x_offset   	FALSE)
-				(object TransView "" @310
+				(object TransView "" @364
 				    font       	(object Font
 					size       	10
 					face       	"Arial"
@@ -6987,8 +8312,8 @@
 					strike     	FALSE
 					color      	0
 					default_color 	TRUE)
-				    label      	(object SegLabel @311
-					Parent_View 	@310
+				    label      	(object SegLabel @365
+					Parent_View 	@364
 					location   	(1320, 623)
 					font       	(object Font
 					    size       	10
@@ -7010,8 +8335,8 @@
 				    stereotype 	TRUE
 				    line_color 	3342489
 				    quidu      	"5B28A4FC006B"
-				    client     	@297
-				    supplier   	@292
+				    client     	@351
+				    supplier   	@346
 				    vertices   	(list Points
 					(1403, 544)
 					(1278, 591)
@@ -7104,7 +8429,7 @@
 			    supplier_quidu 	"5B28A2C5010C"
 			    client     	"Logical View::UI::State/Activity Model3::初始化输入"
 			    client_quidu 	"5B28A2BB0349"
-			    Event      	(object Event "用户选择"
+			    Event      	(object Event "用户合法选择"
 				quid       	"5B28A403002F")
 			    sendEvent  	(object sendEvent
 				quid       	"5B28A4030031"))
@@ -7223,7 +8548,7 @@
 			    origin_x   	0
 			    origin_y   	0
 			    items      	(list diagram_item_list
-				(object StateView "StartState" "开始" @312
+				(object StateView "StartState" "开始" @366
 				    location   	(156, 222)
 				    font       	(object Font
 					size       	10
@@ -7234,8 +8559,8 @@
 					strike     	FALSE
 					color      	0
 					default_color 	TRUE)
-				    label      	(object SegLabel @313
-					Parent_View 	@312
+				    label      	(object SegLabel @367
+					Parent_View 	@366
 					location   	(198, 192)
 					font       	(object Font
 					    size       	10
@@ -7257,7 +8582,7 @@
 				    line_color 	3342489
 				    quidu      	"5B28A2B1017A"
 				    autoResize 	TRUE)
-				(object StateView "Normal" "初始化输入" @314
+				(object StateView "Normal" "初始化输入" @368
 				    location   	(469, 434)
 				    font       	(object Font
 					size       	10
@@ -7269,7 +8594,7 @@
 					color      	0
 					default_color 	TRUE)
 				    label      	(object ItemLabel
-					Parent_View 	@314
+					Parent_View 	@368
 					location   	(469, 423)
 					fill_color 	13434879
 					anchor_loc 	1
@@ -7283,8 +8608,8 @@
 				    quidu      	"5B28A2BB0349"
 				    height     	134
 				    autoResize 	TRUE)
-				(object StateView "Normal" "运行" @315
-				    location   	(1138, 433)
+				(object StateView "Normal" "运行" @369
+				    location   	(1259, 433)
 				    font       	(object Font
 					size       	10
 					face       	"Arial"
@@ -7295,8 +8620,8 @@
 					color      	0
 					default_color 	TRUE)
 				    label      	(object ItemLabel
-					Parent_View 	@315
-					location   	(1138, 422)
+					Parent_View 	@369
+					location   	(1259, 422)
 					fill_color 	13434879
 					anchor_loc 	1
 					nlines     	2
@@ -7309,8 +8634,8 @@
 				    quidu      	"5B28A2C5010C"
 				    height     	134
 				    autoResize 	TRUE)
-				(object StateView "Normal" "检查" @316
-				    location   	(1153, 723)
+				(object StateView "Normal" "检查" @370
+				    location   	(1274, 764)
 				    font       	(object Font
 					size       	10
 					face       	"Arial"
@@ -7321,8 +8646,8 @@
 					color      	0
 					default_color 	TRUE)
 				    label      	(object ItemLabel
-					Parent_View 	@316
-					location   	(1153, 712)
+					Parent_View 	@370
+					location   	(1274, 753)
 					fill_color 	13434879
 					anchor_loc 	1
 					nlines     	2
@@ -7335,8 +8660,8 @@
 				    quidu      	"5B28A3A40356"
 				    height     	134
 				    autoResize 	TRUE)
-				(object StateView "Normal" "报错" @317
-				    location   	(472, 736)
+				(object StateView "Normal" "报错" @371
+				    location   	(472, 777)
 				    font       	(object Font
 					size       	10
 					face       	"Arial"
@@ -7347,8 +8672,8 @@
 					color      	0
 					default_color 	TRUE)
 				    label      	(object ItemLabel
-					Parent_View 	@317
-					location   	(472, 725)
+					Parent_View 	@371
+					location   	(472, 766)
 					fill_color 	13434879
 					anchor_loc 	1
 					nlines     	2
@@ -7361,18 +8686,18 @@
 				    quidu      	"5B28A3B30132"
 				    height     	134
 				    autoResize 	TRUE)
-				(object TransView "" @318
+				(object TransView "" @372
 				    stereotype 	TRUE
 				    line_color 	3342489
 				    quidu      	"5B28A3BE0005"
-				    client     	@312
-				    supplier   	@314
+				    client     	@366
+				    supplier   	@368
 				    vertices   	(list Points
 					(186, 242)
 					(370, 367))
 				    line_style 	0
 				    x_offset   	FALSE)
-				(object TransView "" @319
+				(object TransView "" @373
 				    font       	(object Font
 					size       	10
 					face       	"Arial"
@@ -7382,9 +8707,9 @@
 					strike     	FALSE
 					color      	0
 					default_color 	TRUE)
-				    label      	(object SegLabel @320
-					Parent_View 	@319
-					location   	(803, 389)
+				    label      	(object SegLabel @374
+					Parent_View 	@373
+					location   	(864, 389)
 					font       	(object Font
 					    size       	10
 					    face       	"Arial"
@@ -7396,24 +8721,24 @@
 					    default_color 	TRUE)
 					anchor_loc 	1
 					nlines     	1
-					max_width  	450
+					max_width  	309
 					justify    	0
-					label      	"用户选择"
+					label      	"用户合法选择"
 					pctDist    	0.500000
 					height     	45
 					orientation 	0)
 				    stereotype 	TRUE
 				    line_color 	3342489
 				    quidu      	"5B28A403002E"
-				    client     	@314
-				    supplier   	@315
+				    client     	@368
+				    supplier   	@369
 				    vertices   	(list Points
 					(619, 433)
-					(988, 433))
+					(1109, 433))
 				    line_style 	0
 				    x_offset   	FALSE)
-				(object SelfTransView "" @321
-				    location   	(1138, 216)
+				(object SelfTransView "" @375
+				    location   	(1259, 216)
 				    font       	(object Font
 					size       	10
 					face       	"Arial"
@@ -7423,9 +8748,9 @@
 					strike     	FALSE
 					color      	0
 					default_color 	TRUE)
-				    label      	(object SegLabel @322
-					Parent_View 	@321
-					location   	(1137, 157)
+				    label      	(object SegLabel @376
+					Parent_View 	@375
+					location   	(1258, 157)
 					font       	(object Font
 					    size       	10
 					    face       	"Arial"
@@ -7446,13 +8771,13 @@
 				    stereotype 	TRUE
 				    line_color 	3342489
 				    quidu      	"5B28A415037E"
-				    client     	@315
-				    supplier   	@315
+				    client     	@369
+				    supplier   	@369
 				    vertices   	(list Points
-					(1081, 366)
-					(1195, 365))
+					(1202, 366)
+					(1316, 365))
 				    line_style 	4)
-				(object TransView "" @323
+				(object TransView "" @377
 				    font       	(object Font
 					size       	10
 					face       	"Arial"
@@ -7462,9 +8787,9 @@
 					strike     	FALSE
 					color      	0
 					default_color 	TRUE)
-				    label      	(object SegLabel @324
-					Parent_View 	@323
-					location   	(384, 555)
+				    label      	(object SegLabel @378
+					Parent_View 	@377
+					location   	(350, 578)
 					font       	(object Font
 					    size       	10
 					    face       	"Arial"
@@ -7479,32 +8804,32 @@
 					max_width  	450
 					justify    	0
 					label      	"输入非法"
-					pctDist    	0.500000
-					height     	45
+					pctDist    	0.408968
+					height     	4
 					orientation 	0)
 				    stereotype 	TRUE
 				    line_color 	3342489
 				    quidu      	"5B28A52E0344"
-				    client     	@314
-				    supplier   	@317
+				    client     	@368
+				    supplier   	@371
 				    vertices   	(list Points
 					(406, 501)
 					(341, 572)
-					(418, 669))
+					(429, 709))
 				    line_style 	0
 				    x_offset   	FALSE)
-				(object TransView "" @325
+				(object TransView "" @379
 				    stereotype 	TRUE
 				    line_color 	3342489
 				    quidu      	"5B28A5380085"
-				    client     	@317
-				    supplier   	@314
+				    client     	@371
+				    supplier   	@368
 				    vertices   	(list Points
-					(471, 668)
+					(471, 709)
 					(469, 501))
 				    line_style 	0
 				    x_offset   	FALSE)
-				(object TransView "" @326
+				(object TransView "" @380
 				    font       	(object Font
 					size       	10
 					face       	"Arial"
@@ -7514,9 +8839,9 @@
 					strike     	FALSE
 					color      	0
 					default_color 	TRUE)
-				    label      	(object SegLabel @327
-					Parent_View 	@326
-					location   	(1310, 603)
+				    label      	(object SegLabel @381
+					Parent_View 	@380
+					location   	(1425, 615)
 					font       	(object Font
 					    size       	10
 					    face       	"Arial"
@@ -7537,15 +8862,15 @@
 				    stereotype 	TRUE
 				    line_color 	3342489
 				    quidu      	"5B28A57E0033"
-				    client     	@315
-				    supplier   	@316
+				    client     	@369
+				    supplier   	@370
 				    vertices   	(list Points
-					(1205, 500)
-					(1278, 572)
-					(1208, 655))
+					(1326, 499)
+					(1399, 572)
+					(1317, 697))
 				    line_style 	0
 				    x_offset   	FALSE)
-				(object TransView "" @328
+				(object TransView "" @382
 				    font       	(object Font
 					size       	10
 					face       	"Arial"
@@ -7555,9 +8880,9 @@
 					strike     	FALSE
 					color      	0
 					default_color 	TRUE)
-				    label      	(object SegLabel @329
-					Parent_View 	@328
-					location   	(1101, 579)
+				    label      	(object SegLabel @383
+					Parent_View 	@382
+					location   	(1222, 600)
 					font       	(object Font
 					    size       	10
 					    face       	"Arial"
@@ -7578,14 +8903,14 @@
 				    stereotype 	TRUE
 				    line_color 	3342489
 				    quidu      	"5B28A5910119"
-				    client     	@316
-				    supplier   	@315
+				    client     	@370
+				    supplier   	@369
 				    vertices   	(list Points
-					(1149, 655)
-					(1141, 499))
+					(1270, 697)
+					(1262, 500))
 				    line_style 	0
 				    x_offset   	FALSE)
-				(object TransView "" @330
+				(object TransView "" @384
 				    font       	(object Font
 					size       	10
 					face       	"Arial"
@@ -7595,9 +8920,9 @@
 					strike     	FALSE
 					color      	0
 					default_color 	TRUE)
-				    label      	(object SegLabel @331
-					Parent_View 	@330
-					location   	(807, 847)
+				    label      	(object SegLabel @385
+					Parent_View 	@384
+					location   	(883, 896)
 					font       	(object Font
 					    size       	10
 					    face       	"Arial"
@@ -7618,27 +8943,27 @@
 				    stereotype 	TRUE
 				    line_color 	3342489
 				    quidu      	"5B28A5D301D1"
-				    client     	@316
-				    supplier   	@317
+				    client     	@370
+				    supplier   	@371
 				    vertices   	(list Points
-					(1003, 770)
-					(866, 813)
-					(622, 765))
+					(1124, 797)
+					(866, 854)
+					(622, 806))
 				    line_style 	0
 				    x_offset   	FALSE)
-				(object TransView "" @332
+				(object TransView "" @386
 				    stereotype 	TRUE
 				    line_color 	3342489
 				    quidu      	"5B28A5DB02F6"
-				    client     	@317
-				    supplier   	@316
+				    client     	@371
+				    supplier   	@370
 				    vertices   	(list Points
-					(622, 733)
-					(1003, 725))
+					(622, 774)
+					(1124, 766))
 				    line_style 	0
 				    x_offset   	FALSE)
-				(object StateView "EndState" "$UNNAMED$17" @333
-				    location   	(792, 548)
+				(object StateView "EndState" "$UNNAMED$17" @387
+				    location   	(823, 564)
 				    font       	(object Font
 					size       	10
 					face       	"Arial"
@@ -7648,9 +8973,9 @@
 					strike     	FALSE
 					color      	0
 					default_color 	TRUE)
-				    label      	(object SegLabel @334
-					Parent_View 	@333
-					location   	(846, 506)
+				    label      	(object SegLabel @388
+					Parent_View 	@387
+					location   	(877, 522)
 					font       	(object Font
 					    size       	10
 					    face       	"Arial"
@@ -7672,7 +8997,7 @@
 				    line_color 	3342489
 				    quidu      	"5B28A6020102"
 				    autoResize 	TRUE)
-				(object TransView "" @335
+				(object TransView "" @389
 				    font       	(object Font
 					size       	10
 					face       	"Arial"
@@ -7682,9 +9007,9 @@
 					strike     	FALSE
 					color      	0
 					default_color 	TRUE)
-				    label      	(object SegLabel @336
-					Parent_View 	@335
-					location   	(924, 551)
+				    label      	(object SegLabel @390
+					Parent_View 	@389
+					location   	(999, 558)
 					font       	(object Font
 					    size       	10
 					    face       	"Arial"
@@ -7705,14 +9030,14 @@
 				    stereotype 	TRUE
 				    line_color 	3342489
 				    quidu      	"5B28A61202DC"
-				    client     	@315
-				    supplier   	@333
+				    client     	@369
+				    supplier   	@387
 				    vertices   	(list Points
-					(988, 482)
-					(834, 534))
+					(1109, 478)
+					(865, 551))
 				    line_style 	0
 				    x_offset   	FALSE)
-				(object TransView "" @337
+				(object TransView "" @391
 				    font       	(object Font
 					size       	10
 					face       	"Arial"
@@ -7722,9 +9047,9 @@
 					strike     	FALSE
 					color      	0
 					default_color 	TRUE)
-				    label      	(object SegLabel @338
-					Parent_View 	@337
-					location   	(700, 469)
+				    label      	(object SegLabel @392
+					Parent_View 	@391
+					location   	(715, 477)
 					font       	(object Font
 					    size       	10
 					    face       	"Arial"
@@ -7745,14 +9070,14 @@
 				    stereotype 	TRUE
 				    line_color 	3342489
 				    quidu      	"5B28A62400D9"
-				    client     	@314
-				    supplier   	@333
+				    client     	@368
+				    supplier   	@387
 				    vertices   	(list Points
-					(619, 486)
-					(750, 533))
+					(619, 489)
+					(781, 548))
 				    line_style 	0
 				    x_offset   	FALSE)
-				(object TransView "" @339
+				(object TransView "" @393
 				    font       	(object Font
 					size       	10
 					face       	"Arial"
@@ -7762,9 +9087,9 @@
 					strike     	FALSE
 					color      	0
 					default_color 	TRUE)
-				    label      	(object SegLabel @340
-					Parent_View 	@339
-					location   	(905, 652)
+				    label      	(object SegLabel @394
+					Parent_View 	@393
+					location   	(976, 680)
 					font       	(object Font
 					    size       	10
 					    face       	"Arial"
@@ -7785,11 +9110,11 @@
 				    stereotype 	TRUE
 				    line_color 	3342489
 				    quidu      	"5B28A6420110"
-				    client     	@316
-				    supplier   	@333
+				    client     	@370
+				    supplier   	@387
 				    vertices   	(list Points
-					(1014, 656)
-					(834, 568))
+					(1122, 697)
+					(865, 582))
 				    line_style 	0
 				    x_offset   	FALSE))))))
 	    (object Association "拥有"
@@ -7830,7 +9155,55 @@
 		origin_x   	0
 		origin_y   	1393
 		items      	(list diagram_item_list
-		    (object ClassView "Class" "Logical View::Strategy" @341
+		    (object ClassView "Class" "Logical View::UI" @395
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(1699, 1852)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@395
+			    location   	(1556, 1671)
+			    fill_color 	13434879
+			    nlines     	1
+			    max_width  	286
+			    justify    	0
+			    label      	"UI")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5B28924A00E4"
+			compartment 	(object Compartment
+			    Parent_View 	@395
+			    location   	(1556, 1732)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    icon_style 	"Icon"
+			    fill_color 	13434879
+			    anchor     	2
+			    nlines     	6
+			    max_width  	300
+			    justify    	1)
+			width      	304
+			height     	386
+			annotation 	8
+			autoResize 	TRUE)
+		    (object ClassView "Class" "Logical View::Strategy" @396
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -7845,7 +9218,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@341
+			    Parent_View 	@396
 			    location   	(1524, 857)
 			    fill_color 	13434879
 			    nlines     	1
@@ -7857,7 +9230,7 @@
 			fill_color 	13434879
 			quidu      	"5B286E370090"
 			compartment 	(object Compartment
-			    Parent_View 	@341
+			    Parent_View 	@396
 			    location   	(1524, 918)
 			    font       	(object Font
 				size       	10
@@ -7878,122 +9251,7 @@
 			height     	386
 			annotation 	8
 			autoResize 	TRUE)
-		    (object ClassView "Class" "Logical View::UI" @342
-			ShowCompartmentStereotypes 	TRUE
-			IncludeAttribute 	TRUE
-			IncludeOperation 	TRUE
-			location   	(1699, 1852)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object ItemLabel
-			    Parent_View 	@342
-			    location   	(1556, 1671)
-			    fill_color 	13434879
-			    nlines     	1
-			    max_width  	286
-			    justify    	0
-			    label      	"UI")
-			icon_style 	"Icon"
-			line_color 	3342489
-			fill_color 	13434879
-			quidu      	"5B28924A00E4"
-			compartment 	(object Compartment
-			    Parent_View 	@342
-			    location   	(1556, 1732)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    icon_style 	"Icon"
-			    fill_color 	13434879
-			    anchor     	2
-			    nlines     	6
-			    max_width  	284
-			    justify    	1)
-			width      	304
-			height     	386
-			annotation 	8
-			autoResize 	TRUE)
-		    (object ClassView "Class" "Logical View::Game" @343
-			ShowCompartmentStereotypes 	TRUE
-			IncludeAttribute 	TRUE
-			IncludeOperation 	TRUE
-			location   	(922, 1852)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object ItemLabel
-			    Parent_View 	@343
-			    location   	(728, 1571)
-			    fill_color 	13434879
-			    nlines     	1
-			    max_width  	388
-			    justify    	0
-			    label      	"Game")
-			icon_style 	"Icon"
-			line_color 	3342489
-			fill_color 	13434879
-			quidu      	"5B287EAD024B"
-			compartment 	(object Compartment
-			    Parent_View 	@343
-			    location   	(728, 1632)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    icon_style 	"Icon"
-			    fill_color 	13434879
-			    anchor     	2
-			    nlines     	10
-			    max_width  	384
-			    justify    	1)
-			width      	406
-			height     	586
-			annotation 	8
-			autoResize 	TRUE)
-		    (object UsesView "" @344
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			stereotype 	TRUE
-			line_color 	3342489
-			quidu      	"5B28971A0138"
-			client     	@342
-			supplier   	@343
-			vertices   	(list Points
-			    (1546, 1852)
-			    (1125, 1852))
-			line_style 	0)
-		    (object ClassView "Class" "Logical View::Agent" @345
+		    (object ClassView "Class" "Logical View::Agent" @397
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -8008,7 +9266,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@345
+			    Parent_View 	@397
 			    location   	(643, 758)
 			    fill_color 	13434879
 			    nlines     	1
@@ -8020,7 +9278,7 @@
 			fill_color 	13434879
 			quidu      	"5B286E29038B"
 			compartment 	(object Compartment
-			    Parent_View 	@345
+			    Parent_View 	@397
 			    location   	(643, 819)
 			    font       	(object Font
 				size       	10
@@ -8041,7 +9299,7 @@
 			height     	586
 			annotation 	8
 			autoResize 	TRUE)
-		    (object AssociationViewNew "拥有" @346
+		    (object AssociationViewNew "拥有" @398
 			location   	(1362, 1038)
 			font       	(object Font
 			    size       	10
@@ -8052,8 +9310,8 @@
 			    strike     	FALSE
 			    color      	0
 			    default_color 	TRUE)
-			label      	(object SegLabel @347
-			    Parent_View 	@346
+			label      	(object SegLabel @399
+			    Parent_View 	@398
 			    location   	(1362, 979)
 			    font       	(object Font
 				size       	10
@@ -8077,8 +9335,8 @@
 			line_color 	3342489
 			quidu      	"5B287DB40205"
 			roleview_list 	(list RoleViews
-			    (object RoleView "$UNNAMED$18" @348
-				Parent_View 	@346
+			    (object RoleView "$UNNAMED$18" @400
+				Parent_View 	@398
 				location   	(546, -246)
 				font       	(object Font
 				    size       	10
@@ -8092,14 +9350,14 @@
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5B287DB50248"
-				client     	@346
-				supplier   	@341
+				client     	@398
+				supplier   	@396
 				vertices   	(list Points
 				    (1362, 1038)
 				    (1514, 1038))
 				line_style 	0
-				label      	(object SegLabel @349
-				    Parent_View 	@348
+				label      	(object SegLabel @401
+				    Parent_View 	@400
 				    location   	(1499, 1092)
 				    font       	(object Font
 					size       	10
@@ -8119,8 +9377,8 @@
 				    pctDist    	0.900000
 				    height     	54
 				    orientation 	1))
-			    (object RoleView "$UNNAMED$19" @350
-				Parent_View 	@346
+			    (object RoleView "$UNNAMED$19" @402
+				Parent_View 	@398
 				location   	(546, -246)
 				font       	(object Font
 				    size       	10
@@ -8134,14 +9392,14 @@
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5B287DB5024B"
-				client     	@346
-				supplier   	@345
+				client     	@398
+				supplier   	@397
 				vertices   	(list Points
 				    (1362, 1038)
 				    (1210, 1038))
 				line_style 	0
-				label      	(object SegLabel @351
-				    Parent_View 	@350
+				label      	(object SegLabel @403
+				    Parent_View 	@402
 				    location   	(1225, 1092)
 				    font       	(object Font
 					size       	10
@@ -8161,7 +9419,74 @@
 				    pctDist    	0.900000
 				    height     	54
 				    orientation 	0))))
-		    (object AssociationViewNew "管理" @352
+		    (object ClassView "Class" "Logical View::Game" @404
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(922, 1852)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@404
+			    location   	(728, 1571)
+			    fill_color 	13434879
+			    nlines     	1
+			    max_width  	388
+			    justify    	0
+			    label      	"Game")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5B287EAD024B"
+			compartment 	(object Compartment
+			    Parent_View 	@404
+			    location   	(728, 1632)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    icon_style 	"Icon"
+			    fill_color 	13434879
+			    anchor     	2
+			    nlines     	10
+			    max_width  	384
+			    justify    	1)
+			width      	406
+			height     	586
+			annotation 	8
+			autoResize 	TRUE)
+		    (object UsesView "" @405
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5B28971A0138"
+			client     	@395
+			supplier   	@404
+			vertices   	(list Points
+			    (1546, 1852)
+			    (1125, 1852))
+			line_style 	0)
+		    (object AssociationViewNew "管理" @406
 			location   	(922, 1445)
 			font       	(object Font
 			    size       	10
@@ -8172,8 +9497,8 @@
 			    strike     	FALSE
 			    color      	0
 			    default_color 	TRUE)
-			label      	(object SegLabel @353
-			    Parent_View 	@352
+			label      	(object SegLabel @407
+			    Parent_View 	@406
 			    location   	(922, 1386)
 			    font       	(object Font
 				size       	10
@@ -8197,8 +9522,8 @@
 			line_color 	3342489
 			quidu      	"5B289A4A0116"
 			roleview_list 	(list RoleViews
-			    (object RoleView "$UNNAMED$20" @354
-				Parent_View 	@352
+			    (object RoleView "$UNNAMED$20" @408
+				Parent_View 	@406
 				location   	(-62, -374)
 				font       	(object Font
 				    size       	10
@@ -8212,14 +9537,14 @@
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5B289A4B00DD"
-				client     	@352
-				supplier   	@345
+				client     	@406
+				supplier   	@397
 				vertices   	(list Points
 				    (922, 1445)
 				    (922, 1332))
 				line_style 	0
-				label      	(object SegLabel @355
-				    Parent_View 	@354
+				label      	(object SegLabel @409
+				    Parent_View 	@408
 				    location   	(976, 1343)
 				    font       	(object Font
 					size       	10
@@ -8239,8 +9564,8 @@
 				    pctDist    	0.900000
 				    height     	54
 				    orientation 	1))
-			    (object RoleView "$UNNAMED$21" @356
-				Parent_View 	@352
+			    (object RoleView "$UNNAMED$21" @410
+				Parent_View 	@406
 				location   	(-62, -374)
 				font       	(object Font
 				    size       	10
@@ -8254,14 +9579,14 @@
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5B289A4B00E0"
-				client     	@352
-				supplier   	@343
+				client     	@406
+				supplier   	@404
 				vertices   	(list Points
 				    (922, 1445)
 				    (922, 1558))
 				line_style 	0
-				label      	(object SegLabel @357
-				    Parent_View 	@356
+				label      	(object SegLabel @411
+				    Parent_View 	@410
 				    location   	(976, 1547)
 				    font       	(object Font
 					size       	10
